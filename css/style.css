@@ -737,3 +737,39 @@ margin-bottom: 10px;
 .book-heading{
   margin: 20px 0px 40px 0px;
 }
+
+.pg-main{
+  margin-bottom: 100px;
+  padding: 30px 30px;
+  box-shadow: 0 1px 8px rgba(0,0,0,.1);
+  border-radius: 10px;
+}
+
+.pg-main .pg-heading{
+  margin: 20px 0px 40px 0px;
+}
+
+.pg-main .card img{
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.pg-main .card{
+  border: none;
+  border-radius: 0px;
+}
+
+.pg-main .card-body{
+  padding: 25px 0px 0px 0px;
+}
+
+.pg-main .btn{
+  background-image: linear-gradient(to right, rgba(235, 0, 141, 0.7) , rgba(153, 102, 255, 0.7));
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin-left: 20px;
+}

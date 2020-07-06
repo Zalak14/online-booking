@@ -1127,6 +1127,138 @@
   </div>
 </section>
 
+<section class="tw-pg">
+  <div class="container">
+    <div class="pg-main">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="pg-heading d-flex justify-content-start">
+            <h1>Popular Getaways from</h1>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Bangalore
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Delhi</a>
+                <a class="dropdown-item" href="#">Mumbai</a>
+                <a class="dropdown-item" href="#">Ahmedabad</a>
+                <a class="dropdown-item" href="#">Hyderabad</a>
+                <a class="dropdown-item" href="#">Chennai</a>
+                <a class="dropdown-item" href="#">Indore</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pg-slider">
+            <div class="swiper-container getaways-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <div class="card" style="width: 16rem;">
+                      <img src="img/22.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">AMD</h5>
+                        <p class="card-text">Starting at &#x20B9; 3000*</p>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <div class="card" style="width: 16rem;">
+                      <img src="img/11.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">BLR</h5>
+                        <p class="card-text">Starting at &#x20B9; 4056*</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <div class="card" style="width: 16rem;">
+                      <img src="img/33.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">IXB</h5>
+                        <p class="card-text">Starting at &#x20B9; 3556*</p>
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <div class="card" style="width: 16rem;">
+                      <img src="img/44.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">BBI</h5>
+                        <p class="card-text">Starting at &#x20B9; 4656*</p>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <div class="card" style="width: 16rem;">
+                      <img src="img/55.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">DIB</h5>
+                        <p class="card-text">Starting at &#x20B9; 3256*</p>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <div class="card" style="width: 16rem;">
+                      <img src="img/66.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">DOH</h5>
+                        <p class="card-text">Starting at &#x20B9; 14056*</p>
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <div class="card" style="width: 16rem;">
+                      <img src="img/77.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">CJB</h5>
+                        <p class="card-text">Starting at &#x20B9; 7056*</p>
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <div class="card" style="width: 16rem;">
+                      <img src="img/88.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">HYD</h5>
+                        <p class="card-text">Starting at &#x20B9; 3756*</p>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="tw-pd">
   <div class="plane-design">
   <div class="container">
@@ -1366,6 +1498,7 @@
     slidesPerGroup: 2,
     loop: true,
     loopFillGroupWithBlank: true,
+    observer:true,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -1397,6 +1530,24 @@
 
 <script>
   var swiper = new Swiper('.blog-slider', {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    slidesPerGroup: 4,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+
+<script>
+  var swiper = new Swiper('.getaways-slider', {
     slidesPerView: 4,
     spaceBetween: 30,
     slidesPerGroup: 4,
