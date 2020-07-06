@@ -121,7 +121,7 @@
                       </div>
                       <div class="form-group col-md-2">
                         <label for="inputEmail4"></label>
-                        <button type="submit" class="btn btn-find">Find</button>
+                        <button class="btn btn-find" onclick="openFlight()">Find</button>
                       </div>
                       <div class="form-group col-md-3">
                         <div class="dropdown mr-1">
@@ -241,7 +241,7 @@
                   </div>
                   <div class="form-group col-md-2">
                     <label for="inputEmail4"></label>
-                    <button type="submit" class="btn btn-find">Find</button>
+                    <button class="btn btn-find">Find</button>
                   </div>
                   <div class="form-group col-md-3">
                     <div class="dropdown mr-1">
@@ -1419,6 +1419,7 @@
 </script>
 <script src="js/swiper.min.js"></script>
 <script>
+  
     var swiper = new Swiper('.banner-slider', {
       spaceBetween: 30,
       centeredSlides: true,
@@ -1600,7 +1601,11 @@
     evt1.currentTarget.className += " active";
   }
   </script>
-
+<script>
+  function openFlight(){
+    window.location.href = 'html/flight.html';
+  }
+</script>
 
 
 
