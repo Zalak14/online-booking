@@ -773,3 +773,42 @@ margin-bottom: 10px;
   padding: 10px 20px;
   margin-left: 20px;
 }
+
+.price-btn .slider{
+  
+}
+
+.flight-side-menu{
+  margin-top: 100px;
+}
+
+.flight-accordion .card{
+  border: none;
+  border-radius: 0px !important;
+}
+
+.flight-accordion .card .slider{
+  width: 100%;
+  margin-top: 10px;
+}
+
+.flight-accordion .card-header{
+  background-image: linear-gradient(to right, rgba(235, 0, 141, 0.7) , rgba(153, 102, 255, 0.7));
+  border: none;
+  border-radius: 0px;
+}
+
+.flight-accordion .card-header .btn{
+  color: white;
+}
+.flight-side-menu .show-result{
+  background-image: linear-gradient(to right, rgba(235, 0, 141, 0.7) , rgba(153, 102, 255, 0.7));
+  padding: 20px 30px 10px;
+}
+.flight-side-menu .show-result h5{
+  color: white;
+}
+
+.flight-side-menu .show-result a {
+  color: white !important;
+}

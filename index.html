@@ -1492,7 +1492,7 @@
   });
 </script>
 <script>
-  var swiper = new Swiper('.offer-slider1', {
+  var offerSwiper = new offerSwiper('.offer-slider1', {
     slidesPerView: 2,
     spaceBetween: 30,
     slidesPerGroup: 2,
@@ -1582,6 +1582,7 @@
     
   function offer(evt1, offerName) {
     var j, offercontent, offerlinks;
+    offerSwiper.updateSize()
     offercontent = document.getElementsByClassName("offercontent");
     for (j = 0; j < offercontent.length; j++) {
       offercontent[j].style.display = "none";
