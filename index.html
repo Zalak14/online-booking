@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tekwalker</title>
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font/stylesheet.css">
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+</head>
+<body>
+<div class="main-div">
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light br-nav">
+                        <a class="navbar-brand" href="#"><h2>Tekwalker</h2></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                         
+                        <div class="collapse navbar-collapse d-flex flex-column bd-highlight mb-3" id="navbarNav">
+                          <div class="menu1">
+                          <ul class="navbar-nav br-navmenu1" >
+                            <li class="nav-item"><a class="nav-link" href="#">+919978325789</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Check your booking</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><img src="img/heart.svg" width="20px" height="20px"></a></li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                $ USD
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                              </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                EN
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                              </div>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#"><img src="img/user.svg" width="20px" height="20px"></a></li>
+                            
+                        </ul></div>
+                        <div>
+                            <ul class="navbar-nav br-navmenu">
+                                <li class="nav-item active"><a class="nav-link" href="#">HOME</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">HOTELS</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">VACATION HOMES </a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">FLIGHTS</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">TRIPS</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">PACKAGES</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">TOURS</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">SERVICES</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">ABOUT US</a></li>
+                            </ul></div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+<section class="banner">
+    <div class="banner-slide">
+        <div class="swiper-container banner-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img/11.jpg"/></div>
+              <div class="swiper-slide"><img src="img/22.jpg"/></div>
+              <div class="swiper-slide"><img src="img/33.jpg"/></div>
+              <div class="swiper-slide"><img src="img/44.jpg"/></div>
+              <div class="swiper-slide"><img src="img/55.jpg"/></div>
+              <div class="swiper-slide"><img src="img/66.jpg"/></div>
+              <div class="swiper-slide"><img src="img/77.jpg"/></div>
+              <div class="swiper-slide"><img src="img/88.jpg"/></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination0 swiper-pagination"></div>  
+          </div>
+    </div>
+
+
+    <div class="search-tab">
+            <div class="tab">
+            <button class="tablinks active" onclick="openCity(event, 'flight')">Flight</button>
+            <button class="tablinks" onclick="openCity(event, 'hotels')">Hotels</button>
+            <button class="tablinks" onclick="openCity(event, 'transfer')">Transfer</button>
+            <button class="tablinks" onclick="openCity(event, 'packages')">Packages</button>
+            </div>
+
+            <div id="flight" class="tabcontent initial-active">
+                <form>
+                    <div class="form-row">
+                      <div class="form-group col-md-3">
+                        <label for="inputEmail4">From</label>
+                        <input type="text" class="form-control flight-icon" placeholder="City or Airpot"></div>
+                      <div class="form-group col-md-3">
+                        <label for="inputPassword4">To</label>
+                        <input type="text" class="form-control location-icon" placeholder="Country, City or island">
+                      </div>
+                      <div class="form-group col-md-2">
+                        <label for="inputEmail4">Leaving on</label>
+                        <input type="date" class="form-control" id="inputEmail4">
+                      </div>
+                      <div class="form-group col-md-2">
+                        <label for="inputEmail4">Returning on</label>
+                        <input type="date" class="form-control" id="inputEmail4">
+                      </div>
+                      <div class="form-group col-md-2">
+                        <label for="inputEmail4"></label>
+                        <button type="submit" class="btn btn-find">Find</button>
+                      </div>
+                      <div class="form-group col-md-3">
+                        <div class="dropdown mr-1">
+                            <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                            0 adult
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                            <a class="dropdown-item" href="#">Adult</a>
+                            <a class="dropdown-item" href="#">children</a>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="form-group col-md-3">
+                        <div class="dropdown mr-1">
+                            <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                            Any Class
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                            <a class="dropdown-item" href="#">Any Class</a>
+                            <a class="dropdown-item" href="#">Economy</a>
+                            <a class="dropdown-item" href="#">Premium Economy</a>
+                            <a class="dropdown-item" href="#">First Class</a>
+                            <a class="dropdown-item" href="#">Business</a>
+                            </div>
+                        </div>
+                     </div>
+                    </div>
+                  </form>
+            </div>
+
+            <div id="hotels" class="tabcontent">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Search hotels in</label>
+                    <input type="text" class="form-control hotel-icon" placeholder="Search hotels name"></div>
+                  <div class="form-group col-md-2">
+                    <label for="inputEmail4">Check in</label>
+                    <input type="date" class="form-control" id="inputEmail4">
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputEmail4">Check out</label>
+                    <input type="date" class="form-control" id="inputEmail4">
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputEmail4"></label>
+                    <button type="submit" class="btn btn-find">Find</button>
+                  </div>
+                  <div class="form-group col-md-5">
+                    <div class="dropdown mr-1">
+                        <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                        2 Adult 1 Room
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                        <a class="dropdown-item" href="#">2 Adult</a>
+                        <a class="dropdown-item" href="#">1 Room</a>
+                        </div>
+                    </div>
+                 </div>
+                 
+                </div>
+              </form>
+            </div>
+
+            <div id="transfer" class="tabcontent">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-3">
+                    <label for="inputEmail4">From</label>
+                    <input type="text" class="form-control flight-icon" placeholder="City or Airpot"></div>
+                  <div class="form-group col-md-3">
+                    <label for="inputPassword4">To</label>
+                    <input type="text" class="form-control location-icon" placeholder="Country, City or island">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputEmail4">Date</label>
+                    <input type="date" class="form-control" id="inputEmail4">
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputEmail4"></label>
+                    <button type="submit" class="btn btn-find">Find</button>
+                  </div>
+                  
+                 <div class="form-group col-md-5">
+                    <div class="dropdown mr-1">
+                        <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                        Which Car
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                        <a class="dropdown-item" href="#">Cheapest</a>
+                        <a class="dropdown-item" href="#">Standard</a>
+                        <a class="dropdown-item" href="#">Premium</a>
+                        </div>
+                    </div>
+                 </div>
+                </div>
+              </form>
+            </div>
+
+            <div id="packages" class="tabcontent">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-3">
+                    <label for="inputEmail4">From</label>
+                    <input type="text" class="form-control flight-icon" placeholder="City or Airpot"></div>
+                  <div class="form-group col-md-3">
+                    <label for="inputPassword4">To</label>
+                    <input type="text" class="form-control location-icon" placeholder="Country, City or island">
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputEmail4">Leaving on</label>
+                    <input type="date" class="form-control" id="inputEmail4">
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputEmail4">Returning on</label>
+                    <input type="date" class="form-control" id="inputEmail4">
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputEmail4"></label>
+                    <button type="submit" class="btn btn-find">Find</button>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <div class="dropdown mr-1">
+                        <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                        0 adult
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                        <a class="dropdown-item" href="#">Adult</a>
+                        <a class="dropdown-item" href="#">children</a>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="form-group col-md-3">
+                    <div class="dropdown mr-1">
+                        <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                        Any Class
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                        <a class="dropdown-item" href="#">Any Class</a>
+                        <a class="dropdown-item" href="#">Economy</a>
+                        <a class="dropdown-item" href="#">Primium Economy</a>
+                        <a class="dropdown-item" href="#">First Class</a>
+                        <a class="dropdown-item" href="#">Business</a>
+                        </div>
+                    </div>
+                 </div>
+                </div>
+              </form>
+                </div>
+    </div>
+</section>
+</div>
+
+<section class="tw-alerts">
+  <div class="tw-alerts-div">
+    <div class="container">
+      <div class="alert-detail">
+        <div class="row">
+          <div class="col-sm-2">
+
+            <div class="alert-title">
+              <div class="alert-img"><img src="img/Alerts.gif"/></div>
+              <h3>TEKWALKER ALERTS</h3>
+            </div>
+          </div>
+          <div class="col-md-10">
+            <div class="alert-slider">
+              <div class="swiper-container slider-alert">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><p class="alert-slider-text">This is a wider card with supporting text below as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content.</p></div>
+                  <div class="swiper-slide"><p class="alert-slider-text">This is a wider card with supporting text below as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content.</p></div>
+                  <div class="swiper-slide"><p class="alert-slider-text">This is a wider card with supporting text below as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content.</p></div>
+                  <div class="swiper-slide"><p class="alert-slider-text">This is a wider card with supporting text below as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content.</p></div>
+                  <div class="swiper-slide"><p class="alert-slider-text">This is a wider card with supporting text below as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content.</p></div>
+                  <div class="swiper-slide"><p class="alert-slider-text">This is a wider card with supporting text below as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content.</p></div>
+                  <div class="swiper-slide"><p class="alert-slider-text">This is a wider card with supporting text below as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content.</p></div>
+                  <div class="swiper-slide"><p class="alert-slider-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p></div>
+                </div> 
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tw-mandates">
+  <div class="container">
+    <div class="mandate-main">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="">
+            <div class="mandate-title">
+              <h1>Travel Mandates</h1>
+            </div>
+            <div class="swiper-container slider-mandates">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card" style="width: 16rem;">
+                    <img src="img/m1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Mandatory web check-in</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                     
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card" style="width: 16rem;">
+                    <img src="img/m2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Install the Aarogya Setu app</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card" style="width: 16rem;">
+                    <img src="img/m3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Reach early </h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card" style="width: 16rem;">
+                    <img src="img/m4.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Face mask and gloves</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card" style="width: 16rem;">
+                    <img src="img/m1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Mandatory web check-in</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card" style="width: 16rem;">
+                    <img src="img/m2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Install the Aarogya Setu app</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card" style="width: 16rem;">
+                    <img src="img/m3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Reach early</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card" style="width: 16rem;">
+                    <img src="img/m4.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Face mask and gloves</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="tw-offer">
+  <div class="">
+    <div class="container">
+      <div class="bg-offer">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="all-offer">
+                <div class="all-offer-heading">
+                  <h1>All Offers</h1>
+                </div>
+
+                <div class="offer">
+                  <button class="offerlinks" onclick="offer(event, 'flight1')">Flight</button>
+                  <button class="offerlinks" onclick="offer(event, 'hotel1')">Hotel</button>
+                  <button class="offerlinks" onclick="offer(event, 'holiday')">Holiday</button>
+                  <button class="offerlinks" onclick="offer(event, 'more')">More</button>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div id="flight1" class="offercontent offer-active">
+                <div class="swiper-container offer-slider">
+                  <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                      <div class="offer-slide-detail">
+                      <div class="card mb-3" style="max-width: 460px; height: 250px;">
+                        <div class="row no-gutters">
+                          <div class="col-md-4">
+                            <img src="img/11.jpg" class="card-img" alt="...">
+                            <p class="offer-tc"><small class="text-muted">T&C's Apply</small></p>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">RAILS</h5>
+                              <p class="card-text">This content is a little bit longer.</p>
+                              <div class="card-line"></div>
+                              <p class="card-text"><small class="text-muted">This is a wider card with supporting text below as a natural lead-in to additional content.</small></p>
+                              <a href="#" class="btn btn-primary">Book now</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                    <div class="swiper-slide">
+                      <div class="offer-slide-detail">
+                      <div class="card mb-3" style="max-width: 460px; height: 250px;">
+                        <div class="row no-gutters">
+                          <div class="col-md-4">
+                            <img src="img/22.jpg" class="card-img" alt="...">
+                            <p class="offer-tc"><small class="text-muted">T&C's Apply</small></p>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">DOM FLIGHTS</h5>
+                              <p class="card-text">This content is a little bit longer.</p>
+                              <div class="card-line"></div>
+                              <p class="card-text"><small class="text-muted">This is a wider card with supporting text below as a natural lead-in to additional content.</small></p>
+                              <a href="#" class="btn btn-primary">Book now</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                    <div class="swiper-slide">
+                      <div class="offer-slide-detail">
+                      <div class="card mb-3" style="max-width: 460px; height: 250px;">
+                        <div class="row no-gutters">
+                          <div class="col-md-4">
+                            <img src="img/33.jpg" class="card-img" alt="...">
+                            <p class="offer-tc"><small class="text-muted">T&C's Apply</small></p>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">INTL FLIGHTS</h5>
+                              <p class="card-text">This content is a little bit longer.</p>
+                              <div class="card-line"></div>
+                              <p class="card-text"><small class="text-muted">This is a wider card with supporting text below as a natural lead-in to additional content.</small></p>
+                              <a href="#" class="btn btn-primary">Book now</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                    <div class="swiper-slide">
+                      <div class="offer-slide-detail">
+                      <div class="card mb-3" style="max-width: 460px; height: 250px;">
+                        <div class="row no-gutters">
+                          <div class="col-md-4">
+                            <img src="img/44.jpg" class="card-img" alt="...">
+                            <p class="offer-tc"><small class="text-muted">T&C's Apply</small></p>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">CABS</h5>
+                              <p class="card-text">This content is a little bit longer.</p>
+                              <div class="card-line"></div>
+                              <p class="card-text"><small class="text-muted">This is a wider card with supporting text below as a natural lead-in to additional content.</small></p>
+                              <a href="#" class="btn btn-primary">Book now</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                    <div class="swiper-slide">
+                      <div class="offer-slide-detail">
+                      <div class="card mb-3" style="max-width: 460px; height: 250px;">
+                        <div class="row no-gutters">
+                          <div class="col-md-4">
+                            <img src="img/55.jpg" class="card-img" alt="...">
+                            <p class="offer-tc"><small class="text-muted">T&C's Apply</small></p>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">HOLIDAYS</h5>
+                              <p class="card-text">This content is a little bit longer.</p>
+                              <div class="card-line"></div>
+                              <p class="card-text"><small class="text-muted">This is a wider card with supporting text below as a natural lead-in to additional content.</small></p>
+                              <a href="#" class="btn btn-primary">Book now</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                    <div class="swiper-slide">
+                      <div class="offer-slide-detail">
+                      <div class="card mb-3" style="max-width: 460px; height: 250px;">
+                        <div class="row no-gutters">
+                          <div class="col-md-4">
+                            <img src="img/66.jpg" class="card-img" alt="...">
+                            <p class="offer-tc"><small class="text-muted">T&C's Apply</small></p>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">DOM FLIGHTS</h5>
+                              <p class="card-text">This content is a little bit longer.</p>
+                              <div class="card-line"></div>
+                              <p class="card-text"><small class="text-muted">This is a wider card with supporting text below as a natural lead-in to additional content.</small></p>
+                              <a href="#" class="btn btn-primary">Book now</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                    <div class="swiper-slide">
+                      <div class="offer-slide-detail">
+                      <div class="card mb-3" style="max-width: 460px; height: 250px;">
+                        <div class="row no-gutters">
+                          <div class="col-md-4">
+                            <img src="img/77.jpg" class="card-img" alt="...">
+                            <p class="offer-tc"><small class="text-muted">T&C's Apply</small></p>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">CABS</h5>
+                              <p class="card-text">This content is a little bit longer.</p>
+                              <div class="card-line"></div>
+                              <p class="card-text"><small class="text-muted">This is a wider card with supporting text below as a natural lead-in to additional content.</small></p>
+                              <a href="#" class="btn btn-primary">Book now</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                    <div class="swiper-slide">
+                        <div class="offer-slide-detail">
+                        <div class="card mb-3" style="max-width: 460px; height: 250px;">
+                          <div class="row no-gutters">
+                            <div class="col-md-4">
+                              <img src="img/88.jpg" class="card-img" alt="...">
+                              <p class="offer-tc"><small class="text-muted">T&C's Apply</small></p>
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body">
+                                <h5 class="card-title">BUS</h5>
+                                <p class="card-text">This content is a little bit longer.</p>
+                                <div class="card-line"></div>
+                                <p class="card-text"><small class="text-muted">This is a wider card with supporting text below as a natural lead-in to additional content.</small></p>
+                                <a href="#" class="btn btn-primary">Book now</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+                 
+                  <!-- Add Arrows -->
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div id="hotel1" class="offercontent">
+                <div class="swiper-container offer-slider1">
+                  <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                      <div class="offer-slide-detail">
+                      <div class="card mb-3" style="max-width: 540px; height: 250px;">
+                        <div class="row no-gutters">
+                          <div class="col-md-4">
+                            <img src="img/11.jpg" class="card-img" alt="...">
+                            <p class="offer-tc"><small class="text-muted">T&C's Apply</small></p>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">RAILS</h5>
+                              <p class="card-text">This content is a little bit longer.</p>
+                              <div class="card-line"></div>
+                              <p class="card-text"><small class="text-muted">This is a wider card with supporting text below as a natural lead-in to additional content.</small></p>
+                              <a href="#" class="btn btn-primary">Book now</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                    <div class="swiper-slide">
+                      <div class="offer-slide-detail">
+                      <div class="card mb-3" style="max-width: 540px; height: 250px;">
+                        <div class="row no-gutters">
+                          <div class="col-md-4">
+                            <img src="img/22.jpg" class="card-img" alt="...">
+                            <p class="offer-tc"><small class="text-muted">T&C's Apply</small></p>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">DOM FLIGHTS</h5>
+                              <p class="card-text">This content is a little bit longer.</p>
+                              <div class="card-line"></div>
+                              <p class="card-text"><small class="text-muted">This is a wider card with supporting text below as a natural lead-in to additional content.</small></p>
+                              <a href="#" class="btn btn-primary">Book now</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                    <div class="swiper-slide">
+                      <div class="offer-slide-detail">
+                      <div class="card mb-3" style="max-width: 540px; height: 250px;">
+                        <div class="row no-gutters">
+                          <div class="col-md-4">
+                            <img src="img/33.jpg" class="card-img" alt="...">
+                            <p class="offer-tc"><small class="text-muted">T&C's Apply</small></p>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">INTL FLIGHTS</h5>
+                              <p class="card-text">This content is a little bit longer.</p>
+                              <div class="card-line"></div>
+                              <p class="card-text"><small class="text-muted">This is a wider card with supporting text below as a natural lead-in to additional content.</small></p>
+                              <a href="#" class="btn btn-primary">Book now</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                    <div class="swiper-slide">
+                      <div class="offer-slide-detail">
+                      <div class="card mb-3" style="max-width: 540px; height: 250px;">
+                        <div class="row no-gutters">
+                          <div class="col-md-4">
+                            <img src="img/44.jpg" class="card-img" alt="...">
+                            <p class="offer-tc"><small class="text-muted">T&C's Apply</small></p>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">CABS</h5>
+                              <p class="card-text">This content is a little bit longer.</p>
+                              <div class="card-line"></div>
+                              <p class="card-text"><small class="text-muted">This is a wider card with supporting text below as a natural lead-in to additional content.</small></p>
+                              <a href="#" class="btn btn-primary">Book now</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                    <div class="swiper-slide">
+                      <div class="offer-slide-detail">
+                      <div class="card mb-3" style="max-width: 540px; height: 250px;">
+                        <div class="row no-gutters">
+                          <div class="col-md-4">
+                            <img src="img/55.jpg" class="card-img" alt="...">
+                            <p class="offer-tc"><small class="text-muted">T&C's Apply</small></p>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">HOLIDAYS</h5>
+                              <p class="card-text">This content is a little bit longer.</p>
+                              <div class="card-line"></div>
+                              <p class="card-text"><small class="text-muted">This is a wider card with supporting text below as a natural lead-in to additional content.</small></p>
+                              <a href="#" class="btn btn-primary">Book now</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                    <div class="swiper-slide">
+                      <div class="offer-slide-detail">
+                      <div class="card mb-3" style="max-width: 540px; height: 250px;">
+                        <div class="row no-gutters">
+                          <div class="col-md-4">
+                            <img src="img/66.jpg" class="card-img" alt="...">
+                            <p class="offer-tc"><small class="text-muted">T&C's Apply</small></p>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">DOM FLIGHTS</h5>
+                              <p class="card-text">This content is a little bit longer.</p>
+                              <div class="card-line"></div>
+                              <p class="card-text"><small class="text-muted">This is a wider card with supporting text below as a natural lead-in to additional content.</small></p>
+                              <a href="#" class="btn btn-primary">Book now</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                    <div class="swiper-slide">
+                      <div class="offer-slide-detail">
+                      <div class="card mb-3" style="max-width: 540px; height: 250px;">
+                        <div class="row no-gutters">
+                          <div class="col-md-4">
+                            <img src="img/77.jpg" class="card-img" alt="...">
+                            <p class="offer-tc"><small class="text-muted">T&C's Apply</small></p>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">CABS</h5>
+                              <p class="card-text">This content is a little bit longer.</p>
+                              <div class="card-line"></div>
+                              <p class="card-text"><small class="text-muted">This is a wider card with supporting text below as a natural lead-in to additional content.</small></p>
+                              <a href="#" class="btn btn-primary">Book now</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                    <div class="swiper-slide">
+                        <div class="offer-slide-detail">
+                        <div class="card mb-3" style="max-width: 540px; height: 250px;">
+                          <div class="row no-gutters">
+                            <div class="col-md-4">
+                              <img src="img/88.jpg" class="card-img" alt="...">
+                              <p class="offer-tc"><small class="text-muted">T&C's Apply</small></p>
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body">
+                                <h5 class="card-title">BUS</h5>
+                                <p class="card-text">This content is a little bit longer.</p>
+                                <div class="card-line"></div>
+                                <p class="card-text"><small class="text-muted">This is a wider card with supporting text below as a natural lead-in to additional content.</small></p>
+                                <a href="#" class="btn btn-primary">Book now</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+                 
+                  <!-- Add Arrows -->
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+            
+        
+
+                
+                
+
+                <div id="holiday" class="offercontent">
+                  <h3>Tokyo</h3>
+                  <p>Tokyo is the capital of Japan.</p>
+                </div>
+
+                <div id="more" class="offercontent">
+                  <h3>Tokyo</h3>
+                  <p>Tokyo is the capital of Japan.</p>
+          </div>
+        </div>
+
+        
+
+
+
+
+      
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="tw-addon">
+  <div class="container">
+    <div class="mandate-main">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="">
+            <div class="mandate-title">
+              <h1>6E Add-ons</h1>
+              <p style="padding-top: 10px;">Unbundled Services chargeable separately on opt-in basis</p>
+            </div>
+            <div class="swiper-container slider-mandates">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card" style="width: 16rem;">
+                    <img src="img/add1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Excess Baggage</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Buy now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card" style="width: 16rem;">
+                    <img src="img/add2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Travel Assistance</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Buy now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card" style="width: 16rem;">
+                    <img src="img/add3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Tekwalker Promises </h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Buy now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card" style="width: 16rem;">
+                    <img src="img/add4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Blanket, Pillow & Eye shade</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Buy now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card" style="width: 16rem;">
+                    <img src="img/add1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Excess Baggage</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Buy now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card" style="width: 16rem;">
+                    <img src="img/add2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Travel Assistance</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Buy now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card" style="width: 16rem;">
+                    <img src="img/add3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Tekwalker Promises</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Buy now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card" style="width: 16rem;">
+                    <img src="img/add4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Blanket, Pillow & Eye shade</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Buy now</a>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="tw-blog">
+  <div class="container">
+    <div class="bg-blog">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="travel-heading">
+          <h1>Travel Blog</h1>
+        </div>
+      </div>
+    </div>
+      <div class="blog-slider-div">
+        <div class="row">
+          <div class="col-md-12">
+          <div class="swiper-container blog-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="blog-detail">
+                  <div class="card" >
+                    <img src="img/11.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="blog-detail">
+                  <div class="card" >
+                    <img src="img/22.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="blog-detail">
+                  <div class="card">
+                    <img src="img/33.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide"><div class="blog-detail">
+                <div class="card">
+                  <img src="img/44.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div></div>
+              <div class="swiper-slide"><div class="blog-detail">
+                <div class="card" >
+                  <img src="img/55.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div></div>
+              <div class="swiper-slide"><div class="blog-detail">
+                <div class="card" >
+                  <img src="img/66.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div></div>
+              <div class="swiper-slide"><div class="blog-detail">
+                <div class="card" >
+                  <img src="img/77.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div></div>
+              <div class="swiper-slide"><div class="blog-detail">
+                <div class="card" >
+                  <img src="img/88.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div></div>
+            </div>
+             
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+</section>
+
+<section class="tw-book">
+  <div class="container">
+    <div class="tw-book-main">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="book-detail">
+            <div class="book-heading">
+              <h1>Why book with Tekwalker?</h1>
+            </div>
+            <div class="swiper-container slider-book">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="book-slide">
+                    <img src="img/book11.svg"/>
+                    <h3>Safe and Secure</h3>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="book-slide">
+                    <img src="img/book22.svg"/>
+                    <h3>Travel Guide</h3>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="book-slide">
+                    <img src="img/book33.svg"/>
+                    <h3>Group Booking</h3>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="book-slide">
+                    <img src="img/book44.svg"/>
+                    <h3>Personalised Experience</h3>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="book-slide">
+                    <img src="img/book11.svg"/>
+                    <h3>Safe and Secure</h3>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="book-slide">
+                    <img src="img/book22.svg"/>
+                    <h3>Travel Guide</h3>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="book-slide">
+                    <img src="img/book33.svg"/>
+                    <h3>Group Booking</h3>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="book-slide">
+                    <img src="img/book44.svg"/>
+                    <h3>Personalised Experience</h3>
+                  </div>
+                </div>
+              </div> 
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tw-pd">
+  <div class="plane-design">
+  <div class="container">
+    <div class="pd-main">
+      <div class="row">
+        <div class="col-md-12">
+            <div class="pd-heading">
+              <h1>Book your next popular destination</h1>
+            </div>
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          
+            <div class="pd-detail">
+              <div class="card" style="width: 20rem;">
+                <img src="img/11.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Bali</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary btn-color">Book now</a>
+                </div>
+              </div>
+            </div>
+         
+        </div>
+        <div class="col-md-4">
+          
+          <div class="pd-detail">
+            <div class="card" style="width: 20rem;">
+              <img src="img/22.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Maldives</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary btn-color">Book now</a>
+              </div>
+            </div>
+          </div>
+       
+      </div>
+      <div class="col-md-4">
+          
+        <div class="pd-detail">
+          <div class="card" style="width: 20rem;">
+            <img src="img/33.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">U.S. Vergin Islands</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary btn-color">Book now</a>
+            </div>
+          </div>
+        </div>
+     
+    </div>
+
+    <div class="col-md-4">
+          
+      <div class="pd-detail">
+        <div class="card" style="width: 20rem;">
+          <img src="img/44.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Railay Beach</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary btn-color">Book now</a>
+          </div>
+        </div>
+      </div>
+   
+  </div>
+
+  <div class="col-md-4">
+          
+    <div class="pd-detail">
+      <div class="card" style="width: 20rem;">
+        <img src="img/55.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Phuket</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary btn-color">Book now</a>
+        </div>
+      </div>
+    </div>
+ 
+</div>
+
+<div class="col-md-4">
+          
+  <div class="pd-detail">
+    <div class="card" style="width: 20rem;">
+      <img src="img/66.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Kauai</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary btn-color">Book now</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="tw-sign-up">
+            <h1>Help us be your travel companion</h1>
+            <p>Be the first to receive exclusive offers and the latest news on our products & services directly in your inbox.</p>
+            <div class="sign-up-form">
+              <form>
+                <div class="form-row d-flex justify-content-center">
+                  <div class="col-9">
+                    <input type="text" class="form-control" placeholder="Email address">
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-2">Sign up</button>
+                  </div>
+                </div>
+              </form>
+              <p>Email addresses submitted to IndiGo are subject to our <a href="#" class="sign-up-pp">Privacy Notice....</a></p>
+            </div>
+            <div class="social-icon d-flex justify-content-center">
+              <ul class="">
+                <li class="icon"><a href="#"><img src="img/fb.svg"/></a></li>
+                <li class="icon"><a href="#"><img src="img/insta.svg"/></a></li>
+                <li class="icon"><a href="#"><img src="img/in.svg"/></a></li>
+                <li class="icon"><a href="#"><img src="img/tw.svg"/></a></li>
+              </ul>
+            </div>
+            <p class="copyright">&copy; Copyright 2020 Tekwalker. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/aos.js"></script>
+<script>
+    AOS.init({
+        easing: 'ease-in-out-sine',
+        once: true
+    });
+</script>
+<script src="js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.banner-slider', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next0',
+        prevEl: '.swiper-button-prev0',
+      },
+    });
+  </script>
+
+<script>
+  var swiper = new Swiper('.slider-alert', {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+
+<script>
+  var swiper = new Swiper('.slider-mandates', {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    slidesPerGroup: 4,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+
+<script>
+  var swiper = new Swiper('.offer-slider', {
+    slidesPerView: 2,
+    spaceBetween: 20,
+    slidesPerGroup: 2,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+<script>
+  var swiper = new Swiper('.offer-slider1', {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    slidesPerGroup: 2,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+
+<script>
+  var swiper = new Swiper('.slider-book', {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    slidesPerGroup: 4,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+
+<script>
+  var swiper = new Swiper('.blog-slider', {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    slidesPerGroup: 4,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+
+<script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+        tabcontent[i].className = tabcontent[i].className.replace("initial-active", "");
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace("active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    
+  function offer(evt1, offerName) {
+    var j, offercontent, offerlinks;
+    offercontent = document.getElementsByClassName("offercontent");
+    for (j = 0; j < offercontent.length; j++) {
+      offercontent[j].style.display = "none";
+      offercontent[j].className = offercontent[j].className.replace("offer-active", "");
+    }
+    offerlinks = document.getElementsByClassName("offerlinks");
+    for (j = 0; j < offerlinks.length; j++) {
+      offerlinks[j].className = offerlinks[j].className.replace(" active", "");
+    }
+    document.getElementById(offerName).style.display = "block";
+    evt1.currentTarget.className += " active";
+  }
+  </script>
+
+
+
+
+</html>
