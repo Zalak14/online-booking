@@ -101,8 +101,64 @@
             <button class="tablinks" onclick="openCity(event, 'packages')">Packages</button>
             </div>
 
-            <div id="flight" class="tabcontent initial-active">
-                <form>
+            <div id="flight" class="tabcontent initial-active ">
+              <div class="search-box-detail main-search-box">
+                <div class="search">
+                  <button class="searchlinks" onclick="searchBox(event, 'one-way')">One-way</button>
+                  <button class="searchlinks" onclick="searchBox(event, 'return')">Return</button>
+                  <button class="searchlinks" onclick="searchBox(event, 'multicity')">Multicity</button>
+                </div>
+    
+                <div id="one-way" class="searchcontent search-active">
+                  <form>
+                    <div class="form-row">
+                      <div class="form-group col-md-3">
+                        <label for="inputEmail4">From</label>
+                        <input type="text" class="form-control flight-icon" placeholder="City or Airpot"></div>
+                      <div class="form-group col-md-3">
+                        <label for="inputPassword4">To</label>
+                        <input type="text" class="form-control location-icon" placeholder="Country, City or island">
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="inputEmail4">Leaving on</label>
+                        <input type="date" class="form-control" id="inputEmail4">
+                      </div>
+                      
+                      <div class="form-group col-md-2">
+                        <label for="inputEmail4"></label>
+                        <button class="btn btn-find" onclick="openFlight()">Find</button>
+                      </div>
+                      <div class="form-group col-md-3">
+                        <div class="dropdown mr-1">
+                            <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                            0 adult
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                            <a class="dropdown-item" href="#">Adult</a>
+                            <a class="dropdown-item" href="#">children</a>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="form-group col-md-3">
+                        <div class="dropdown mr-1">
+                            <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                            Any Class
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                            <a class="dropdown-item" href="#">Any Class</a>
+                            <a class="dropdown-item" href="#">Economy</a>
+                            <a class="dropdown-item" href="#">Premium Economy</a>
+                            <a class="dropdown-item" href="#">First Class</a>
+                            <a class="dropdown-item" href="#">Business</a>
+                            </div>
+                        </div>
+                     </div>
+                    </div>
+                  </form>
+                </div>
+                
+                <div id="return" class="searchcontent">
+                  <form>
                     <div class="form-row">
                       <div class="form-group col-md-3">
                         <label for="inputEmail4">From</label>
@@ -150,6 +206,74 @@
                      </div>
                     </div>
                   </form>
+                   
+                </div>
+                
+                <div id="multicity" class="searchcontent">
+                  <form>
+                    <div class="form-row">
+                      <div class="form-group col-md-3">
+                        <label for="inputEmail4">From</label>
+                        <input type="text" class="form-control flight-icon" placeholder="City or Airpot"></div>
+                      <div class="form-group col-md-3">
+                        <label for="inputPassword4">To</label>
+                        <input type="text" class="form-control location-icon" placeholder="Country, City or island">
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="inputEmail4">Date</label>
+                        <input type="date" class="form-control" id="inputEmail4">
+                      </div>
+                      
+                      <div class="form-group col-md-2">
+                        <label for="inputEmail4"></label>
+                        <button class="btn btn-find" onclick="openFlight()">Find</button>
+                      </div>
+                      <div class="form-group col-md-3">
+                        <label for="inputEmail4">From</label>
+                        <input type="text" class="form-control flight-icon" placeholder="City or Airpot"></div>
+                      <div class="form-group col-md-3">
+                        <label for="inputPassword4">To</label>
+                        <input type="text" class="form-control location-icon" placeholder="Country, City or island">
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="inputEmail4">Date</label>
+                        <input type="date" class="form-control" id="inputEmail4">
+                      </div>
+                      <div class="form-group col-md-2">
+                        <label for="inputEmail4"></label>
+                        <button class="btn btn-find">Add city</button>
+                      </div>
+    
+                      <div class="form-group col-md-3">
+                        <div class="dropdown mr-1">
+                            <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                            0 adult
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                            <a class="dropdown-item" href="#">Adult</a>
+                            <a class="dropdown-item" href="#">children</a>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="form-group col-md-3">
+                        <div class="dropdown mr-1">
+                            <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                            Any Class
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                            <a class="dropdown-item" href="#">Any Class</a>
+                            <a class="dropdown-item" href="#">Economy</a>
+                            <a class="dropdown-item" href="#">Premium Economy</a>
+                            <a class="dropdown-item" href="#">First Class</a>
+                            <a class="dropdown-item" href="#">Business</a>
+                            </div>
+                        </div>
+                     </div>
+                    </div>
+                  </form>
+                </div>
+                
+              </div>
             </div>
 
             <div id="hotels" class="tabcontent">
@@ -2016,6 +2140,23 @@
  
   }
 </script>
+
+<script>
+  function searchBox(evt, cityName) {
+    var i, searchcontent, searchlinks;
+    searchcontent = document.getElementsByClassName("searchcontent");
+    for (i = 0; i < searchcontent.length; i++) {
+      searchcontent[i].style.display = "none";
+      searchcontent[i].className = searchcontent[i].className.replace("search-active", "");
+    }
+    searchlinks = document.getElementsByClassName("searchlinks");
+    for (i = 0; i < searchlinks.length; i++) {
+      searchlinks[i].className = searchlinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  </script>
 
 
 
