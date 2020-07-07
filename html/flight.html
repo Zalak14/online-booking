@@ -15,6 +15,34 @@
 </head>
 <body>
 <div class="flight-main-div">
+  <section>
+    <div class="container">
+      <div class="flight-search-box">
+        <div class="row">
+          <div class="search-box-detail">
+            <div class="search">
+              <button class="searchlinks" onclick="searchBox(event, 'one-way')">One-way</button>
+              <button class="searchlinks" onclick="searchBox(event, 'return')">Return</button>
+              <button class="searchlinks" onclick="searchBox(event, 'multicity')">Multicity</button>
+            </div>
+
+            <div id="one-way" class="searchcontent">
+              
+            </div>
+            
+            <div id="return" class="searchcontent">
+               
+            </div>
+            
+            <div id="multicity" class="searchcontent">
+              
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="flight-booking">
     <div class="container">
       <div class="">
@@ -151,6 +179,22 @@
   
   slider.oninput = function() {
     output.innerHTML = this.value;
+  }
+  </script>
+
+<script>
+  function searchBox(evt, cityName) {
+    var i, searchcontent, searchlinks;
+    searchcontent = document.getElementsByClassName("searchcontent");
+    for (i = 0; i < searchcontent.length; i++) {
+      searchcontent[i].style.display = "none";
+    }
+    searchlinks = document.getElementsByClassName("searchlinks");
+    for (i = 0; i < searchlinks.length; i++) {
+      searchlinks[i].className = searchlinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
   }
   </script>
 
