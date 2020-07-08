@@ -967,3 +967,229 @@ margin-bottom: 10px;
   color: white;
   
 }
+
+.flight-route{
+  border: 2px solid transparent;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 1px 8px rgba(0,0,0,.1);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.flight-route:hover{
+  box-shadow: 0 1px 8px rgba(153, 102, 255, 0.7);
+}
+
+.flight-route .flight-name img{
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+.flight-name{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flight-route .flight-time{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flight-route .flight-price{
+  display: flex;
+  align-items: center;
+}
+.flight-route .flight-price h2{
+  font-size: 20px;
+  color: #646464;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.btn-tw{
+  border-radius: 30px;
+  padding: 10px 20px 10px 20px;
+  background-image: linear-gradient(to right, rgba(235, 0, 141, 0.7) , rgba(153, 102, 255, 0.7)) !important;
+  color: white;
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.btn-tw:active{
+  box-shadow: none;
+  border: none;
+  text-decoration: none;
+}
+
+.flight-route-detail{
+  margin-top: 10px;
+  border-top: 1px solid #b3b1b1;
+  padding-top: 10px;
+}
+
+.flight-route-detail a{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.no-meal{
+  margin-right: 10px;
+  background-image: url(../img/eid-mubarak.svg);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding-left: 22px;
+}
+
+.flight-route-detail .ecase{
+  border: 1px solid #b3b1b1;
+  border-radius: 10px;
+  font-size: 15px !important;
+  display: flex;
+  align-items: center;
+  padding-left: 4px;
+  
+}
+
+.flight-route-detail .ecase .ecase-rs{
+  background-color: yellow;
+  overflow: hidden !important;
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 4px;
+  padding: 0px 4px;
+}
+
+.route-detail-main{
+  box-shadow: 0 1px 8px rgba(153, 102, 255, 0.7);
+  border-radius: 10px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.flight-slide-open .slide-header{
+  background-color: black;
+  padding: 20px 10px;
+  
+}
+
+.flight-slide-open .slide-header h4{
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.flight-slide-open .flight-slide-open-img{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.flight-slide-open .flight-slide-open-img img{
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.flight-slide-open .flight-slide-open-facility-img img{
+  height: 20px;
+  width: 20px;
+  
+}
+.flight-slide-open .flight-slide-open-facility-img{
+  margin-right: 10px;
+}
+
+.route-slide-detail{
+  text-align: left;
+}
+
+.slide-line{
+  background-color: #b3b1b1;
+  width: 150px;
+  height: 3px;
+  margin: 15px 0px;
+}
+.route-slide-detail-line{
+  margin: 0px 56px;
+  text-align: center;
+}
+
+.route-baggage{
+  width: 100%;
+  padding: 10px 0px ;
+  background-color: rgb(230, 230, 230);
+  display: flex;
+  justify-content: space-around;
+  border-radius: 30px;
+  margin: 0px 10px;
+}
+
+.route-baggage1{
+  width: 100%;
+  padding: 10px 0px ;
+  background-color: rgb(255, 241, 162);
+  text-align: center;
+  border-radius: 30px;
+  margin: 0px 10px;
+  margin-top: 20px;
+}
+
+.tabdetail {
+  overflow: hidden;
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.tabdetail button {
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  display: flex;
+  border: none;
+  align-items: center;
+  outline: none;
+  cursor: pointer;
+  padding: 16.5px 12px;
+  transition: 0.3s;
+  font-size: 16px;
+  width: 100%;
+  border-bottom: 2px solid transparent;
+}
+
+.tabdetail button:hover {
+  border-bottom: 2px solid white;
+}
+
+.tabdetail button.active {
+  border-bottom: 2px solid white;
+}
+
+.detailtabcontent {
+  display: none;
+  padding: 6px 12px;
+  height: 100% !important;
+  background-color: rgb(253, 244, 213);
+  
+}
+
+.route-detail-main .col-sm-4{
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
+.route-detail-main .col-sm-8{
+  padding-right: 0px !important;
+}
