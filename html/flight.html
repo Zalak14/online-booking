@@ -15,7 +15,55 @@
 </head>
 <body>
 <div class="flight-main-div">
-  <section>
+  <header class="header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light br-nav">
+                    <a class="navbar-brand" href="#"><h2>Tekwalker</h2></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                     
+                    <div class="collapse navbar-collapse d-flex flex-column bd-highlight mb-3" id="navbarNav">
+                      <div class="menu1">
+                      <ul class="navbar-nav br-navmenu1" >
+                        <li class="nav-item"><a class="nav-link" href="#">+919978325789</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Check your booking</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><img src="../img/heart-black.svg" width="20px" height="20px"></a></li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            $ USD
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            EN
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#"><img src="../img/user-black.svg" width="20px" height="20px"></a></li>
+                        
+                    </ul></div>
+                   
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+  <section class="flight-search-bg">
     <div class="container">
       <div class="flight-search-box">
         <div class="row">
@@ -43,7 +91,7 @@
                   
                   <div class="form-group col-md-2">
                     <label for="inputEmail4"></label>
-                    <button class="btn btn-find" onclick="openFlight()">Find</button>
+                    <button class="btn btn-find" onclick="openFlight()">Modify</button>
                   </div>
                   <div class="form-group col-md-3">
                     <div class="dropdown mr-1">
@@ -94,7 +142,7 @@
                   </div>
                   <div class="form-group col-md-2">
                     <label for="inputEmail4"></label>
-                    <button class="btn btn-find" onclick="openFlight()">Find</button>
+                    <button class="btn btn-find" onclick="openFlight()">Modify</button>
                   </div>
                   <div class="form-group col-md-3">
                     <div class="dropdown mr-1">
@@ -143,7 +191,7 @@
                   
                   <div class="form-group col-md-2">
                     <label for="inputEmail4"></label>
-                    <button class="btn btn-find" onclick="openFlight()">Find</button>
+                    <button class="btn btn-find" onclick="openFlight()">Modify</button>
                   </div>
                   <div class="form-group col-md-3">
                     <label for="inputEmail4">From</label>
@@ -204,6 +252,9 @@
               <div class="show-result">
                 <h5>1 of 1500 results</h5>
                 <a href="#" class="result">Show all</a>
+                <div class="map-btn">
+                  <button class="btn btn-primary">View Map</button>
+                </div>
               </div>
               <div class="accordion flight-accordion" id="accordionExample">
                 <div class="card">
@@ -281,7 +332,26 @@
                   </div>
                   <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
                     <div class="card-body">
-                      section 4
+                      <div class="stop-detail">
+                        <form>
+                          <h4>Outbound <small>(BLR - AMD)</small></h4>
+                          <label>Departure airport</label><br>
+                          <input type="checkbox" id="vehicle1" name="vehicle1" value="direct">
+                          <label for="vehicle1"> Bangalore</label><br>
+                          <label>Arrival airport</label><br>
+                          <input type="checkbox" id="vehicle3" name="vehicle3" value="more">
+                          <label for="vehicle3"> Ahmedabad S.</label>
+                        </form>
+                        <form>
+                          <h4>Return <small>(AMD - BLR)</small></h4>
+                          <label>Departure airport</label><br>
+                          <input type="checkbox" id="vehicle1" name="vehicle1" value="direct">
+                          <label for="vehicle3"> Ahmedabad S.</label><br>
+                          <label>Arrival airport</label><br>
+                          <input type="checkbox" id="vehicle3" name="vehicle3" value="more">
+                          <label for="vehicle1"> Bangalore</label>
+                        </form>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -295,8 +365,36 @@
                   </div>
                   <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
                     <div class="card-body">
-                      section 5
+                      <div class="form-group">
+                        <div class="dropdown mr-1">
+                            <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                            Payment Method
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                            <a class="dropdown-item" href="#">Visa</a>
+                            <a class="dropdown-item" href="#">MasterCard</a>
+                            <a class="dropdown-item" href="#">Prepaid MasterCard</a>
+                            <a class="dropdown-item" href="#">American Express</a>
+                            <a class="dropdown-item" href="#">Visa Debit</a>
+                            <a class="dropdown-item" href="#">MasterCard Debit</a>
+                            <a class="dropdown-item" href="#">PayPal</a>
+                            <a class="dropdown-item" href="#">Google Pay</a>
+                            <a class="dropdown-item" href="#">Phonepe</a>
+                            
+                            </div>
+                        </div>
+                     </div>
                     </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header" id="headingSix">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-reset btn-block" type="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseSix">
+                        Reset Filter
+                      </button>
+                    </h2>
                   </div>
                 </div>
               </div>
@@ -304,6 +402,324 @@
             </div>
           </div>
           <div class="col-md-9" style="margin-bottom: 100px;">
+            <div class="">
+              <div class="fast-detail">
+                <button class="fast-tablinks" onclick="openFast(event, 'Best')">Best</button>
+                <button class="fast-tablinks" onclick="openFast(event, 'Cheapest')">Cheapest</button>
+                <button class="fast-tablinks" onclick="openFast(event, 'Fastest')">Fastest</button>
+              </div>
+              <div id="Best" class="fast-tabcontent search-active">
+                <div class="flight-route d-flex justify-content-between">
+                  <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
+                    <div class="col-sm-2">
+                      <div class="flight-name">
+                        <img src="../img/indigo.png">
+                        <div class="flight-name-detail">
+                          <p>IndiGo</p>
+                          <small>6E-755</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="flight-time">
+                        <div class="">
+                          <p>17:00</p>
+                          <small>Mumbai</small>
+                        </div>
+                        <img src="../img/ll2.svg">
+                        <div class="">
+                          <p>20:00</p>
+                          <small>New Delhi</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+                      <div class="flight-hour">
+                        <p>2h 30m </p>
+                        <small>Non stop</small>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="flight-price d-flex justify-content-end">
+                        <h2>&#x20B9; 10,800</h2>
+                        <button class="btn btn-tw">Book Now</button>
+                      </div>
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="flight-route-detail d-flex justify-content-between">
+                        <div class="flight-slide">
+                          <a id="flip">Flight Detail</a>
+                        </div>
+                        
+                        <div class="d-flex justify-content-around" style="display: flex; align-items: center;">
+                          <small class="no-meal">No Meal Fare</small>
+                          <div class="ecase d-flex justify-content-between">
+                            <small>eCase</small>
+                            <small class="ecase-rs">&#x20B9; 250</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div> 
+              </div>
+
+              <div id="panel" class="route-detail-main" style="display: none;">
+                <div class="row">
+                  <div class="col-sm-7">
+                    <div class="slide-header">
+                      <h4>Flight Detail</h4>
+                    </div>
+                    <div class="flight-slide-open">
+                      
+                      <div class="d-flex justify-content-between" style="border-bottom: 1px solid #b3b1b1; margin: 20px 0px;">
+                        <div class="flight-slide-open-img">
+                          <img src="../img/indigo.png">
+                          <div class="">
+                            <p>IndiGo, 6E-212 <small>(Economy)</small></p>
+                            <small>Airbus A320-100</small>
+                          </div>
+                        </div>
+                        <div class="flight-slide-open-facility-img">
+                          <img src="../img/eid-mubarak.svg">
+                          <img src="../img/wifi.svg">
+                          <img src="../img/seat.svg">
+                          <img src="../img/plug.svg">
+                          <img src="../img/youtube.svg">
+                        </div>
+                        
+                      </div>
+                      <div class="d-flex justify-content-between" style="padding-left: 10px; margin-bottom: 20px; width: 100%;">
+                        <div class="route-slide-detail">
+                          <p>New Delhi (DEL)</p>
+                          <p>10:10</p>
+                          <p>Wed, 15 Jul 2020</p>
+                          <p>Indira Gandhi,T-3</p>
+                        </div>
+                        <div class="route-slide-detail-line">
+                          <p>1h 20m</p>
+                          <div class="slide-line"></div>
+                          <p>Non Stop</p>
+                        </div>
+                        <div class="route-slide-detail">
+                          <p>New Delhi (DEL)</p>
+                          <p>10:10</p>
+                          <p>Wed, 15 Jul 2020</p>
+                          <p>Indira Gandhi,T-3</p>
+                        </div>
+                        
+                      </div>
+                      <div class="route-baggage">
+                        <p>Checkin Baggage: <span>20 kgs</span></p>
+                        <small class="no-meal">No Meal Fare</small>
+                      </div>
+                      <div class="route-baggage1">
+                        <p>Change plane at Jaipur (JAI), Connecting Time: 2h 20m</p>
+                      </div>
+                      <div class="d-flex justify-content-between" style="border-bottom: 1px solid #b3b1b1; margin: 20px 0px;">
+                        <div class="flight-slide-open-img">
+                          <img src="../img/indigo.png">
+                          <div class="">
+                            <p>IndiGo, 6E-212 <small>(Economy)</small></p>
+                            <small>Airbus A320-100</small>
+                          </div>
+                        </div>
+                        <div class="flight-slide-open-facility-img">
+                          <img src="../img/eid-mubarak.svg">
+                          <img src="../img/wifi.svg">
+                          <img src="../img/seat.svg">
+                          <img src="../img/plug.svg">
+                          <img src="../img/youtube.svg">
+                        </div>
+                        
+                      </div>
+                      <div class="d-flex justify-content-between" style="padding-left: 10px; margin-bottom: 20px; width: 100%;">
+                        <div class="route-slide-detail">
+                          <p>New Delhi (DEL)</p>
+                          <p>10:10</p>
+                          <p>Wed, 15 Jul 2020</p>
+                          <p>Indira Gandhi,T-3</p>
+                        </div>
+                        <div class="route-slide-detail-line">
+                          <p>1h 20m</p>
+                          <div class="slide-line"></div>
+                          <p>Non Stop</p>
+                        </div>
+                        <div class="route-slide-detail">
+                          <p>New Delhi (DEL)</p>
+                          <p>10:10</p>
+                          <p>Wed, 15 Jul 2020</p>
+                          <p>Indira Gandhi,T-3</p>
+                        </div>
+                        
+                      </div>
+                      <div class="route-baggage" style="margin-bottom: 20px;">
+                        <p>Checkin Baggage: <span>20 kgs</span></p>
+                        <small class="no-meal">No Meal Fare</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-5">
+                    <div class="summary-btn-detail">
+                      <div class="tabdetail">
+                        <button class="detailtablinks" onclick="openDetail(event, 'summary')">Fare Summary</button>
+                        <button class="detailtablinks" onclick="openDetail(event, 'rule')">Fare Rules</button>
+                        
+                      </div>
+                      <div id="summary" class="detailtabcontent search-active">
+                        <div class="route-summary">
+                          <p>Fare Summary : </p>
+                          <small>Adult x 1</small>
+                        </div>
+                        <div class="route-summary">
+                          <p>Base Fare : </p>
+                          <small>&#x20B9; 4,902	</small>
+                        </div>
+                        <div class="route-summary summary-line">
+                          <p>Fees & Taxes : </p>
+                          <small>&#x20B9; 670</small>
+                        </div>
+                        <div class="d-flex justify-content-between summary-line route-summary">
+                          <p>You Pay : </p>
+                          <p>&#x20B9; 5578 </p>
+                        </div>
+                        <div class="route-summary">
+                          <small>Note: Total fare displayed above has been rounded off and may show a slight difference from actual fare.</small>
+                        </div>
+                        <div class="btn-book">
+                          <button class="btn">Book</button>
+                        </div>
+                      </div>
+                      
+                      <div id="rule" class="detailtabcontent">
+                       <div class="route-summary summary-line">
+                         <h6>DEL-JAI-BOM</h6>
+                       </div>
+                       <p style="color: white !important;">Airline Cancellation Fee</p>
+                       <div class="route-rule summary-line">
+                        
+                        <div class="">
+                          <p>Duration*</p>
+                          <small>0 hour to 2 hours</small><br>
+                          <small>2 hours to 4 days</small><br>
+                          <small>>4 days</small>
+                        </div>
+                        <div class="">
+                          <p>Per Passenger</p>
+                          <small>Non-Refundable</small><br>
+                          <small>&#x20B9; 3,500</small><br>
+                          <small>&#x20B9; 3,500</small>
+                        </div>
+                       </div>
+                       <p style="color: white !important;">Airline Date Change Fee</p>
+                       <div class="route-rule">
+                        <div class="">
+                          <p>Duration*</p>
+                          <small>2 hours to 4 days</small><br>
+                          <small>>4 days</small>
+                        </div>
+                        <div class="">
+                          <p>Per Passenger</p>
+                          <small>&#x20B9; 3,500</small><br>
+                          <small>&#x20B9; 3,500</small>
+                        </div>
+                       </div>
+                       <div class="rule-note">
+                         <small>We would recommend that you reschedule/cancel your tickets atleast 72 hours prior to the flight departure</small>
+                       </div>
+                       <p style="color: white !important;">Yatra Service Fee (YSF)**</p>
+                       <small style="color: white !important;">(charged per passenger in addition to airline fee as applicable)</small>
+                       <div class="rule-note-detail summary-line">
+                         <div class="d-flex justify-content-between">
+                           <small>Online Cancellation Service Fee</small>
+                           <small>&#x20B9; 400</small>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                          <small>Online Cancellation Service Fee</small>
+                          <small>&#x20B9; 400</small>
+                       </div>
+                       <div class="d-flex justify-content-between">
+                        <small>Online Rescheduling Service Fee</small>
+                        <small>&#x20B9; 400</small>
+                     </div>
+                     <div class="d-flex justify-content-between">
+                      <small>Online Rescheduling Service Fee</small>
+                      <small>&#x20B9; 1200</small>
+                   </div>
+                       </div>
+                       <div class="rule-note2">
+                         <small>* Prior to the date/time of departure.</small><br>
+                         <small>**Please note: Yatra service fee is over and above the airline cancellation fee due to which refund type may vary.</small>
+                       </div>
+                       <div class="btn-book">
+                        <button class="btn">Book</button>
+                      </div>
+                       
+    
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+              <div class="flight-route d-flex justify-content-between">
+                <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
+                  <div class="col-sm-2">
+                    <div class="flight-name">
+                      <img src="../img/indigo.png">
+                      <div class="flight-name-detail">
+                        <p>IndiGo</p>
+                        <small>6E-755</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="flight-time">
+                      <div class="">
+                        <p>17:00</p>
+                        <small>Mumbai</small>
+                      </div>
+                      <img src="../img/ll2.svg">
+                      <div class="">
+                        <p>20:00</p>
+                        <small>New Delhi</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="flight-hour">
+                      <p>2h 30m </p>
+                      <small>Non stop</small>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="flight-price d-flex justify-content-end">
+                      <h2>&#x20B9; 10,800</h2>
+                      <button class="btn btn-tw">Book Now</button>
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="flight-route-detail d-flex justify-content-between">
+                      <div class="flight-slide">
+                        <a id="flip">Flight Detail</a>
+                      </div>
+                      
+                      <div class="d-flex justify-content-around" style="display: flex; align-items: center;">
+                        <small class="no-meal">No Meal Fare</small>
+                        <div class="ecase d-flex justify-content-between">
+                          <small>eCase</small>
+                          <small class="ecase-rs">&#x20B9; 250</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div> 
+            </div>
+
+
             <div class="flight-route d-flex justify-content-between">
               <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
                 <div class="col-sm-2">
@@ -356,252 +772,1291 @@
                   </div>
                 </div>
             </div> 
-          </div> 
-          <div id="panel" class="route-detail-main" style="display: none;">
-            <div class="row">
-              <div class="col-sm-8">
-                <div class="flight-slide-open">
-                  <div class="slide-header">
-                    <h4>Flight Detail</h4>
-                  </div>
-                  <div class="d-flex justify-content-between" style="border-bottom: 1px solid #b3b1b1; margin: 20px 0px;">
-                    <div class="flight-slide-open-img">
-                      <img src="../img/indigo.png">
-                      <div class="">
-                        <p>IndiGo, 6E-212 <small>(Economy)</small></p>
-                        <small>Airbus A320-100</small>
-                      </div>
-                    </div>
-                    <div class="flight-slide-open-facility-img">
-                      <img src="../img/wifi.svg">
-                      <img src="../img/wifi.svg">
-                      <img src="../img/wifi.svg">
-                      <img src="../img/wifi.svg">
-                      <img src="../img/wifi.svg">
-                    </div>
-                    
-                  </div>
-                  <div class="d-flex justify-content-between" style="padding-left: 10px; margin-bottom: 20px; width: 100%;">
-                    <div class="route-slide-detail">
-                      <p>New Delhi (DEL)</p>
-                      <p>10:10</p>
-                      <p>Wed, 15 Jul 2020</p>
-                      <p>Indira Gandhi,T-3</p>
-                    </div>
-                    <div class="route-slide-detail-line">
-                      <p>1h 20m</p>
-                      <div class="slide-line"></div>
-                      <p>Non Stop</p>
-                    </div>
-                    <div class="route-slide-detail">
-                      <p>New Delhi (DEL)</p>
-                      <p>10:10</p>
-                      <p>Wed, 15 Jul 2020</p>
-                      <p>Indira Gandhi,T-3</p>
-                    </div>
-                    
-                  </div>
-                  <div class="route-baggage">
-                    <p>Checkin Baggage: <span>20 kgs</span></p>
-                    <small class="no-meal">No Meal Fare</small>
-                  </div>
-                  <div class="route-baggage1">
-                    <p>Change plane at Jaipur (JAI), Connecting Time: 2h 20m</p>
-                  </div>
-                  <div class="d-flex justify-content-between" style="border-bottom: 1px solid #b3b1b1; margin: 20px 0px;">
-                    <div class="flight-slide-open-img">
-                      <img src="../img/indigo.png">
-                      <div class="">
-                        <p>IndiGo, 6E-212 <small>(Economy)</small></p>
-                        <small>Airbus A320-100</small>
-                      </div>
-                    </div>
-                    <div class="flight-slide-open-facility-img">
-                      <img src="../img/wifi.svg">
-                      <img src="../img/wifi.svg">
-                      <img src="../img/wifi.svg">
-                      <img src="../img/wifi.svg">
-                      <img src="../img/wifi.svg">
-                    </div>
-                    
-                  </div>
-                  <div class="d-flex justify-content-between" style="padding-left: 10px; margin-bottom: 20px; width: 100%;">
-                    <div class="route-slide-detail">
-                      <p>New Delhi (DEL)</p>
-                      <p>10:10</p>
-                      <p>Wed, 15 Jul 2020</p>
-                      <p>Indira Gandhi,T-3</p>
-                    </div>
-                    <div class="route-slide-detail-line">
-                      <p>1h 20m</p>
-                      <div class="slide-line"></div>
-                      <p>Non Stop</p>
-                    </div>
-                    <div class="route-slide-detail">
-                      <p>New Delhi (DEL)</p>
-                      <p>10:10</p>
-                      <p>Wed, 15 Jul 2020</p>
-                      <p>Indira Gandhi,T-3</p>
-                    </div>
-                    
-                  </div>
-                  <div class="route-baggage" style="margin-bottom: 20px;">
-                    <p>Checkin Baggage: <span>20 kgs</span></p>
-                    <small class="no-meal">No Meal Fare</small>
+          </div>
+
+
+          <div class="flight-route d-flex justify-content-between">
+            <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
+              <div class="col-sm-2">
+                <div class="flight-name">
+                  <img src="../img/indigo.png">
+                  <div class="flight-name-detail">
+                    <p>IndiGo</p>
+                    <small>6E-755</small>
                   </div>
                 </div>
               </div>
               <div class="col-sm-4">
+                <div class="flight-time">
+                  <div class="">
+                    <p>17:00</p>
+                    <small>Mumbai</small>
+                  </div>
+                  <img src="../img/ll2.svg">
+                  <div class="">
+                    <p>20:00</p>
+                    <small>New Delhi</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-2">
+                <div class="flight-hour">
+                  <p>2h 30m </p>
+                  <small>Non stop</small>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="flight-price d-flex justify-content-end">
+                  <h2>&#x20B9; 10,800</h2>
+                  <button class="btn btn-tw">Book Now</button>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <div class="flight-route-detail d-flex justify-content-between">
+                  <div class="flight-slide">
+                    <a id="flip">Flight Detail</a>
+                  </div>
+                  
+                  <div class="d-flex justify-content-around" style="display: flex; align-items: center;">
+                    <small class="no-meal">No Meal Fare</small>
+                    <div class="ecase d-flex justify-content-between">
+                      <small>eCase</small>
+                      <small class="ecase-rs">&#x20B9; 250</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div> 
+        </div>
+
+
+        <div class="flight-route d-flex justify-content-between">
+          <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
+            <div class="col-sm-2">
+              <div class="flight-name">
+                <img src="../img/indigo.png">
+                <div class="flight-name-detail">
+                  <p>IndiGo</p>
+                  <small>6E-755</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="flight-time">
                 <div class="">
-                  <div class="tabdetail">
-                    <button class="detailtablinks" onclick="openDetail(event, 'summary')">Fare Summary</button>
-                    <button class="detailtablinks" onclick="openDetail(event, 'rule')">Fare Rules</button>
-                    
+                  <p>17:00</p>
+                  <small>Mumbai</small>
+                </div>
+                <img src="../img/ll2.svg">
+                <div class="">
+                  <p>20:00</p>
+                  <small>New Delhi</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <div class="flight-hour">
+                <p>2h 30m </p>
+                <small>Non stop</small>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="flight-price d-flex justify-content-end">
+                <h2>&#x20B9; 10,800</h2>
+                <button class="btn btn-tw">Book Now</button>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="flight-route-detail d-flex justify-content-between">
+                <div class="flight-slide">
+                  <a id="flip">Flight Detail</a>
+                </div>
+                
+                <div class="d-flex justify-content-around" style="display: flex; align-items: center;">
+                  <small class="no-meal">No Meal Fare</small>
+                  <div class="ecase d-flex justify-content-between">
+                    <small>eCase</small>
+                    <small class="ecase-rs">&#x20B9; 250</small>
                   </div>
-                  <div id="summary" class="detailtabcontent search-active">
-                    <div class="">
-                      <p>Fare Summary</p>
-                      <small>Adult x 1</small>
-                    </div>
-                    <div class="">
-                      <p>Base Fare</p>
-                      <small>&#x20B9; 4,902	</small>
-                    </div>
-                    <div class="">
-                      <p>Fees & Taxes</p>
-                      <small>&#x20B9; 670</small>
-                    </div>
-                  </div>
-                  
-                  <div id="rule" class="detailtabcontent">
-                    <h3>Paris</h3>
-                    <p>Paris is the capital of France.</p> 
-                  </div>
-                  
+                </div>
+              </div>
+            </div>
+        </div> 
+      </div>
+
+
+
+      <div class="flight-route d-flex justify-content-between">
+        <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
+          <div class="col-sm-2">
+            <div class="flight-name">
+              <img src="../img/indigo.png">
+              <div class="flight-name-detail">
+                <p>IndiGo</p>
+                <small>6E-755</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="flight-time">
+              <div class="">
+                <p>17:00</p>
+                <small>Mumbai</small>
+              </div>
+              <img src="../img/ll2.svg">
+              <div class="">
+                <p>20:00</p>
+                <small>New Delhi</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="flight-hour">
+              <p>2h 30m </p>
+              <small>Non stop</small>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="flight-price d-flex justify-content-end">
+              <h2>&#x20B9; 10,800</h2>
+              <button class="btn btn-tw">Book Now</button>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="flight-route-detail d-flex justify-content-between">
+              <div class="flight-slide">
+                <a id="flip">Flight Detail</a>
+              </div>
+              
+              <div class="d-flex justify-content-around" style="display: flex; align-items: center;">
+                <small class="no-meal">No Meal Fare</small>
+                <div class="ecase d-flex justify-content-between">
+                  <small>eCase</small>
+                  <small class="ecase-rs">&#x20B9; 250</small>
                 </div>
               </div>
             </div>
           </div>
-          
+      </div> 
+    </div>
+              </div>
+              
+              <div id="Cheapest" class="fast-tabcontent">
+                
+                <div class="flight-route d-flex justify-content-between">
+                  <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
+                    <div class="col-sm-2">
+                      <div class="flight-name">
+                        <img src="../img/airasia.png">
+                        <div class="flight-name-detail">
+                          <p>IndiGo</p>
+                          <small>6E-755</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="flight-time">
+                        <div class="">
+                          <p>17:00</p>
+                          <small>Mumbai</small>
+                        </div>
+                        <img src="../img/ll2.svg">
+                        <div class="">
+                          <p>20:00</p>
+                          <small>New Delhi</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+                      <div class="flight-hour">
+                        <p>2h 30m </p>
+                        <small>Non stop</small>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="flight-price d-flex justify-content-end">
+                        <h2>&#x20B9; 10,800</h2>
+                        <button class="btn btn-tw">Book Now</button>
+                      </div>
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="flight-route-detail d-flex justify-content-between">
+                        <div class="flight-slide">
+                          <a id="flip1">Flight Detail</a>
+                        </div>
+                        
+                        <div class="d-flex justify-content-around" style="display: flex; align-items: center;">
+                          <small class="no-meal">No Meal Fare</small>
+                          <div class="ecase d-flex justify-content-between">
+                            <small>eCase</small>
+                            <small class="ecase-rs">&#x20B9; 250</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div> 
+              </div>
+
+              <div id="panel1" class="route-detail-main" style="display: none;">
+                <div class="row">
+                  <div class="col-sm-7">
+                    <div class="slide-header">
+                      <h4>Flight Detail</h4>
+                    </div>
+                    <div class="flight-slide-open">
+                      
+                      <div class="d-flex justify-content-between" style="border-bottom: 1px solid #b3b1b1; margin: 20px 0px;">
+                        <div class="flight-slide-open-img">
+                          <img src="../img/indigo.png">
+                          <div class="">
+                            <p>IndiGo, 6E-212 <small>(Economy)</small></p>
+                            <small>Airbus A320-100</small>
+                          </div>
+                        </div>
+                        <div class="flight-slide-open-facility-img">
+                          <img src="../img/eid-mubarak.svg">
+                          <img src="../img/wifi.svg">
+                          <img src="../img/seat.svg">
+                          <img src="../img/plug.svg">
+                          <img src="../img/youtube.svg">
+                        </div>
+                        
+                      </div>
+                      <div class="d-flex justify-content-between" style="padding-left: 10px; margin-bottom: 20px; width: 100%;">
+                        <div class="route-slide-detail">
+                          <p>New Delhi (DEL)</p>
+                          <p>10:10</p>
+                          <p>Wed, 15 Jul 2020</p>
+                          <p>Indira Gandhi,T-3</p>
+                        </div>
+                        <div class="route-slide-detail-line">
+                          <p>1h 20m</p>
+                          <div class="slide-line"></div>
+                          <p>Non Stop</p>
+                        </div>
+                        <div class="route-slide-detail">
+                          <p>New Delhi (DEL)</p>
+                          <p>10:10</p>
+                          <p>Wed, 15 Jul 2020</p>
+                          <p>Indira Gandhi,T-3</p>
+                        </div>
+                        
+                      </div>
+                      <div class="route-baggage">
+                        <p>Checkin Baggage: <span>20 kgs</span></p>
+                        <small class="no-meal">No Meal Fare</small>
+                      </div>
+                      <div class="route-baggage1">
+                        <p>Change plane at Jaipur (JAI), Connecting Time: 2h 20m</p>
+                      </div>
+                      <div class="d-flex justify-content-between" style="border-bottom: 1px solid #b3b1b1; margin: 20px 0px;">
+                        <div class="flight-slide-open-img">
+                          <img src="../img/indigo.png">
+                          <div class="">
+                            <p>IndiGo, 6E-212 <small>(Economy)</small></p>
+                            <small>Airbus A320-100</small>
+                          </div>
+                        </div>
+                        <div class="flight-slide-open-facility-img">
+                          <img src="../img/eid-mubarak.svg">
+                          <img src="../img/wifi.svg">
+                          <img src="../img/seat.svg">
+                          <img src="../img/plug.svg">
+                          <img src="../img/youtube.svg">
+                        </div>
+                        
+                      </div>
+                      <div class="d-flex justify-content-between" style="padding-left: 10px; margin-bottom: 20px; width: 100%;">
+                        <div class="route-slide-detail">
+                          <p>New Delhi (DEL)</p>
+                          <p>10:10</p>
+                          <p>Wed, 15 Jul 2020</p>
+                          <p>Indira Gandhi,T-3</p>
+                        </div>
+                        <div class="route-slide-detail-line">
+                          <p>1h 20m</p>
+                          <div class="slide-line"></div>
+                          <p>Non Stop</p>
+                        </div>
+                        <div class="route-slide-detail">
+                          <p>New Delhi (DEL)</p>
+                          <p>10:10</p>
+                          <p>Wed, 15 Jul 2020</p>
+                          <p>Indira Gandhi,T-3</p>
+                        </div>
+                        
+                      </div>
+                      <div class="route-baggage" style="margin-bottom: 20px;">
+                        <p>Checkin Baggage: <span>20 kgs</span></p>
+                        <small class="no-meal">No Meal Fare</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-5">
+                    <div class="summary-btn-detail">
+                      <div class="tabdetail">
+                        <button class="detailtablinks1" onclick="openDetail1(event, 'summary1')">Fare Summary</button>
+                        <button class="detailtablinks1" onclick="openDetail1(event, 'rule1')">Fare Rules</button>
+                        
+                      </div>
+                      <div id="summary1" class="detailtabcontent1 search-active">
+                        <div class="route-summary">
+                          <p>Fare Summary : </p>
+                          <small>Adult x 1</small>
+                        </div>
+                        <div class="route-summary">
+                          <p>Base Fare : </p>
+                          <small>&#x20B9; 4,902	</small>
+                        </div>
+                        <div class="route-summary summary-line">
+                          <p>Fees & Taxes : </p>
+                          <small>&#x20B9; 670</small>
+                        </div>
+                        <div class="d-flex justify-content-between summary-line route-summary">
+                          <p>You Pay : </p>
+                          <p>&#x20B9; 5578 </p>
+                        </div>
+                        <div class="route-summary">
+                          <small>Note: Total fare displayed above has been rounded off and may show a slight difference from actual fare.</small>
+                        </div>
+                        <div class="btn-book">
+                          <button class="btn">Book</button>
+                        </div>
+                      </div>
+                      
+                      <div id="rule1" class="detailtabcontent1">
+                       <div class="route-summary summary-line">
+                         <h6>DEL-JAI-BOM</h6>
+                       </div>
+                       <p style="color: white !important;">Airline Cancellation Fee</p>
+                       <div class="route-rule summary-line">
+                        
+                        <div class="">
+                          <p>Duration*</p>
+                          <small>0 hour to 2 hours</small><br>
+                          <small>2 hours to 4 days</small><br>
+                          <small>>4 days</small>
+                        </div>
+                        <div class="">
+                          <p>Per Passenger</p>
+                          <small>Non-Refundable</small><br>
+                          <small>&#x20B9; 3,500</small><br>
+                          <small>&#x20B9; 3,500</small>
+                        </div>
+                       </div>
+                       <p style="color: white !important;">Airline Date Change Fee</p>
+                       <div class="route-rule">
+                        <div class="">
+                          <p>Duration*</p>
+                          <small>2 hours to 4 days</small><br>
+                          <small>>4 days</small>
+                        </div>
+                        <div class="">
+                          <p>Per Passenger</p>
+                          <small>&#x20B9; 3,500</small><br>
+                          <small>&#x20B9; 3,500</small>
+                        </div>
+                       </div>
+                       <div class="rule-note">
+                         <small>We would recommend that you reschedule/cancel your tickets atleast 72 hours prior to the flight departure</small>
+                       </div>
+                       <p style="color: white !important;">Yatra Service Fee (YSF)**</p>
+                       <small style="color: white !important;">(charged per passenger in addition to airline fee as applicable)</small>
+                       <div class="rule-note-detail summary-line">
+                         <div class="d-flex justify-content-between">
+                           <small>Online Cancellation Service Fee</small>
+                           <small>&#x20B9; 400</small>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                          <small>Online Cancellation Service Fee</small>
+                          <small>&#x20B9; 400</small>
+                       </div>
+                       <div class="d-flex justify-content-between">
+                        <small>Online Rescheduling Service Fee</small>
+                        <small>&#x20B9; 400</small>
+                     </div>
+                     <div class="d-flex justify-content-between">
+                      <small>Online Rescheduling Service Fee</small>
+                      <small>&#x20B9; 1200</small>
+                   </div>
+                       </div>
+                       <div class="rule-note2">
+                         <small>* Prior to the date/time of departure.</small><br>
+                         <small>**Please note: Yatra service fee is over and above the airline cancellation fee due to which refund type may vary.</small>
+                       </div>
+                       <div class="btn-book">
+                        <button class="btn">Book</button>
+                      </div>
+                       
+    
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+
+
+              <div class="flight-route d-flex justify-content-between">
+                <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
+                  <div class="col-sm-2">
+                    <div class="flight-name">
+                      <img src="../img/indigo.png">
+                      <div class="flight-name-detail">
+                        <p>IndiGo</p>
+                        <small>6E-755</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="flight-time">
+                      <div class="">
+                        <p>17:00</p>
+                        <small>Mumbai</small>
+                      </div>
+                      <img src="../img/ll2.svg">
+                      <div class="">
+                        <p>20:00</p>
+                        <small>New Delhi</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="flight-hour">
+                      <p>2h 30m </p>
+                      <small>Non stop</small>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="flight-price d-flex justify-content-end">
+                      <h2>&#x20B9; 10,800</h2>
+                      <button class="btn btn-tw">Book Now</button>
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="flight-route-detail d-flex justify-content-between">
+                      <div class="flight-slide">
+                        <a id="flip">Flight Detail</a>
+                      </div>
+                      
+                      <div class="d-flex justify-content-around" style="display: flex; align-items: center;">
+                        <small class="no-meal">No Meal Fare</small>
+                        <div class="ecase d-flex justify-content-between">
+                          <small>eCase</small>
+                          <small class="ecase-rs">&#x20B9; 250</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div> 
+            </div>
+
+
+            <div class="flight-route d-flex justify-content-between">
+              <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
+                <div class="col-sm-2">
+                  <div class="flight-name">
+                    <img src="../img/indigo.png">
+                    <div class="flight-name-detail">
+                      <p>IndiGo</p>
+                      <small>6E-755</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="flight-time">
+                    <div class="">
+                      <p>17:00</p>
+                      <small>Mumbai</small>
+                    </div>
+                    <img src="../img/ll2.svg">
+                    <div class="">
+                      <p>20:00</p>
+                      <small>New Delhi</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2">
+                  <div class="flight-hour">
+                    <p>2h 30m </p>
+                    <small>Non stop</small>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="flight-price d-flex justify-content-end">
+                    <h2>&#x20B9; 10,800</h2>
+                    <button class="btn btn-tw">Book Now</button>
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="flight-route-detail d-flex justify-content-between">
+                    <div class="flight-slide">
+                      <a id="flip">Flight Detail</a>
+                    </div>
+                    
+                    <div class="d-flex justify-content-around" style="display: flex; align-items: center;">
+                      <small class="no-meal">No Meal Fare</small>
+                      <div class="ecase d-flex justify-content-between">
+                        <small>eCase</small>
+                        <small class="ecase-rs">&#x20B9; 250</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div> 
+          </div>
+
+
+          <div class="flight-route d-flex justify-content-between">
+            <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
+              <div class="col-sm-2">
+                <div class="flight-name">
+                  <img src="../img/indigo.png">
+                  <div class="flight-name-detail">
+                    <p>IndiGo</p>
+                    <small>6E-755</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="flight-time">
+                  <div class="">
+                    <p>17:00</p>
+                    <small>Mumbai</small>
+                  </div>
+                  <img src="../img/ll2.svg">
+                  <div class="">
+                    <p>20:00</p>
+                    <small>New Delhi</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-2">
+                <div class="flight-hour">
+                  <p>2h 30m </p>
+                  <small>Non stop</small>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="flight-price d-flex justify-content-end">
+                  <h2>&#x20B9; 10,800</h2>
+                  <button class="btn btn-tw">Book Now</button>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <div class="flight-route-detail d-flex justify-content-between">
+                  <div class="flight-slide">
+                    <a id="flip">Flight Detail</a>
+                  </div>
+                  
+                  <div class="d-flex justify-content-around" style="display: flex; align-items: center;">
+                    <small class="no-meal">No Meal Fare</small>
+                    <div class="ecase d-flex justify-content-between">
+                      <small>eCase</small>
+                      <small class="ecase-rs">&#x20B9; 250</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div> 
+        </div>
+
+
+        <div class="flight-route d-flex justify-content-between">
+          <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
+            <div class="col-sm-2">
+              <div class="flight-name">
+                <img src="../img/indigo.png">
+                <div class="flight-name-detail">
+                  <p>IndiGo</p>
+                  <small>6E-755</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="flight-time">
+                <div class="">
+                  <p>17:00</p>
+                  <small>Mumbai</small>
+                </div>
+                <img src="../img/ll2.svg">
+                <div class="">
+                  <p>20:00</p>
+                  <small>New Delhi</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <div class="flight-hour">
+                <p>2h 30m </p>
+                <small>Non stop</small>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="flight-price d-flex justify-content-end">
+                <h2>&#x20B9; 10,800</h2>
+                <button class="btn btn-tw">Book Now</button>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="flight-route-detail d-flex justify-content-between">
+                <div class="flight-slide">
+                  <a id="flip">Flight Detail</a>
+                </div>
+                
+                <div class="d-flex justify-content-around" style="display: flex; align-items: center;">
+                  <small class="no-meal">No Meal Fare</small>
+                  <div class="ecase d-flex justify-content-between">
+                    <small>eCase</small>
+                    <small class="ecase-rs">&#x20B9; 250</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div> 
+      </div>
+
+
+
+      <div class="flight-route d-flex justify-content-between">
+        <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
+          <div class="col-sm-2">
+            <div class="flight-name">
+              <img src="../img/indigo.png">
+              <div class="flight-name-detail">
+                <p>IndiGo</p>
+                <small>6E-755</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="flight-time">
+              <div class="">
+                <p>17:00</p>
+                <small>Mumbai</small>
+              </div>
+              <img src="../img/ll2.svg">
+              <div class="">
+                <p>20:00</p>
+                <small>New Delhi</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="flight-hour">
+              <p>2h 30m </p>
+              <small>Non stop</small>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="flight-price d-flex justify-content-end">
+              <h2>&#x20B9; 10,800</h2>
+              <button class="btn btn-tw">Book Now</button>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="flight-route-detail d-flex justify-content-between">
+              <div class="flight-slide">
+                <a id="flip">Flight Detail</a>
+              </div>
+              
+              <div class="d-flex justify-content-around" style="display: flex; align-items: center;">
+                <small class="no-meal">No Meal Fare</small>
+                <div class="ecase d-flex justify-content-between">
+                  <small>eCase</small>
+                  <small class="ecase-rs">&#x20B9; 250</small>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div> 
+    </div>
+              
+              </div>
+              
+              <div id="Fastest" class="fast-tabcontent">
+                
+                  <div class="flight-route d-flex justify-content-between">
+                    <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
+                      <div class="col-sm-2">
+                        <div class="flight-name">
+                          <img src="../img/goair.png">
+                          <div class="flight-name-detail">
+                            <p>IndiGo</p>
+                            <small>6E-755</small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="flight-time">
+                          <div class="">
+                            <p>17:00</p>
+                            <small>Mumbai</small>
+                          </div>
+                          <img src="../img/ll2.svg">
+                          <div class="">
+                            <p>20:00</p>
+                            <small>New Delhi</small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="flight-hour">
+                          <p>2h 30m </p>
+                          <small>Non stop</small>
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="flight-price d-flex justify-content-end">
+                          <h2>&#x20B9; 10,800</h2>
+                          <button class="btn btn-tw">Book Now</button>
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <div class="flight-route-detail d-flex justify-content-between">
+                          <div class="flight-slide">
+                            <a id="flip2">Flight Detail</a>
+                          </div>
+                          
+                          <div class="d-flex justify-content-around" style="display: flex; align-items: center;">
+                            <small class="no-meal">No Meal Fare</small>
+                            <div class="ecase d-flex justify-content-between">
+                              <small>eCase</small>
+                              <small class="ecase-rs">&#x20B9; 250</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div> 
+                </div>
+  
+                <div id="panel2" class="route-detail-main" style="display: none;">
+                  <div class="row">
+                    <div class="col-sm-7">
+                      <div class="slide-header">
+                        <h4>Flight Detail</h4>
+                      </div>
+                      <div class="flight-slide-open">
+                        
+                        <div class="d-flex justify-content-between" style="border-bottom: 1px solid #b3b1b1; margin: 20px 0px;">
+                          <div class="flight-slide-open-img">
+                            <img src="../img/indigo.png">
+                            <div class="">
+                              <p>IndiGo, 6E-212 <small>(Economy)</small></p>
+                              <small>Airbus A320-100</small>
+                            </div>
+                          </div>
+                          <div class="flight-slide-open-facility-img">
+                            <img src="../img/eid-mubarak.svg">
+                            <img src="../img/wifi.svg">
+                            <img src="../img/seat.svg">
+                            <img src="../img/plug.svg">
+                            <img src="../img/youtube.svg">
+                          </div>
+                          
+                        </div>
+                        <div class="d-flex justify-content-between" style="padding-left: 10px; margin-bottom: 20px; width: 100%;">
+                          <div class="route-slide-detail">
+                            <p>New Delhi (DEL)</p>
+                            <p>10:10</p>
+                            <p>Wed, 15 Jul 2020</p>
+                            <p>Indira Gandhi,T-3</p>
+                          </div>
+                          <div class="route-slide-detail-line">
+                            <p>1h 20m</p>
+                            <div class="slide-line"></div>
+                            <p>Non Stop</p>
+                          </div>
+                          <div class="route-slide-detail">
+                            <p>New Delhi (DEL)</p>
+                            <p>10:10</p>
+                            <p>Wed, 15 Jul 2020</p>
+                            <p>Indira Gandhi,T-3</p>
+                          </div>
+                          
+                        </div>
+                        <div class="route-baggage">
+                          <p>Checkin Baggage: <span>20 kgs</span></p>
+                          <small class="no-meal">No Meal Fare</small>
+                        </div>
+                        <div class="route-baggage1">
+                          <p>Change plane at Jaipur (JAI), Connecting Time: 2h 20m</p>
+                        </div>
+                        <div class="d-flex justify-content-between" style="border-bottom: 1px solid #b3b1b1; margin: 20px 0px;">
+                          <div class="flight-slide-open-img">
+                            <img src="../img/indigo.png">
+                            <div class="">
+                              <p>IndiGo, 6E-212 <small>(Economy)</small></p>
+                              <small>Airbus A320-100</small>
+                            </div>
+                          </div>
+                          <div class="flight-slide-open-facility-img">
+                            <img src="../img/eid-mubarak.svg">
+                            <img src="../img/wifi.svg">
+                            <img src="../img/seat.svg">
+                            <img src="../img/plug.svg">
+                            <img src="../img/youtube.svg">
+                          </div>
+                          
+                        </div>
+                        <div class="d-flex justify-content-between" style="padding-left: 10px; margin-bottom: 20px; width: 100%;">
+                          <div class="route-slide-detail">
+                            <p>New Delhi (DEL)</p>
+                            <p>10:10</p>
+                            <p>Wed, 15 Jul 2020</p>
+                            <p>Indira Gandhi,T-3</p>
+                          </div>
+                          <div class="route-slide-detail-line">
+                            <p>1h 20m</p>
+                            <div class="slide-line"></div>
+                            <p>Non Stop</p>
+                          </div>
+                          <div class="route-slide-detail">
+                            <p>New Delhi (DEL)</p>
+                            <p>10:10</p>
+                            <p>Wed, 15 Jul 2020</p>
+                            <p>Indira Gandhi,T-3</p>
+                          </div>
+                          
+                        </div>
+                        <div class="route-baggage" style="margin-bottom: 20px;">
+                          <p>Checkin Baggage: <span>20 kgs</span></p>
+                          <small class="no-meal">No Meal Fare</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-5">
+                      <div class="summary-btn-detail">
+                        <div class="tabdetail">
+                          <button class="detailtablinks2" onclick="openDetail2(event, 'summary2')">Fare Summary</button>
+                          <button class="detailtablinks2" onclick="openDetail2(event, 'rule2')">Fare Rules</button>
+                          
+                        </div>
+                        <div id="summary2" class="detailtabcontent2 search-active">
+                          <div class="route-summary">
+                            <p>Fare Summary : </p>
+                            <small>Adult x 1</small>
+                          </div>
+                          <div class="route-summary">
+                            <p>Base Fare : </p>
+                            <small>&#x20B9; 4,902	</small>
+                          </div>
+                          <div class="route-summary summary-line">
+                            <p>Fees & Taxes : </p>
+                            <small>&#x20B9; 670</small>
+                          </div>
+                          <div class="d-flex justify-content-between summary-line route-summary">
+                            <p>You Pay : </p>
+                            <p>&#x20B9; 5578 </p>
+                          </div>
+                          <div class="route-summary">
+                            <small>Note: Total fare displayed above has been rounded off and may show a slight difference from actual fare.</small>
+                          </div>
+                          <div class="btn-book">
+                            <button class="btn">Book</button>
+                          </div>
+                        </div>
+                        
+                        <div id="rule2" class="detailtabcontent2">
+                         <div class="route-summary summary-line">
+                           <h6>DEL-JAI-BOM</h6>
+                         </div>
+                         <p style="color: white !important;">Airline Cancellation Fee</p>
+                         <div class="route-rule summary-line">
+                          
+                          <div class="">
+                            <p>Duration*</p>
+                            <small>0 hour to 2 hours</small><br>
+                            <small>2 hours to 4 days</small><br>
+                            <small>>4 days</small>
+                          </div>
+                          <div class="">
+                            <p>Per Passenger</p>
+                            <small>Non-Refundable</small><br>
+                            <small>&#x20B9; 3,500</small><br>
+                            <small>&#x20B9; 3,500</small>
+                          </div>
+                         </div>
+                         <p style="color: white !important;">Airline Date Change Fee</p>
+                         <div class="route-rule">
+                          <div class="">
+                            <p>Duration*</p>
+                            <small>2 hours to 4 days</small><br>
+                            <small>>4 days</small>
+                          </div>
+                          <div class="">
+                            <p>Per Passenger</p>
+                            <small>&#x20B9; 3,500</small><br>
+                            <small>&#x20B9; 3,500</small>
+                          </div>
+                         </div>
+                         <div class="rule-note">
+                           <small>We would recommend that you reschedule/cancel your tickets atleast 72 hours prior to the flight departure</small>
+                         </div>
+                         <p style="color: white !important;">Yatra Service Fee (YSF)**</p>
+                         <small style="color: white !important;">(charged per passenger in addition to airline fee as applicable)</small>
+                         <div class="rule-note-detail summary-line">
+                           <div class="d-flex justify-content-between">
+                             <small>Online Cancellation Service Fee</small>
+                             <small>&#x20B9; 400</small>
+                          </div>
+                          <div class="d-flex justify-content-between">
+                            <small>Online Cancellation Service Fee</small>
+                            <small>&#x20B9; 400</small>
+                         </div>
+                         <div class="d-flex justify-content-between">
+                          <small>Online Rescheduling Service Fee</small>
+                          <small>&#x20B9; 400</small>
+                       </div>
+                       <div class="d-flex justify-content-between">
+                        <small>Online Rescheduling Service Fee</small>
+                        <small>&#x20B9; 1200</small>
+                     </div>
+                         </div>
+                         <div class="rule-note2">
+                           <small>* Prior to the date/time of departure.</small><br>
+                           <small>**Please note: Yatra service fee is over and above the airline cancellation fee due to which refund type may vary.</small>
+                         </div>
+                         <div class="btn-book">
+                          <button class="btn">Book</button>
+                        </div>
+                         
+      
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                
+  
+  
+                <div class="flight-route d-flex justify-content-between">
+                  <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
+                    <div class="col-sm-2">
+                      <div class="flight-name">
+                        <img src="../img/indigo.png">
+                        <div class="flight-name-detail">
+                          <p>IndiGo</p>
+                          <small>6E-755</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="flight-time">
+                        <div class="">
+                          <p>17:00</p>
+                          <small>Mumbai</small>
+                        </div>
+                        <img src="../img/ll2.svg">
+                        <div class="">
+                          <p>20:00</p>
+                          <small>New Delhi</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+                      <div class="flight-hour">
+                        <p>2h 30m </p>
+                        <small>Non stop</small>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="flight-price d-flex justify-content-end">
+                        <h2>&#x20B9; 10,800</h2>
+                        <button class="btn btn-tw">Book Now</button>
+                      </div>
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="flight-route-detail d-flex justify-content-between">
+                        <div class="flight-slide">
+                          <a id="flip">Flight Detail</a>
+                        </div>
+                        
+                        <div class="d-flex justify-content-around" style="display: flex; align-items: center;">
+                          <small class="no-meal">No Meal Fare</small>
+                          <div class="ecase d-flex justify-content-between">
+                            <small>eCase</small>
+                            <small class="ecase-rs">&#x20B9; 250</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div> 
+              </div>
+  
+  
+              <div class="flight-route d-flex justify-content-between">
+                <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
+                  <div class="col-sm-2">
+                    <div class="flight-name">
+                      <img src="../img/indigo.png">
+                      <div class="flight-name-detail">
+                        <p>IndiGo</p>
+                        <small>6E-755</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="flight-time">
+                      <div class="">
+                        <p>17:00</p>
+                        <small>Mumbai</small>
+                      </div>
+                      <img src="../img/ll2.svg">
+                      <div class="">
+                        <p>20:00</p>
+                        <small>New Delhi</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="flight-hour">
+                      <p>2h 30m </p>
+                      <small>Non stop</small>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="flight-price d-flex justify-content-end">
+                      <h2>&#x20B9; 10,800</h2>
+                      <button class="btn btn-tw">Book Now</button>
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="flight-route-detail d-flex justify-content-between">
+                      <div class="flight-slide">
+                        <a id="flip">Flight Detail</a>
+                      </div>
+                      
+                      <div class="d-flex justify-content-around" style="display: flex; align-items: center;">
+                        <small class="no-meal">No Meal Fare</small>
+                        <div class="ecase d-flex justify-content-between">
+                          <small>eCase</small>
+                          <small class="ecase-rs">&#x20B9; 250</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div> 
+            </div>
+  
+  
+            <div class="flight-route d-flex justify-content-between">
+              <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
+                <div class="col-sm-2">
+                  <div class="flight-name">
+                    <img src="../img/indigo.png">
+                    <div class="flight-name-detail">
+                      <p>IndiGo</p>
+                      <small>6E-755</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="flight-time">
+                    <div class="">
+                      <p>17:00</p>
+                      <small>Mumbai</small>
+                    </div>
+                    <img src="../img/ll2.svg">
+                    <div class="">
+                      <p>20:00</p>
+                      <small>New Delhi</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2">
+                  <div class="flight-hour">
+                    <p>2h 30m </p>
+                    <small>Non stop</small>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="flight-price d-flex justify-content-end">
+                    <h2>&#x20B9; 10,800</h2>
+                    <button class="btn btn-tw">Book Now</button>
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="flight-route-detail d-flex justify-content-between">
+                    <div class="flight-slide">
+                      <a id="flip">Flight Detail</a>
+                    </div>
+                    
+                    <div class="d-flex justify-content-around" style="display: flex; align-items: center;">
+                      <small class="no-meal">No Meal Fare</small>
+                      <div class="ecase d-flex justify-content-between">
+                        <small>eCase</small>
+                        <small class="ecase-rs">&#x20B9; 250</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div> 
+          </div>
+  
+  
+          <div class="flight-route d-flex justify-content-between">
+            <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
+              <div class="col-sm-2">
+                <div class="flight-name">
+                  <img src="../img/indigo.png">
+                  <div class="flight-name-detail">
+                    <p>IndiGo</p>
+                    <small>6E-755</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="flight-time">
+                  <div class="">
+                    <p>17:00</p>
+                    <small>Mumbai</small>
+                  </div>
+                  <img src="../img/ll2.svg">
+                  <div class="">
+                    <p>20:00</p>
+                    <small>New Delhi</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-2">
+                <div class="flight-hour">
+                  <p>2h 30m </p>
+                  <small>Non stop</small>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="flight-price d-flex justify-content-end">
+                  <h2>&#x20B9; 10,800</h2>
+                  <button class="btn btn-tw">Book Now</button>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <div class="flight-route-detail d-flex justify-content-between">
+                  <div class="flight-slide">
+                    <a id="flip">Flight Detail</a>
+                  </div>
+                  
+                  <div class="d-flex justify-content-around" style="display: flex; align-items: center;">
+                    <small class="no-meal">No Meal Fare</small>
+                    <div class="ecase d-flex justify-content-between">
+                      <small>eCase</small>
+                      <small class="ecase-rs">&#x20B9; 250</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div> 
+        </div>
+  
+  
+  
+        <div class="flight-route d-flex justify-content-between">
+          <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
+            <div class="col-sm-2">
+              <div class="flight-name">
+                <img src="../img/indigo.png">
+                <div class="flight-name-detail">
+                  <p>IndiGo</p>
+                  <small>6E-755</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="flight-time">
+                <div class="">
+                  <p>17:00</p>
+                  <small>Mumbai</small>
+                </div>
+                <img src="../img/ll2.svg">
+                <div class="">
+                  <p>20:00</p>
+                  <small>New Delhi</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <div class="flight-hour">
+                <p>2h 30m </p>
+                <small>Non stop</small>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="flight-price d-flex justify-content-end">
+                <h2>&#x20B9; 10,800</h2>
+                <button class="btn btn-tw">Book Now</button>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="flight-route-detail d-flex justify-content-between">
+                <div class="flight-slide">
+                  <a id="flip">Flight Detail</a>
+                </div>
+                
+                <div class="d-flex justify-content-around" style="display: flex; align-items: center;">
+                  <small class="no-meal">No Meal Fare</small>
+                  <div class="ecase d-flex justify-content-between">
+                    <small>eCase</small>
+                    <small class="ecase-rs">&#x20B9; 250</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div> 
+      </div>
+                
+              </div>
+
+            </div>
+           
+         
          
             
 
-            <div class="flight-route d-flex justify-content-between">
-              <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
-                <div class="col-sm-2">
-                  <div class="flight-name">
-                    <img src="../img/indigo.png">
-                    <div class="flight-name-detail">
-                      <p>IndiGo</p>
-                      <small>6E-755</small>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="flight-time">
-                    <div class="">
-                      <p>17:00</p>
-                      <small>Mumbai</small>
-                    </div>
-                    <img src="../img/ll2.svg">
-                    <div class="">
-                      <p>20:00</p>
-                      <small>New Delhi</small>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-2">
-                  <div class="flight-hour">
-                    <p>2h 30m </p>
-                    <small>Non stop</small>
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="flight-price d-flex justify-content-end">
-                    <h2>&#x20B9; 10,800</h2>
-                    <button class="btn btn-tw">Book Now</button>
-                  </div>
-                </div>
-            </div>   
-            </div>
+         
+        
 
-            <div class="flight-route d-flex justify-content-between">
-              <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
-                <div class="col-sm-2">
-                  <div class="flight-name">
-                    <img src="../img/indigo.png">
-                    <div class="flight-name-detail">
-                      <p>IndiGo</p>
-                      <small>6E-755</small>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="flight-time">
-                    <div class="">
-                      <p>17:00</p>
-                      <small>Mumbai</small>
-                    </div>
-                    <img src="../img/ll2.svg">
-                    <div class="">
-                      <p>20:00</p>
-                      <small>New Delhi</small>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-2">
-                  <div class="flight-hour">
-                    <p>2h 30m </p>
-                    <small>Non stop</small>
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="flight-price d-flex justify-content-end">
-                    <h2>&#x20B9; 10,800</h2>
-                    <button class="btn btn-tw">Book Now</button>
-                  </div>
-                </div>
-            </div>   
-            </div>
 
-            <div class="flight-route d-flex justify-content-between">
-              <div class="row" style="width: 100%; padding: 0px; margin: 0px;">
-                <div class="col-sm-2">
-                  <div class="flight-name">
-                    <img src="../img/indigo.png">
-                    <div class="flight-name-detail">
-                      <p>IndiGo</p>
-                      <small>6E-755</small>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="flight-time">
-                    <div class="">
-                      <p>17:00</p>
-                      <small>Mumbai</small>
-                    </div>
-                    <img src="../img/ll2.svg">
-                    <div class="">
-                      <p>20:00</p>
-                      <small>New Delhi</small>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-2">
-                  <div class="flight-hour">
-                    <p>2h 30m </p>
-                    <small>Non stop</small>
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="flight-price d-flex justify-content-end">
-                    <h2>&#x20B9; 10,800</h2>
-                    <button class="btn btn-tw">Book Now</button>
-                  </div>
-                </div>
-            </div>   
-            </div>
+        
+
+
+     
+    
+
+
+
+    
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+    
+    
 
 
           </div>
@@ -609,6 +2064,42 @@
       </div>
     </div>
   </section>
+  <footer>
+    <div class="container">
+      <div class="">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="tw-sign-up">
+              <h1>Help us be your travel companion</h1>
+              <p>Be the first to receive exclusive offers and the latest news on our products & services directly in your inbox.</p>
+              <div class="sign-up-form">
+                <form>
+                  <div class="form-row d-flex justify-content-center">
+                    <div class="col-9">
+                      <input type="text" class="form-control" placeholder="Email address">
+                    </div>
+                    <div class="col-auto">
+                      <button type="submit" class="btn btn-primary mb-2">Sign up</button>
+                    </div>
+                  </div>
+                </form>
+                <p>Email addresses submitted to IndiGo are subject to our <a href="#" class="sign-up-pp">Privacy Notice....</a></p>
+              </div>
+              <div class="social-icon d-flex justify-content-center">
+                <ul class="">
+                  <li class="icon"><a href="#"><img src="../img/fb.svg"/></a></li>
+                  <li class="icon"><a href="#"><img src="../img/insta.svg"/></a></li>
+                  <li class="icon"><a href="#"><img src="../img/in.svg"/></a></li>
+                  <li class="icon"><a href="#"><img src="../img/tw.svg"/></a></li>
+                </ul>
+              </div>
+              <p class="copyright">&copy; Copyright 2020 Tekwalker. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
    
 
 </div>
@@ -661,6 +2152,20 @@
     });
   });
   </script>
+  <script> 
+    $(document).ready(function(){
+      $("#flip1").click(function(){
+        $("#panel1").slideToggle("slow");
+      });
+    });
+    </script>
+    <script> 
+      $(document).ready(function(){
+        $("#flip2").click(function(){
+          $("#panel2").slideToggle("slow");
+        });
+      });
+      </script>
 
 <script>
   function openDetail(evt, cityName) {
@@ -671,6 +2176,53 @@
       tabcontent[i].className = tabcontent[i].className.replace("search-active", "");
     }
     tablinks = document.getElementsByClassName("detailtablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+
+  function openDetail1(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("detailtabcontent1");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+      tabcontent[i].className = tabcontent[i].className.replace("search-active", "");
+    }
+    tablinks = document.getElementsByClassName("detailtablinks1");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+
+  function openDetail2(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("detailtabcontent2");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+      tabcontent[i].className = tabcontent[i].className.replace("search-active", "");
+    }
+    tablinks = document.getElementsByClassName("detailtablinks2");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  </script>
+
+<script>
+  function openFast(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("fast-tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+      tabcontent[i].className = tabcontent[i].className.replace("search-active", "");
+    }
+    tablinks = document.getElementsByClassName("fast-tablinks");
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].className = tablinks[i].className.replace(" active", "");
     }

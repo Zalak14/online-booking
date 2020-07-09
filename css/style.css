@@ -854,6 +854,16 @@ margin-bottom: 10px;
   border: none;
   border-radius: 0px;
 }
+.flight-accordion .btn-reset{
+  border: 1px solid white;
+  border-radius: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.flight-accordion .btn-reset:hover{
+  text-decoration: none;
+}
 
 .flight-accordion .card-header .btn{
   color: white;
@@ -882,14 +892,10 @@ margin-bottom: 10px;
 
 .search-box-detail{
   width: 100%;
-  margin-top: 50px;
   margin-left: 15px;
 }
 .search {
   overflow: hidden;
- 
-  background-image: linear-gradient(to right, rgba(235, 0, 141, 0.7) , rgba(153, 102, 255, 0.7));
-  
   width: 100%;
 }
 
@@ -923,7 +929,6 @@ margin-bottom: 10px;
   padding: 6px 12px;
  color: white;
   border-top: none;
-  background-image: linear-gradient(to right, rgba(235, 0, 141, 0.7) , rgba(153, 102, 255, 0.7));
 }
 
 .searchcontent .btn-find{
@@ -1074,14 +1079,13 @@ margin-bottom: 10px;
   margin-top: 10px;
   overflow: hidden;
 }
-
-.flight-slide-open .slide-header{
+.slide-header{
   background-color: black;
   padding: 20px 10px;
-  
+  padding-right: 15px;
 }
 
-.flight-slide-open .slide-header h4{
+.slide-header h4{
   color: white;
   font-weight: 500;
   font-size: 18px;
@@ -1099,6 +1103,9 @@ margin-bottom: 10px;
   width: 30px;
   margin-right: 10px;
 }
+.flight-slide-open-img p{
+  font-size: 14px !important;
+}
 
 .flight-slide-open .flight-slide-open-facility-img img{
   height: 20px;
@@ -1107,6 +1114,10 @@ margin-bottom: 10px;
 }
 .flight-slide-open .flight-slide-open-facility-img{
   margin-right: 10px;
+}
+
+.flight-slide-open{
+  padding-right: 17px;
 }
 
 .route-slide-detail{
@@ -1120,7 +1131,6 @@ margin-bottom: 10px;
   margin: 15px 0px;
 }
 .route-slide-detail-line{
-  margin: 0px 56px;
   text-align: center;
 }
 
@@ -1146,7 +1156,7 @@ margin-bottom: 10px;
 
 .tabdetail {
   overflow: hidden;
-  background-color: black;
+  background-color: rgb(27, 27, 27);
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -1177,19 +1187,245 @@ margin-bottom: 10px;
   border-bottom: 2px solid white;
 }
 
+.detailtabcontent::-webkit-scrollbar {
+  width: 6px;
+border-radius: 10px;}
+
 .detailtabcontent {
   display: none;
   padding: 6px 12px;
-  height: 100% !important;
-  background-color: rgb(253, 244, 213);
-  
+  height: 500px !important;
+  background-color: rgb(27, 27, 27);
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 300;
+  overflow-y: scroll;
+  --scrollbarBG: transparent;
+  --thumbBG: rgba(255, 255, 255, 0.3);
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+.detailtabcontent::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+.detailtabcontent::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
 }
 
-.route-detail-main .col-sm-4{
-  padding-right: 0px !important;
+.detailtabcontent1::-webkit-scrollbar {
+  width: 6px;
+border-radius: 10px;}
+
+.detailtabcontent1 {
+  display: none;
+  padding: 6px 12px;
+  height: 500px !important;
+  background-color: rgb(27, 27, 27);
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 300;
+  overflow-y: scroll;
+  --scrollbarBG: transparent;
+  --thumbBG: rgba(255, 255, 255, 0.3);
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+.detailtabcontent1::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+.detailtabcontent1::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+
+.detailtabcontent2::-webkit-scrollbar {
+  width: 6px;
+border-radius: 10px;}
+
+.detailtabcontent2 {
+  display: none;
+  padding: 6px 12px;
+  height: 500px !important;
+  background-color: rgb(27, 27, 27);
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 300;
+  overflow-y: scroll;
+  --scrollbarBG: transparent;
+  --thumbBG: rgba(255, 255, 255, 0.3);
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+.detailtabcontent2::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+.detailtabcontent2::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+
+.route-detail-main .col-sm-5{
+  padding-right: 14px !important;
   padding-left: 0px !important;
 }
 
-.route-detail-main .col-sm-8{
+.route-detail-main .col-sm-7{
   padding-right: 0px !important;
+}
+
+.route-summary{
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.route-summary p{
+  color: white !important;
+}
+
+.summary-line{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-book{
+  height: 62px;
+  background-color: rgb(27, 27, 27);
+  position: absolute;
+    bottom: 13px;
+    width: 89%;
+}
+.btn-book .btn{
+  background-color: white !important;
+  border: none;
+  border-radius: 30px;
+  color: black;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.btn-book:hover{
+  opacity: 0.7;
+}
+
+.route-summary h6{
+  margin: 15px 0px;
+}
+
+.route-rule p{
+color: white !important;
+font-size: 14px;
+font-weight: 400;
+margin-top: 15px;
+}
+.route-rule small{
+  font-size: 12px;
+}
+.route-rule{
+  display: flex;
+  justify-content: space-between;
+}
+
+.rule-note{
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  margin: 10px 0px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.rule-note-detail{
+  margin-top: 10px;
+}
+
+.rule-note2{
+  margin-bottom: 30px;
+}
+
+.summary-btn-detail{
+  height: 613px;
+  background-color: rgb(27, 27, 27);
+}
+
+#flip{
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+#flip1{
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+#flip2{
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.flight-main-div header .navbar-brand h2{
+  background: -webkit-linear-gradient(right, rgba(235, 0, 141, 0.7) , rgba(153, 102, 255, 0.7));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.flight-main-div header .br-navmenu1 .nav-link{
+  color: black !important;
+}
+
+.flight-main-div header .menu1{
+  padding-left: 0 !important;
+}
+
+.flight-search-bg{
+  background-image: linear-gradient(to right, rgba(235, 0, 141, 0.7) , rgba(153, 102, 255, 0.7));
+  margin-top: 70px;
+}
+
+.fast-detail{
+  overflow: hidden;
+  background-color: #f1f1f1;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.fast-detail button{
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  width: 100%;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+}
+.fast-detail button:hover {
+  border-bottom: 2px solid blue;
+}
+.fast-detail button.active {
+  border-bottom: 2px solid blue;
+}
+.fast-tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+
+.map-btn{
+  background-image: url(../img/view-map.png);
+  background-repeat: no-repeat;
+  background-size: 200px 200px;
+  display: flex;
+  align-items: center;
+  height: 90px;
+    width: 196px;
+    margin-top: 20px;
+}
+.map-btn .btn{
+  position: absolute;
+  left: 32%;
 }
