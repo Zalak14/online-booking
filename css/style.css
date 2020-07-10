@@ -698,6 +698,7 @@ h1{
 footer{
   background-image: linear-gradient(to right, rgba(235, 0, 141, 0.7) , rgba(153, 102, 255, 0.7));
   padding: 100px 0px 20px 0px;
+  margin-top: 100px;
 }
 
 .tw-sign-up h1{
@@ -1428,4 +1429,117 @@ margin-top: 15px;
 .map-btn .btn{
   position: absolute;
   left: 32%;
+}
+
+.flight-detail-alert{
+  box-shadow: 0 1px 8px rgba(153, 102, 255, 0.7);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 20px 20px;
+  align-items: center;
+}
+
+.flight-detail-alert img{
+  height: 100px;
+  width: 100px;
+  margin-right: 20px;
+}
+
+.flight-detail-alert h6{
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.flight-detail-alert h6 span{
+  font-size: 18px;
+  font-weight: 500;
+  background: -webkit-linear-gradient(right, rgba(235, 0, 141) , rgba(153, 102, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.payment-detail{
+  margin-top: 50px;
+}
+
+.payment-detail .card{
+  box-shadow: 0 1px 8px rgba(0,0,0,.1);
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+.payment-detail .card-header{
+  background-image: linear-gradient(to right, rgba(235, 0, 141, 0.7) , rgba(153, 102, 255, 0.7));
+  border: none;
+}
+.payment-detail .card-header button{
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
+  
+}
+.payment-detail .card-body h4{
+  width: 100%;
+  background-color: #dfdfdf;
+  font-size: 18px;
+  color: #646464;
+  font-weight: 500;
+  padding: 20px 20px;
+}
+
+.payment-detail .card-body .radio{
+  font-size: 16px;
+  font-weight: 500;
+  color: #646464;
+  margin-right: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.payment-detail .card-body form .form-group{
+  font-size: 16px;
+  font-weight: 500;
+  color: #646464;
+} 
+
+.payment-detail .card-body .btn{
+  float: right;
+  margin: 20px 0px;
+  display: flex;
+  justify-content: end;
+  text-align: right;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 15px 22px;
+}
+
+.payment-addon img{
+  height: 150px;
+  width: auto;
+  
+}
+.payment-addon .btn-add{
+  margin: 0px !important;
+  height: 50px;
+  background-image: linear-gradient(to right, rgba(235, 0, 141, 0.7) , rgba(153, 102, 255, 0.7));
+  background-color: transparent;
+  border: none;
+}
+
+.payment-addon-main{
+  margin: 20px;
+  
+}
+.payment-addon .card-body{
+  padding: 0px 20px;
+}
+
+.payment-addon ul{
+  padding-left: 20px;
+    margin-bottom: 10px;
 }

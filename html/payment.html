@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tekwalker</title>
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../font/stylesheet.css">
+    <link rel="stylesheet" href="../css/aos.css" />
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+</head>
+<body>
+<div class="flight-main-div">
+  <header class="header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light br-nav">
+                    <a class="navbar-brand" href="#"><h2>Tekwalker</h2></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                     
+                    <div class="collapse navbar-collapse d-flex flex-column bd-highlight mb-3" id="navbarNav">
+                      <div class="menu1">
+                      <ul class="navbar-nav br-navmenu1" >
+                        <li class="nav-item"><a class="nav-link" href="#">+919978325789</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Check your booking</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><img src="../img/heart-black.svg" width="20px" height="20px"></a></li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            $ USD
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            EN
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#"><img src="../img/user-black.svg" width="20px" height="20px"></a></li>
+                        
+                    </ul></div>
+                   
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+  <section class="flight-search-bg">
+    <div class="container">
+      <div class="flight-search-box">
+        <div class="row">
+          <div class="search-box-detail">
+            <div class="search">
+              <button class="searchlinks" onclick="searchBox(event, 'one-way')">One-way</button>
+              <button class="searchlinks" onclick="searchBox(event, 'return')">Return</button>
+              <button class="searchlinks" onclick="searchBox(event, 'multicity')">Multicity</button>
+            </div>
+
+            <div id="one-way" class="searchcontent search-active">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-3">
+                    <label for="inputEmail4">From</label>
+                    <input type="text" class="form-control flight-icon" placeholder="City or Airpot"></div>
+                  <div class="form-group col-md-3">
+                    <label for="inputPassword4">To</label>
+                    <input type="text" class="form-control location-icon" placeholder="Country, City or island">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputEmail4">Leaving on</label>
+                    <input type="date" class="form-control" id="inputEmail4">
+                  </div>
+                  
+                  <div class="form-group col-md-2">
+                    <label for="inputEmail4"></label>
+                    <button class="btn btn-find" onclick="openFlight()">Modify</button>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <div class="dropdown mr-1">
+                        <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                        0 adult
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                        <a class="dropdown-item" href="#">Adult</a>
+                        <a class="dropdown-item" href="#">children</a>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="form-group col-md-3">
+                    <div class="dropdown mr-1">
+                        <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                        Any Class
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                        <a class="dropdown-item" href="#">Any Class</a>
+                        <a class="dropdown-item" href="#">Economy</a>
+                        <a class="dropdown-item" href="#">Premium Economy</a>
+                        <a class="dropdown-item" href="#">First Class</a>
+                        <a class="dropdown-item" href="#">Business</a>
+                        </div>
+                    </div>
+                 </div>
+                </div>
+              </form>
+            </div>
+            
+            <div id="return" class="searchcontent">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-3">
+                    <label for="inputEmail4">From</label>
+                    <input type="text" class="form-control flight-icon" placeholder="City or Airpot"></div>
+                  <div class="form-group col-md-3">
+                    <label for="inputPassword4">To</label>
+                    <input type="text" class="form-control location-icon" placeholder="Country, City or island">
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputEmail4">Leaving on</label>
+                    <input type="date" class="form-control" id="inputEmail4">
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputEmail4">Returning on</label>
+                    <input type="date" class="form-control" id="inputEmail4">
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputEmail4"></label>
+                    <button class="btn btn-find" onclick="openFlight()">Modify</button>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <div class="dropdown mr-1">
+                        <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                        0 adult
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                        <a class="dropdown-item" href="#">Adult</a>
+                        <a class="dropdown-item" href="#">children</a>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="form-group col-md-3">
+                    <div class="dropdown mr-1">
+                        <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                        Any Class
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                        <a class="dropdown-item" href="#">Any Class</a>
+                        <a class="dropdown-item" href="#">Economy</a>
+                        <a class="dropdown-item" href="#">Premium Economy</a>
+                        <a class="dropdown-item" href="#">First Class</a>
+                        <a class="dropdown-item" href="#">Business</a>
+                        </div>
+                    </div>
+                 </div>
+                </div>
+              </form>
+               
+            </div>
+            
+            <div id="multicity" class="searchcontent">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-3">
+                    <label for="inputEmail4">From</label>
+                    <input type="text" class="form-control flight-icon" placeholder="City or Airpot"></div>
+                  <div class="form-group col-md-3">
+                    <label for="inputPassword4">To</label>
+                    <input type="text" class="form-control location-icon" placeholder="Country, City or island">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputEmail4">Date</label>
+                    <input type="date" class="form-control" id="inputEmail4">
+                  </div>
+                  
+                  <div class="form-group col-md-2">
+                    <label for="inputEmail4"></label>
+                    <button class="btn btn-find" onclick="openFlight()">Modify</button>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="inputEmail4">From</label>
+                    <input type="text" class="form-control flight-icon" placeholder="City or Airpot"></div>
+                  <div class="form-group col-md-3">
+                    <label for="inputPassword4">To</label>
+                    <input type="text" class="form-control location-icon" placeholder="Country, City or island">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputEmail4">Date</label>
+                    <input type="date" class="form-control" id="inputEmail4">
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputEmail4"></label>
+                    <button class="btn btn-find">Add city</button>
+                  </div>
+
+                  <div class="form-group col-md-3">
+                    <div class="dropdown mr-1">
+                        <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                        0 adult
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                        <a class="dropdown-item" href="#">Adult</a>
+                        <a class="dropdown-item" href="#">children</a>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="form-group col-md-3">
+                    <div class="dropdown mr-1">
+                        <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                        Any Class
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                        <a class="dropdown-item" href="#">Any Class</a>
+                        <a class="dropdown-item" href="#">Economy</a>
+                        <a class="dropdown-item" href="#">Premium Economy</a>
+                        <a class="dropdown-item" href="#">First Class</a>
+                        <a class="dropdown-item" href="#">Business</a>
+                        </div>
+                    </div>
+                 </div>
+                </div>
+              </form>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="payment-main-div">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="payment-detail">
+              <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link" type="button"  aria-expanded="true" aria-controls="collapseOne">
+                        Add passenger Detail
+                      </button>
+                    </h2>
+                  </div>
+              
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <h4>Add passenger   1</h4>
+                      <form class="d-flex justify-content-start">
+                        <div class="radio">
+                          <label><input type="radio" name="optradio" style="margin-right: 10px;" checked>Mr.</label>
+                        </div>
+                        <div class="radio">
+                          <label><input type="radio" name="optradio" style="margin-right: 10px;">Ms.</label>
+                        </div>
+                        <div class="radio">
+                          <label><input type="radio" name="optradio" style="margin-right: 10px;">Mrs.</label>
+                        </div>
+                      </form>
+
+                      <form>
+                        <div class="form-group">
+                          <label for="usr">First Name:</label>
+                          <input type="text" class="form-control" id="usr" placeholder="Enter your first name and middle name if you">
+                        </div>
+                        <div class="form-group">
+                          <label for="pwd">Last Name:</label>
+                          <input type="text" class="form-control" id="usr" placeholder="Enter your last name">
+                        </div>
+        
+                      </form>
+
+                      <a href="../html/payment.html" class="btn btn-tw" role="button">Continue to Add-ons</a>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button"  aria-expanded="false" aria-controls="collapseTwo">
+                        6E add-ons
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <div class="payment-addon-main">
+                        
+                        <div class="payment-addon">
+                          <div class="d-flex justify-content-around" >
+                              <img src="../img/add5.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">Fast Forward</h5>
+                                <p class="card-text">Check-in first and get your bag(s) before anyone else. In case of a connecting flight, this service will be applied on the entire journey.</p>
+                              </div>
+                              <a href="#" class="btn btn-primary btn-add" role="button">Add To Trip</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="payment-addon-main">
+                        
+                        <div class="payment-addon">
+                          <div class="d-flex justify-content-around" >
+                              <img src="../img/add6.png" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">6E Flex</h5>
+                                <p class="card-text">Make unlimited changes to your booking or cancel without incurring a fee.</p>
+                              </div> 
+                              <a href="#" class="btn btn-primary btn-add" role="button">Add for &#x20B9; 1200</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="payment-addon-main">
+                        
+                        <div class="payment-addon">
+                          <div class="d-flex justify-content-around" >
+                              <img src="../img/add1.png" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">Excess Baggage</h5>
+                                <p class="card-text">Pre-book your excess baggage for a hassle-free travel and save more.</p>
+                              </div> 
+                              <a href="#" class="btn btn-primary btn-add" role="button">Add To Trip</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="payment-addon-main">
+                        
+                        <div class="payment-addon">
+                          <div class="d-flex justify-content-around" >
+                              <img src="../img/add3.png" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">IndiGo Promise</h5>
+                                <p class="card-text">Protect yourself against flight delay & baggage loss. <a href="#">More Details</a></p>
+                              </div> 
+                              <a href="#" class="btn btn-primary btn-add" role="button">Add for &#x20B9; 49</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="payment-addon-main">
+                        
+                        <div class="payment-addon">
+                          <div class="d-flex justify-content-around" >
+                              <img src="../img/add2.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">Travel Assistance</h5>
+                                <p class="card-text">
+                                  <ul>
+                                    <li>Domestic Roadside Assistance</li>
+                                    <li>Domestic Medical Assistance</li>
+                                    <li>Complimentary Travel Insurance including hospitalization also for <span>COVID-19</span></li>
+                                  </ul>
+                                  <a href="#">Read More</a>
+                                </p>
+                              </div> 
+                              <a href="#" class="btn btn-primary btn-add" role="button">Add To Trip</a>
+                          </div>
+                        </div>
+                       
+                      </div>
+
+                      <div class="payment-addon-main">
+                        
+                        <div class="payment-addon">
+                          <div class="d-flex justify-content-around" >
+                              <img src="../img/add3.png" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">Hotel Booking </h5>
+                                <p class="card-text">
+                                  The Hotel Booking facility is also available Here.
+                                  <a href="#">Read More</a>
+                                </p>
+                              </div> 
+                              <a href="#" class="btn btn-primary btn-add" role="button">Add To Hotel</a>
+                          </div>
+                        </div>
+                       
+                      </div>
+
+                      <div class="payment-addon-main">
+                        
+                        <div class="payment-addon">
+                          <div class="d-flex justify-content-around" >
+                              <img src="../img/add4.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">Car Booking</h5>
+                                <p class="card-text">
+                                  The Car Booking facility is also available Here.
+                                  <a href="#">Read More</a>
+                                </p>
+                              </div> 
+                              <a href="#" class="btn btn-primary btn-add" role="button">Add To Car</a>
+                          </div>
+                        </div>
+                       
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button"   aria-expanded="false" aria-controls="collapseThree">
+                        seat select
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingFour" data-toggle="collapse" data-target="#collapseFour">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button"  aria-expanded="false" aria-controls="collapseFour">
+                        payment
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-3">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <footer>
+    <div class="container">
+      <div class="">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="tw-sign-up">
+              <h1>Help us be your travel companion</h1>
+              <p>Be the first to receive exclusive offers and the latest news on our products & services directly in your inbox.</p>
+              <div class="sign-up-form">
+                <form>
+                  <div class="form-row d-flex justify-content-center">
+                    <div class="col-9">
+                      <input type="text" class="form-control" placeholder="Email address">
+                    </div>
+                    <div class="col-auto">
+                      <button type="submit" class="btn btn-primary mb-2">Sign up</button>
+                    </div>
+                  </div>
+                </form>
+                <p>Email addresses submitted to IndiGo are subject to our <a href="#" class="sign-up-pp">Privacy Notice....</a></p>
+              </div>
+              <div class="social-icon d-flex justify-content-center">
+                <ul class="">
+                  <li class="icon"><a href="#"><img src="../img/fb.svg"/></a></li>
+                  <li class="icon"><a href="#"><img src="../img/insta.svg"/></a></li>
+                  <li class="icon"><a href="#"><img src="../img/in.svg"/></a></li>
+                  <li class="icon"><a href="#"><img src="../img/tw.svg"/></a></li>
+                </ul>
+              </div>
+              <p class="copyright">&copy; Copyright 2020 Tekwalker. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+   
+
+</div>
+
+
+</body>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/aos.js"></script>
+<script>
+    AOS.init({
+        easing: 'ease-in-out-sine',
+        once: true
+    });
+</script>
+<script src="js/swiper.min.js"></script>
+<script>
+  var slider = document.getElementById("myRange");
+  var output = document.getElementById("demo");
+  output.innerHTML = slider.value;
+  
+  slider.oninput = function() {
+    output.innerHTML = this.value;
+  }
+  </script>
+
+<script>
+  function searchBox(evt, cityName) {
+    var i, searchcontent, searchlinks;
+    searchcontent = document.getElementsByClassName("searchcontent");
+    for (i = 0; i < searchcontent.length; i++) {
+      searchcontent[i].style.display = "none";
+      searchcontent[i].className = searchcontent[i].className.replace("search-active", "");
+    }
+    searchlinks = document.getElementsByClassName("searchlinks");
+    for (i = 0; i < searchlinks.length; i++) {
+      searchlinks[i].className = searchlinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+  $(document).ready(function(){
+    $("#flip").click(function(){
+      $("#panel").slideToggle("slow");
+    });
+  });
+  </script>
+  <script> 
+    $(document).ready(function(){
+      $("#flip1").click(function(){
+        $("#panel1").slideToggle("slow");
+      });
+    });
+    </script>
+    <script> 
+      $(document).ready(function(){
+        $("#flip2").click(function(){
+          $("#panel2").slideToggle("slow");
+        });
+      });
+      </script>
+
+<script>
+  function openDetail(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("detailtabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+      tabcontent[i].className = tabcontent[i].className.replace("search-active", "");
+    }
+    tablinks = document.getElementsByClassName("detailtablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+
+  function openDetail1(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("detailtabcontent1");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+      tabcontent[i].className = tabcontent[i].className.replace("search-active", "");
+    }
+    tablinks = document.getElementsByClassName("detailtablinks1");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+
+  function openDetail2(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("detailtabcontent2");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+      tabcontent[i].className = tabcontent[i].className.replace("search-active", "");
+    }
+    tablinks = document.getElementsByClassName("detailtablinks2");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  </script>
+
+<script>
+  function openFast(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("fast-tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+      tabcontent[i].className = tabcontent[i].className.replace("search-active", "");
+    }
+    tablinks = document.getElementsByClassName("fast-tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  </script>
+
+
+</html>
