@@ -1543,3 +1543,109 @@ margin-top: 15px;
   padding-left: 20px;
     margin-bottom: 10px;
 }
+.seat-select{
+  display: flex;
+  justify-content: start;
+  overflow-x: scroll;
+  align-items: center;
+  margin-left: 40px;
+  padding-left: 10px;
+}
+.seat-select ul li button{
+border: none;
+background-color: transparent;
+font-weight: 400;
+font-size: 18px;
+height: 40px;
+width: 40px;
+text-align: center;
+display: flex;
+align-items: center;
+}
+.seat-select ul li button img{
+  height: 30PX;
+  width: 30PX;
+}
+.seat-select ul{
+  list-style: none;
+  text-align: center;
+  align-items: center;
+}
+.seat-select ul li{
+  margin-bottom: 10px;
+}
+html{
+  --scrollbarseatBG: transparent;
+  --thumbseatBG: #cfcfcf;
+}
+.seat-select::-webkit-scrollbar {
+  width: 6px !important;
+}
+.seat-select {
+  scrollbar-width: thin !important;
+  scrollbar-color: var(--thumbseatBG) var(--scrollbarseatBG);
+  padding-top: 32px;
+}
+.seat-select::-webkit-scrollbar-track {
+  background: var(--scrollbarseatBG);
+}
+.seat-select::-webkit-scrollbar-thumb {
+  background-color: var(--thumbseatBG) ;
+  border-radius: 6px;
+  
+}
+.seat-select-color{
+  margin: 20px 0px;
+  
+}
+.seat-select-num{
+  position: absolute;
+  left: 0%;
+  z-index: 11111111111111111111111111;
+  background-color: white;
+  padding: 0px 0px 0px 22px;
+}
+.seat-select-color ul{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  list-style: none;
+ border-bottom: 1px solid #b3b1b1;
+ padding: 20px 10px;
+ 
+}
+.seat-select-color ul li img{
+  height: 30px;
+  width: 30px;
+}
+.seat-select-color ul li{
+  margin-right: 20px;
+  align-items: center;
+}
+
+.seat-select ul li button {
+  position: relative;
+  display: inline-block;
+}
+.seat-select ul li button .tooltiptext {
+  visibility: hidden;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 5px;
+  font-size: 14px;
+  font-weight: 400;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 11111111111111;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -30px;
+}
+
+.seat-select ul li button:hover .tooltiptext {
+  visibility: visible;
+}
