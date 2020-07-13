@@ -1649,3 +1649,62 @@ html{
 .seat-select ul li button:hover .tooltiptext {
   visibility: visible;
 }
+.payment-option .nav{
+  
+}
+.payment-option .nav a{
+  color: #646464 !important;
+  background-color: rgb(240, 240, 240) !important;
+  border-bottom: 1px solid white;
+  margin-bottom: 10px;
+  border-radius: 0px !important;
+  padding: 10px 10px;
+}
+.payment-option .nav .active{
+  background-image: linear-gradient(to right, rgba(235, 0, 141, 0.7) , rgba(153, 102, 255, 0.7));
+  color: white !important;
+  background-color: transparent !important;
+}
+.payment-option .option-detail{
+  margin-top: 50px;
+}
+.btn-pay{
+  background-image: linear-gradient(to right, rgba(235, 0, 141, 0.7) , rgba(153, 102, 255, 0.7));
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 0px 22px !important;
+  height: 40px !important;
+  align-items: center;
+  
+}
+.option-detail .btn1{
+  font-size: 25px !important;
+  font-weight: 500 !important;
+  color: #646464 !important;
+  margin-right: 50px !important;
+}
+.payment-option .pay-note{
+  font-size: 14px !important;
+  margin-left: 18px;
+  color: #646464;
+  font-weight: 400;
+}
+
+.payment-option-upi img{
+  height: 30px;
+  width: auto;
+  margin: 15px 0px;
+}
+.payment-option-upi p{
+  margin-bottom: 10px;
+}
+.payment-option-upi form{
+ text-align: center;
+  align-items: center;
+  display: flex;
+  
+}
+.payment-option-upi form button{
+  float: left !important;
+}
