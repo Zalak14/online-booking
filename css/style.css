@@ -832,9 +832,7 @@ margin-bottom: 10px;
   margin-left: 20px;
 }
 
-.price-btn .slider{
-  
-}
+
 
 .flight-side-menu{
   margin-top: 20px;
@@ -1015,6 +1013,11 @@ margin-bottom: 10px;
   color: #646464;
   font-weight: 500;
   margin-right: 10px;
+}
+
+.btn-continue{
+  width: 100% !important;
+  margin-bottom: 150px;
 }
 
 .btn-tw{
@@ -1550,6 +1553,10 @@ margin-top: 15px;
   align-items: center;
   margin-left: 40px;
   padding-left: 10px;
+  background-image: url(../img/flight11.svg);
+  background-position: center;
+  background-size: 600px auto;
+  background-repeat: no-repeat;
 }
 .seat-select ul li button{
 border: none;
@@ -1649,9 +1656,7 @@ html{
 .seat-select ul li button:hover .tooltiptext {
   visibility: visible;
 }
-.payment-option .nav{
-  
-}
+
 .payment-option .nav a{
   color: #646464 !important;
   background-color: rgb(240, 240, 240) !important;
@@ -1678,7 +1683,7 @@ html{
   align-items: center;
   
 }
-.option-detail .btn1{
+ .btn1{
   font-size: 25px !important;
   font-weight: 500 !important;
   color: #646464 !important;
@@ -1707,4 +1712,130 @@ html{
 }
 .payment-option-upi form button{
   float: left !important;
+}
+.payment-option-net img{
+  height: 40px;
+  width: auto;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.payment-option-net .option-net{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.payment-option-net .option-net label{
+  margin-right: 50px;
+}
+.payment-option-net a{
+  color: #646464 !important;
+  background-color: transparent !important;
+  border-bottom: 1px solid white;
+  margin-bottom: 10px;
+  border-radius: 0px !important;
+  padding: 10px 10px;
+  font-size: 20px !important;
+}
+
+
+.option-net [type="radio"]:checked,
+.option-net [type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+.option-net[type="radio"]:checked + label,
+.option-net[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+.option-net [type="radio"]:checked + label:before,
+.option-net [type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 12px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+.option-net [type="radio"]:checked + label:after,
+.option-net [type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #F87DA9;
+    position: absolute;
+    top: 15px;
+    left: 3px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.option-net [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.option-net [type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.payment-option-phonepe h5{
+  margin-bottom: 20px;
+}
+.payment-option-phonepe .p-space{
+  margin-bottom: 40px;
+}
+.payment-option-amazon h5{
+  margin-bottom: 20px;
+}
+.payment-option-amazon ul{
+  margin: 20px 20px;
+  color: #646464;
+}
+.p-payfont{
+  font-size: 16px !important;
+  color: #646464 !important;
+  margin-left: 14px;
+  margin-top: 30px;
+}
+
+#collapseThree .btn-continue{
+  margin-bottom: 20px !important;
+}
+.payment-fare{
+  box-shadow: 0 1px 8px rgba(0,0,0,.1);
+  margin-top: 50px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.payment-fare h5{
+  margin-bottom: 30px;
+}
+.payment-fare p{
+  margin-bottom: 10px;
+}
+.payment-fare .total-font p{
+  font-size: 20px !important;
+  color: black !important;
+  font-weight: 600 !important;
+  margin: 15px 0px;
+}
+.payment-promo-code{
+  margin-top: 60px;
+  box-shadow: 0 1px 8px rgba(0,0,0,.1);
+  border-radius: 10px;
+  padding: 10px;
+}
+.payment-promo-code .input-group{
+  margin-top: 20px;
 }

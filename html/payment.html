@@ -302,6 +302,9 @@
                   </div>
                   <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                     <div class="card-body">
+                      <div class="btn-continue">
+                        <a href="../html/payment.html" class="btn btn-tw" role="button">Continue to Seat Select</a>
+                      </div>
                       <div class="payment-addon-main">
                         
                         <div class="payment-addon">
@@ -414,6 +417,9 @@
                           </div>
                         </div>
                        
+                      </div>
+                      <div class="btn-continue">
+                        <a href="../html/payment.html" class="btn btn-tw" role="button">Continue to Seat Select</a>
                       </div>
                       
                     </div>
@@ -729,7 +735,11 @@
                           <li><button><img src="../img/seat-5.svg"><span class="tooltiptext">&#x20B9; 150</span></button></li>
                         </ul>
                       </div>
+                      <div class="btn-continue">
+                        <a href="../html/payment.html" class="btn btn-tw" role="button">Continue to Payment</a>
+                      </div>
                     </div>
+                   
                   </div>
                 </div>
                 <div class="card">
@@ -751,8 +761,8 @@
                               <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">UPI</a>
                               <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Net Banking</a>
                               <a class="nav-link" id="v-pills-profile1-tab" data-toggle="pill" href="#v-pills-profile1" role="tab" aria-controls="v-pills-profile1" aria-selected="false">PhonePe</a>
-                              <a class="nav-link" id="v-pills-messages1-tab" data-toggle="pill" href="#v-pills-messages1" role="tab" aria-controls="v-pills-messages1" aria-selected="false">Google Pay</a>
-                              <a class="nav-link" id="v-pills-settings1-tab" data-toggle="pill" href="#v-pills-settings1" role="tab" aria-controls="v-pills-settings1" aria-selected="false">AmazonPay</a>
+                              <a class="nav-link" id="v-pills-messages1-tab" data-toggle="pill" href="#v-pills-messages1" role="tab" aria-controls="v-pills-messages1" aria-selected="false">AmazonPay</a>
+                              <a class="nav-link" id="v-pills-settings1-tab" data-toggle="pill" href="#v-pills-settings1" role="tab" aria-controls="v-pills-settings1" aria-selected="false">Google Pay</a>
                             </div>
                           </div>
                           <div class="col-9">
@@ -834,7 +844,7 @@
                                   <p>Please enter existing Virual Payment Address(VPA)<a href="#"> How it works?</a></p>
                                   <form>
                                     <div class="form-group col-">
-                                      <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                                     </div>
                                     <div class="form-group col-6">
                                       <button class="btn btn-pay">Verify Now</button>
@@ -844,10 +854,96 @@
                                 </div>
 
                               </div>
-                              <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">juli</div>
-                              <div class="tab-pane fade" id="v-pills-profile1" role="tabpanel" aria-labelledby="v-pills-profile-tab1">Ankit</div>
-                              <div class="tab-pane fade" id="v-pills-messages1" role="tabpanel" aria-labelledby="v-pills-messages-tab1">pankaj</div>
-                              <div class="tab-pane fade" id="v-pills-settings1" role="tabpanel" aria-labelledby="v-pills-settings-tab1">juli</div>
+                              <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                <div class="payment-option-net">
+                                  <form action="/action_page.php">
+                                    <div class="option-net">
+                                      <p class="form-group col-6">
+                                        <input type="radio" id="test1" name="radio-group" checked>
+                                        <label for="test2"><img src="../img/hdfc.png"></label>
+                                      </p>
+                                      <p class="form-group col-6">
+                                        <input type="radio" id="test2" name="radio-group">
+                                        <label for="test2"><img src="../img/icic.png"></label>
+                                      </p>
+                                    </div>
+                                    <div class="option-net">
+                                      <p class="form-group col-6">
+                                        <input type="radio" id="test3" name="radio-group">
+                                        <label for="test3"><img src="../img/axis.png"></label>
+                                      </p>
+                                      <p class="form-group col-6">
+                                        <input type="radio" id="test4" name="radio-group">
+                                        <label for="test4"><img src="../img/kotak.png"></label>
+                                      </p>
+                                    </div>
+                                    <div class="form-group col-6">
+                                      <label for="cars">Other Banks</label>
+                                      <select class="form-control" id="exampleFormControlSelect1">
+                                        <option>Select Your Bank</option>
+                                        <option>ICIC</option>
+                                        <option>HDFC</option>
+                                        <option>Kotak</option>
+                                        <option>Axis</option>
+                                        <option>SBI</option>
+                                      </select>
+                                    </div>
+                                    <div class="d-flex justify-content-start">
+                                      <a class="btn btn1" role="button">&#x20B9; 4543</a>
+                                      <button class="btn btn-pay">Pay Now</button>
+                                    </div>
+                                    <p class="pay-note">By clicking on Pay Now, you are agreeing to our Terms & Conditions , Privacy policy, User Agreement and Covid-19 Guidelines.</p>
+                                    
+                                  </form>
+                                </div>
+                              </div>
+                              <div class="tab-pane fade" id="v-pills-profile1" role="tabpanel" aria-labelledby="v-pills-profile-tab1">
+                                <div class="payment-option-phonepe">
+                                  <h5>Pay with PhonePe</h5>
+                                  <p class="p-space">Dear Customer,</p>
+                                  <p>Please click 'Pay now' to continue.</p>
+                                  <div class="d-flex justify-content-start">
+                                    <a class="btn btn1" role="button">&#x20B9; 4543</a>
+                                    <button class="btn btn-pay">Pay Now</button>
+                                  </div>
+                                  <p class="pay-note">By clicking on Pay Now, you are agreeing to our Terms & Conditions , Privacy policy, User Agreement and Covid-19 Guidelines.</p>
+                                </div>
+                              </div>
+                              <div class="tab-pane fade" id="v-pills-messages1" role="tabpanel" aria-labelledby="v-pills-messages-tab1">
+                                <div class="payment-option-amazon">
+                                  <h5>Pay With Amazon Pay</h5>
+                                  <div class="">
+                                    <ul>
+                                      <li>Enter your mobile number and click on pay now.</li>
+                                      <li>You will receive payment request from Yatra in your Google Pay app.</li>
+                                      <li>Enter mpin in your Google Pay app to authorize payment.</li>
+                                    </ul>
+                                    
+                                    <p class="p-payfont">Enter mobile number linked with Google Pay
+                                    </p>
+                                    <div class="form-group col-6">
+                                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="d-flex justify-content-start">
+                                      <a class="btn btn1" role="button">&#x20B9; 4543</a>
+                                      <button class="btn btn-pay">Pay Now</button>
+                                    </div>
+                                    <p class="pay-note">By clicking on Pay Now, you are agreeing to our Terms & Conditions , Privacy policy, User Agreement and Covid-19 Guidelines.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="tab-pane fade" id="v-pills-settings1" role="tabpanel" aria-labelledby="v-pills-settings-tab1">
+                                <div class="payment-option-phonepe">
+                                  <h5>Pay with Google Pay</h5>
+                                  <p class="p-space">Dear Customer,</p>
+                                  <p>Please click 'Pay now' to continue.</p>
+                                  <div class="d-flex justify-content-start">
+                                    <a class="btn btn1" role="button">&#x20B9; 4543</a>
+                                    <button class="btn btn-pay">Pay Now</button>
+                                  </div>
+                                  <p class="pay-note">By clicking on Pay Now, you are agreeing to our Terms & Conditions , Privacy policy, User Agreement and Covid-19 Guidelines.</p>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -862,6 +958,70 @@
 
 
           <div class="col-md-3">
+            <div class="">
+              <div class="payment-fare">
+                <h5>Fare detail</h5>
+              <div >
+                <div class="d-flex justify-content-between">
+                  <p>Fare Base (1 Traveller)</p>
+                  <p>&#x20B9; 3400</p>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <p>Fee & Surcharges</p>
+                  <p>&#x20B9; 890</p>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <p>GST</p>
+                  <p>&#x20B9; 171</p>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <p>Airline Fuel Surcharges</p>
+                  <p>&#x20B9; 300</p>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <p>User Devlopment Fees</p>
+                  <p>&#x20B9; 420</p>
+                </div>
+                <div class="total-font d-flex justify-content-between">
+                  <p>Total Fare</p>
+                  <p>&#x20B9; 4420</p>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <p>Add Ons</p>
+                  <p>&#x20B9; 10</p>
+                </div>
+                <div class="total-font d-flex justify-content-between">
+                  <p>Total Pay:</p>
+                  <p>&#x20B9; 4271</p>
+                </div>
+
+
+              </div>
+              </div>
+              <div class="payment-promo-code">
+                <div class="">
+                  <h5>Promo Code</h5>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <button class="btn btn-outline-secondary" type="button">Apply</button>
+                    </div>
+                    <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="">
+                      <input type="radio" id="male" name="gender" value="male">
+                      <label for="male">ICICI2020</label><br>
+                      <small>Get Flat 12% OFF on using ICICI Bank Credit Card.</small>
+                      <small> <a href="#">Terms & Conditions Apply</a></small><br>
+                      <input type="radio" id="female" name="gender" value="female">
+                      <label for="female">FLYMONSOON</label><br>
+                      <small>Get Flat 12% OFF on using ICICI Bank Credit Card.</small>
+                      <small> <a href="#">Terms & Conditions Apply</a></small><br>
+                    
+                    <a href="#">View All</a>
+                  </div>
+                </div>
+              </div>
+            </div>
             
           </div>
         </div>
