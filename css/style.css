@@ -1819,7 +1819,10 @@ html{
   padding: 10px;
 }
 .payment-fare h5{
-  margin-bottom: 30px;
+ 
+  padding: 10px 10px 10px;
+    background-color: lightgray;
+    margin: 0px 0px 10px 0px;
 }
 .payment-fare p{
   margin-bottom: 10px;
@@ -1828,7 +1831,12 @@ html{
   font-size: 20px !important;
   color: black !important;
   font-weight: 600 !important;
-  margin: 15px 0px;
+  margin: 10px 0px;
+}
+.payment-fare .total-font{
+  padding: 0px 10px;
+    background-color: lightgray;
+    margin: 10px 0px;
 }
 .payment-promo-code{
   margin-top: 60px;
@@ -1838,4 +1846,71 @@ html{
 }
 .payment-promo-code .input-group{
   margin-top: 20px;
+}
+
+#map {
+  height: 200px;  /* The height is 400 pixels */
+  width: 100%;  /* The width is the width of the web page */
+  margin-top: 20px;
+ }
+
+ .hotel-detail{
+   margin-top: 20px;
+   display: flex;
+   justify-content: start;
+   box-shadow: 0 1px 8px rgba(0,0,0,.1);
+  border-radius: 10px;
+  padding: 20px;
+ }
+ .hotel-detail:hover{
+    box-shadow: rgb(255, 0, 0) !important;
+ }
+ .hotel-detail .checked {
+  color: orange;
+}
+.hotel-detail .fa {
+  font-size: 18px;
+}
+.hotel-detail .heading {
+  font-size: 18px;
+  font-weight: 500;
+  color: #646464;
+}
+.hotel-detail img{
+  height: 250px;
+  width: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.hotel-detail .hotel-detail-sub h3{
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+}
+.hotel-detail .hotel-detail-sub{
+  margin-left: 20px;
+}
+.hotel-detail .hotel-detail-sub small{
+  color: #646464;
+  font-weight: 400;
+  cursor: pointer;
+}
+.hotel-detail .hotel-detail-sub p{
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  
+}
+.hotel-detail .hotel-detail-sub h6{
+  margin: 10px 0px 0px 0px;
+}
+
+.mt-10{
+  margin-top: 10px;
+}
+.mt-20{
+  margin-top: 20px;
+}
+.mb-10{
+  margin-bottom: 10px;
 }
