@@ -169,7 +169,7 @@
                   <div class="card-header" id="headingTwo">
                     <h2 class="mb-0">
                       <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Stops
+                        Stars
                       </button>
                     </h2>
                   </div>
@@ -177,23 +177,32 @@
                     <div class="card-body">
                       <div class="stop-detail">
                         <form>
-                          <h4>Outbound</h4>
-                          <input type="checkbox" id="vehicle1" name="vehicle1" value="direct">
-                          <label for="vehicle1"> Direct</label><br>
-                          <input type="checkbox" id="vehicle2" name="vehicle2" value="stop">
-                          <label for="vehicle2"> 1 Stop</label><br>
-                          <input type="checkbox" id="vehicle3" name="vehicle3" value="more">
-                          <label for="vehicle3"> 2 Stops & More</label>
+                          <h4>Stars</h4>
+                          <input type="checkbox">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span><br>
+                            <input type="checkbox">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span><br>
+                          <input type="checkbox">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span><br>
+                          
+                          <input type="checkbox">
+                          <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span><br>
+                          <input type="checkbox">
+                          <span class="fa fa-star checked"></span><br>
+                          <input type="checkbox">
+                          <label>Other</label>
                         </form>
-                        <form>
-                          <h4>Return</h4>
-                          <input type="checkbox" id="vehicle1" name="vehicle1" value="direct1">
-                          <label for="vehicle1"> Direct</label><br>
-                          <input type="checkbox" id="vehicle2" name="vehicle2" value="stop1">
-                          <label for="vehicle2"> 1 Stop</label><br>
-                          <input type="checkbox" id="vehicle3" name="vehicle3" value="more1">
-                          <label for="vehicle3"> 2 Stops & More</label>
-                        </form>
+                        
                       </div>
                     </div>
                   </div>
@@ -202,13 +211,22 @@
                   <div class="card-header" id="headingThree">
                     <h2 class="mb-0">
                       <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Departure time
+                        Select Hotel
                       </button>
                     </h2>
                   </div>
                   <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                     <div class="card-body">
-                      section 3
+                      <div class="stop-detail">
+                        <form>
+                          <h4>Select Hotel</h4>
+                          <input type="checkbox">
+                          <label>Room only</label> <br>
+                          <input type="checkbox">
+                          <label>Bed and breakfast</label>  
+                        </form>
+                        
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -216,7 +234,7 @@
                   <div class="card-header" id="headingFour">
                     <h2 class="mb-0">
                       <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        Airports
+                        Facility
                       </button>
                     </h2>
                   </div>
@@ -224,36 +242,63 @@
                     <div class="card-body">
                       <div class="stop-detail">
                         <form>
-                          <h4>Outbound <small>(BLR - AMD)</small></h4>
-                          <label>Departure airport</label><br>
-                          <input type="checkbox" id="vehicle1" name="vehicle1" value="direct">
-                          <label for="vehicle1"> Bangalore</label><br>
-                          <label>Arrival airport</label><br>
-                          <input type="checkbox" id="vehicle3" name="vehicle3" value="more">
-                          <label for="vehicle3"> Ahmedabad S.</label>
+                          <h4>Facility</h4>
+                          <input type="checkbox">
+                          <label>Free WiFi</label><br>
+                          <input type="checkbox">
+                          <label>Parking</label><br>
+                          <input type="checkbox">
+                          <label>Covid-19 measures</label><br>
+                          <input type="checkbox">
+                          <label>Adults only</label><br>
+                          <input type="checkbox">
+                          <label>Spa/Wellness </label><br>
+                          <input type="checkbox">
+                          <label>Swimming pool </label>
                         </form>
-                        <form>
-                          <h4>Return <small>(AMD - BLR)</small></h4>
-                          <label>Departure airport</label><br>
-                          <input type="checkbox" id="vehicle1" name="vehicle1" value="direct">
-                          <label for="vehicle3"> Ahmedabad S.</label><br>
-                          <label>Arrival airport</label><br>
-                          <input type="checkbox" id="vehicle3" name="vehicle3" value="more">
-                          <label for="vehicle1"> Bangalore</label>
-                        </form>
+              
                       </div>
                     </div>
                   </div>
                 </div>
+
+
                 <div class="card">
                   <div class="card-header" id="headingFive">
                     <h2 class="mb-0">
                       <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                        Payment method
+                        Guest rating
                       </button>
                     </h2>
                   </div>
                   <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <div class="stop-detail">
+                        <form>
+                          <h4>Rating</h4>
+                          <input type="checkbox">
+                          <label>&#128512 Excellent</label><br>
+                          <input type="checkbox">
+                          <label>&#128522 Very Good</label><br>
+                          <input type="checkbox">
+                          <label>&#128578 Good</label>
+                        </form>
+              
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="card">
+                  <div class="card-header" id="headingSix">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        Payment method
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
                     <div class="card-body">
                       <div class="form-group">
                         <div class="dropdown mr-1">
@@ -306,580 +351,1363 @@
                 <button class="fast-tablinks" onclick="openFast(event, 'Fastest')">Cheap Price</button>
               </div>
               <div id="Offer" class="fast-tabcontent search-active">
-                <div class="hotel-detail">
-                  <div class="hotel-detail-img">
-                    <img src="../img/11.jpg">
+                <div class="hotel-detail-main">
+                  <div class="hotel-detail">
+                    <div class="hotel-detail-img">
+                      <img src="../img/11.jpg">
+                    </div>
+                    <div class="hotel-detail-sub">
+                      <h3>Courtyard By Marriott Ahmedabad</h3>
+                      <span class="heading">User Rating</span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <small>(109 Reviews)</small>
+                      <p class="mt-10"><i class='fas fa-map-marker-alt'></i>  Ahmedabad</p>
+                      <p class="mt-10">Deluxe Double Room</p>
+                      <p class="mb-10">1 extra-large double bed</p>
+                      <small>1 Night 2 Adults</small>
+                      <h6 class="heading">&#x20B9; 5600</h6>
+                      <small>+&#x20B9; 1,062 taxes and charges</small><br>
+                      
+                    </div>
                   </div>
-                  <div class="hotel-detail-sub">
-                    <h3>Courtyard By Marriott Ahmedabad</h3>
-                    <span class="heading">User Rating</span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <small>(109 Reviews)</small>
-                    <p class="mt-10">Deluxe Double Room</p>
-                    <p class="mb-10">1 extra-large double bed</p>
-                    <small>1 Night 2 Adults</small>
-                    <h6 class="heading">&#x20B9; 5600</h6>
-                    <small>+&#x20B9; 1,062 taxes and charges</small><br>
-                    <button class="btn btn-find mt-20" style="width: 120px;">Book Now</button>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Room Only</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="../html/hotel-detail.html" role="button" class="btn btn-find">Book Now</a>
+                    </div>
+                    
                   </div>
-                </div>
-
-                <div class="hotel-detail">
-                  <div class="hotel-detail-img">
-                    <img src="../img/11.jpg">
-                  </div>
-                  <div class="hotel-detail-sub">
-                    <h3>Courtyard By Marriott Ahmedabad</h3>
-                    <span class="heading">User Rating</span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <small>(109 Reviews)</small>
-                    <p class="mt-10">Deluxe Double Room</p>
-                    <p class="mb-10">1 extra-large double bed</p>
-                    <small>1 Night 2 Adults</small>
-                    <h6 class="heading">&#x20B9; 5600</h6>
-                    <small>+&#x20B9; 1,062 taxes and charges</small><br>
-                    <button class="btn btn-find mt-20" style="width: 120px;">Book Now</button>
-                  </div>
-                </div>
-
-                <div class="hotel-detail">
-                  <div class="hotel-detail-img">
-                    <img src="../img/11.jpg">
-                  </div>
-                  <div class="hotel-detail-sub">
-                    <h3>Courtyard By Marriott Ahmedabad</h3>
-                    <span class="heading">User Rating</span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <small>(109 Reviews)</small>
-                    <p class="mt-10">Deluxe Double Room</p>
-                    <p class="mb-10">1 extra-large double bed</p>
-                    <small>1 Night 2 Adults</small>
-                    <h6 class="heading">&#x20B9; 5600</h6>
-                    <small>+&#x20B9; 1,062 taxes and charges</small><br>
-                    <button class="btn btn-find mt-20" style="width: 120px;">Book Now</button>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Bed and breakfast</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="../html/hotel-detail.html" role="button" class="btn btn-find">Book Now</a>
+                    </div>
                   </div>
                 </div>
 
-                <div class="hotel-detail">
-                  <div class="hotel-detail-img">
-                    <img src="../img/11.jpg">
+                <div class="hotel-detail-main">
+                  <div class="hotel-detail">
+                    <div class="hotel-detail-img">
+                      <img src="../img/11.jpg">
+                    </div>
+                    <div class="hotel-detail-sub">
+                      <h3>Courtyard By Marriott Ahmedabad</h3>
+                      <span class="heading">User Rating</span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <small>(109 Reviews)</small>
+                      <p class="mt-10"><i class='fas fa-map-marker-alt'></i>  Ahmedabad</p>
+                      <p class="mt-10">Deluxe Double Room</p>
+                      <p class="mb-10">1 extra-large double bed</p>
+                      <small>1 Night 2 Adults</small>
+                      <h6 class="heading">&#x20B9; 5600</h6>
+                      <small>+&#x20B9; 1,062 taxes and charges</small><br>
+                      
+                    </div>
                   </div>
-                  <div class="hotel-detail-sub">
-                    <h3>Courtyard By Marriott Ahmedabad</h3>
-                    <span class="heading">User Rating</span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <small>(109 Reviews)</small>
-                    <p class="mt-10">Deluxe Double Room</p>
-                    <p class="mb-10">1 extra-large double bed</p>
-                    <small>1 Night 2 Adults</small>
-                    <h6 class="heading">&#x20B9; 5600</h6>
-                    <small>+&#x20B9; 1,062 taxes and charges</small><br>
-                    <button class="btn btn-find mt-20" style="width: 120px;">Book Now</button>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Room Only</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
+                    
                   </div>
-                </div>
-
-                <div class="hotel-detail">
-                  <div class="hotel-detail-img">
-                    <img src="../img/11.jpg">
-                  </div>
-                  <div class="hotel-detail-sub">
-                    <h3>Courtyard By Marriott Ahmedabad</h3>
-                    <span class="heading">User Rating</span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <small>(109 Reviews)</small>
-                    <p class="mt-10">Deluxe Double Room</p>
-                    <p class="mb-10">1 extra-large double bed</p>
-                    <small>1 Night 2 Adults</small>
-                    <h6 class="heading">&#x20B9; 5600</h6>
-                    <small>+&#x20B9; 1,062 taxes and charges</small><br>
-                    <button class="btn btn-find mt-20" style="width: 120px;">Book Now</button>
-                  </div>
-                </div>
-
-                <div class="hotel-detail">
-                  <div class="hotel-detail-img">
-                    <img src="../img/11.jpg">
-                  </div>
-                  <div class="hotel-detail-sub">
-                    <h3>Courtyard By Marriott Ahmedabad</h3>
-                    <span class="heading">User Rating</span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <small>(109 Reviews)</small>
-                    <p class="mt-10">Deluxe Double Room</p>
-                    <p class="mb-10">1 extra-large double bed</p>
-                    <small>1 Night 2 Adults</small>
-                    <h6 class="heading">&#x20B9; 5600</h6>
-                    <small>+&#x20B9; 1,062 taxes and charges</small><br>
-                    <button class="btn btn-find mt-20" style="width: 120px;">Book Now</button>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Bed and breakfast</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
                   </div>
                 </div>
 
-                <div class="hotel-detail">
-                  <div class="hotel-detail-img">
-                    <img src="../img/11.jpg">
+                <div class="hotel-detail-main">
+                  <div class="hotel-detail">
+                    <div class="hotel-detail-img">
+                      <img src="../img/11.jpg">
+                    </div>
+                    <div class="hotel-detail-sub">
+                      <h3>Courtyard By Marriott Ahmedabad</h3>
+                      <span class="heading">User Rating</span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <small>(109 Reviews)</small>
+                      <p class="mt-10"><i class='fas fa-map-marker-alt'></i>  Ahmedabad</p>
+                      <p class="mt-10">Deluxe Double Room</p>
+                      <p class="mb-10">1 extra-large double bed</p>
+                      <small>1 Night 2 Adults</small>
+                      <h6 class="heading">&#x20B9; 5600</h6>
+                      <small>+&#x20B9; 1,062 taxes and charges</small><br>
+                      
+                    </div>
                   </div>
-                  <div class="hotel-detail-sub">
-                    <h3>Courtyard By Marriott Ahmedabad</h3>
-                    <span class="heading">User Rating</span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <small>(109 Reviews)</small>
-                    <p class="mt-10">Deluxe Double Room</p>
-                    <p class="mb-10">1 extra-large double bed</p>
-                    <small>1 Night 2 Adults</small>
-                    <h6 class="heading">&#x20B9; 5600</h6>
-                    <small>+&#x20B9; 1,062 taxes and charges</small><br>
-                    <button class="btn btn-find mt-20" style="width: 120px;">Book Now</button>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Room Only</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
+                    
+                  </div>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Bed and breakfast</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="hotel-detail-main">
+                  <div class="hotel-detail">
+                    <div class="hotel-detail-img">
+                      <img src="../img/11.jpg">
+                    </div>
+                    <div class="hotel-detail-sub">
+                      <h3>Courtyard By Marriott Ahmedabad</h3>
+                      <span class="heading">User Rating</span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <small>(109 Reviews)</small>
+                      <p class="mt-10"><i class='fas fa-map-marker-alt'></i>  Ahmedabad</p>
+                      <p class="mt-10">Deluxe Double Room</p>
+                      <p class="mb-10">1 extra-large double bed</p>
+                      <small>1 Night 2 Adults</small>
+                      <h6 class="heading">&#x20B9; 5600</h6>
+                      <small>+&#x20B9; 1,062 taxes and charges</small><br>
+                      
+                    </div>
+                  </div>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Room Only</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
+                    
+                  </div>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Bed and breakfast</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="hotel-detail-main">
+                  <div class="hotel-detail">
+                    <div class="hotel-detail-img">
+                      <img src="../img/11.jpg">
+                    </div>
+                    <div class="hotel-detail-sub">
+                      <h3>Courtyard By Marriott Ahmedabad</h3>
+                      <span class="heading">User Rating</span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <small>(109 Reviews)</small>
+                      <p class="mt-10"><i class='fas fa-map-marker-alt'></i>  Ahmedabad</p>
+                      <p class="mt-10">Deluxe Double Room</p>
+                      <p class="mb-10">1 extra-large double bed</p>
+                      <small>1 Night 2 Adults</small>
+                      <h6 class="heading">&#x20B9; 5600</h6>
+                      <small>+&#x20B9; 1,062 taxes and charges</small><br>
+                      
+                    </div>
+                  </div>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Room Only</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
+                    
+                  </div>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Bed and breakfast</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="hotel-detail-main">
+                  <div class="hotel-detail">
+                    <div class="hotel-detail-img">
+                      <img src="../img/11.jpg">
+                    </div>
+                    <div class="hotel-detail-sub">
+                      <h3>Courtyard By Marriott Ahmedabad</h3>
+                      <span class="heading">User Rating</span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <small>(109 Reviews)</small>
+                      <p class="mt-10"><i class='fas fa-map-marker-alt'></i>  Ahmedabad</p>
+                      <p class="mt-10">Deluxe Double Room</p>
+                      <p class="mb-10">1 extra-large double bed</p>
+                      <small>1 Night 2 Adults</small>
+                      <h6 class="heading">&#x20B9; 5600</h6>
+                      <small>+&#x20B9; 1,062 taxes and charges</small><br>
+                      
+                    </div>
+                  </div>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Room Only</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
+                    
+                  </div>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Bed and breakfast</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
+                  </div>
+                </div>
+                
+
+                <div class="hotel-detail-main">
+                  <div class="hotel-detail">
+                    <div class="hotel-detail-img">
+                      <img src="../img/11.jpg">
+                    </div>
+                    <div class="hotel-detail-sub">
+                      <h3>Courtyard By Marriott Ahmedabad</h3>
+                      <span class="heading">User Rating</span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <small>(109 Reviews)</small>
+                      <p class="mt-10"><i class='fas fa-map-marker-alt'></i>  Ahmedabad</p>
+                      <p class="mt-10">Deluxe Double Room</p>
+                      <p class="mb-10">1 extra-large double bed</p>
+                      <small>1 Night 2 Adults</small>
+                      <h6 class="heading">&#x20B9; 5600</h6>
+                      <small>+&#x20B9; 1,062 taxes and charges</small><br>
+                      
+                    </div>
+                  </div>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Room Only</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
+                    
+                  </div>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Bed and breakfast</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
                   </div>
                 </div>
                
               </div>
               
               <div id="Cheapest" class="fast-tabcontent">
-                <div class="hotel-detail">
-                  <div class="hotel-detail-img">
-                    <img src="../img/22.jpg">
+                <div class="hotel-detail-main">
+                  <div class="hotel-detail">
+                    <div class="hotel-detail-img">
+                      <img src="../img/22.jpg">
+                    </div>
+                    <div class="hotel-detail-sub">
+                      <h3>Courtyard By Marriott Ahmedabad</h3>
+                      <span class="heading">User Rating</span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <small>(109 Reviews)</small>
+                      <p class="mt-10"><i class='fas fa-map-marker-alt'></i>  Ahmedabad</p>
+                      <p class="mt-10">Deluxe Double Room</p>
+                      <p class="mb-10">1 extra-large double bed</p>
+                      <small>1 Night 2 Adults</small>
+                      <h6 class="heading">&#x20B9; 5600</h6>
+                      <small>+&#x20B9; 1,062 taxes and charges</small><br>
+                      
+                    </div>
                   </div>
-                  <div class="hotel-detail-sub">
-                    <h3>Courtyard By Marriott Ahmedabad</h3>
-                    <span class="heading">User Rating</span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <small>(109 Reviews)</small>
-                    <p class="mt-10">Deluxe Double Room</p>
-                    <p class="mb-10">1 extra-large double bed</p>
-                    <small>1 Night 2 Adults</small>
-                    <h6 class="heading">&#x20B9; 5600</h6>
-                    <small>+&#x20B9; 1,062 taxes and charges</small><br>
-                    <button class="btn btn-find mt-20" style="width: 120px;">Book Now</button>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Room Only</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
+                    
                   </div>
-                </div>
-
-                <div class="hotel-detail">
-                  <div class="hotel-detail-img">
-                    <img src="../img/11.jpg">
-                  </div>
-                  <div class="hotel-detail-sub">
-                    <h3>Courtyard By Marriott Ahmedabad</h3>
-                    <span class="heading">User Rating</span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <small>(109 Reviews)</small>
-                    <p class="mt-10">Deluxe Double Room</p>
-                    <p class="mb-10">1 extra-large double bed</p>
-                    <small>1 Night 2 Adults</small>
-                    <h6 class="heading">&#x20B9; 5600</h6>
-                    <small>+&#x20B9; 1,062 taxes and charges</small><br>
-                    <button class="btn btn-find mt-20" style="width: 120px;">Book Now</button>
-                  </div>
-                </div>
-
-                <div class="hotel-detail">
-                  <div class="hotel-detail-img">
-                    <img src="../img/11.jpg">
-                  </div>
-                  <div class="hotel-detail-sub">
-                    <h3>Courtyard By Marriott Ahmedabad</h3>
-                    <span class="heading">User Rating</span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <small>(109 Reviews)</small>
-                    <p class="mt-10">Deluxe Double Room</p>
-                    <p class="mb-10">1 extra-large double bed</p>
-                    <small>1 Night 2 Adults</small>
-                    <h6 class="heading">&#x20B9; 5600</h6>
-                    <small>+&#x20B9; 1,062 taxes and charges</small><br>
-                    <button class="btn btn-find mt-20" style="width: 120px;">Book Now</button>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Bed and breakfast</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
                   </div>
                 </div>
 
-                <div class="hotel-detail">
-                  <div class="hotel-detail-img">
-                    <img src="../img/11.jpg">
+                <div class="hotel-detail-main">
+                  <div class="hotel-detail">
+                    <div class="hotel-detail-img">
+                      <img src="../img/11.jpg">
+                    </div>
+                    <div class="hotel-detail-sub">
+                      <h3>Courtyard By Marriott Ahmedabad</h3>
+                      <span class="heading">User Rating</span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <small>(109 Reviews)</small>
+                      <p class="mt-10"><i class='fas fa-map-marker-alt'></i>  Ahmedabad</p>
+                      <p class="mt-10">Deluxe Double Room</p>
+                      <p class="mb-10">1 extra-large double bed</p>
+                      <small>1 Night 2 Adults</small>
+                      <h6 class="heading">&#x20B9; 5600</h6>
+                      <small>+&#x20B9; 1,062 taxes and charges</small><br>
+                      
+                    </div>
                   </div>
-                  <div class="hotel-detail-sub">
-                    <h3>Courtyard By Marriott Ahmedabad</h3>
-                    <span class="heading">User Rating</span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <small>(109 Reviews)</small>
-                    <p class="mt-10">Deluxe Double Room</p>
-                    <p class="mb-10">1 extra-large double bed</p>
-                    <small>1 Night 2 Adults</small>
-                    <h6 class="heading">&#x20B9; 5600</h6>
-                    <small>+&#x20B9; 1,062 taxes and charges</small><br>
-                    <button class="btn btn-find mt-20" style="width: 120px;">Book Now</button>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Room Only</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
+                    
                   </div>
-                </div>
-
-                <div class="hotel-detail">
-                  <div class="hotel-detail-img">
-                    <img src="../img/11.jpg">
-                  </div>
-                  <div class="hotel-detail-sub">
-                    <h3>Courtyard By Marriott Ahmedabad</h3>
-                    <span class="heading">User Rating</span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <small>(109 Reviews)</small>
-                    <p class="mt-10">Deluxe Double Room</p>
-                    <p class="mb-10">1 extra-large double bed</p>
-                    <small>1 Night 2 Adults</small>
-                    <h6 class="heading">&#x20B9; 5600</h6>
-                    <small>+&#x20B9; 1,062 taxes and charges</small><br>
-                    <button class="btn btn-find mt-20" style="width: 120px;">Book Now</button>
-                  </div>
-                </div>
-
-                <div class="hotel-detail">
-                  <div class="hotel-detail-img">
-                    <img src="../img/11.jpg">
-                  </div>
-                  <div class="hotel-detail-sub">
-                    <h3>Courtyard By Marriott Ahmedabad</h3>
-                    <span class="heading">User Rating</span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <small>(109 Reviews)</small>
-                    <p class="mt-10">Deluxe Double Room</p>
-                    <p class="mb-10">1 extra-large double bed</p>
-                    <small>1 Night 2 Adults</small>
-                    <h6 class="heading">&#x20B9; 5600</h6>
-                    <small>+&#x20B9; 1,062 taxes and charges</small><br>
-                    <button class="btn btn-find mt-20" style="width: 120px;">Book Now</button>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Bed and breakfast</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
                   </div>
                 </div>
 
-                <div class="hotel-detail">
-                  <div class="hotel-detail-img">
-                    <img src="../img/11.jpg">
+                <div class="hotel-detail-main">
+                  <div class="hotel-detail">
+                    <div class="hotel-detail-img">
+                      <img src="../img/11.jpg">
+                    </div>
+                    <div class="hotel-detail-sub">
+                      <h3>Courtyard By Marriott Ahmedabad</h3>
+                      <span class="heading">User Rating</span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <small>(109 Reviews)</small>
+                      <p class="mt-10"><i class='fas fa-map-marker-alt'></i>  Ahmedabad</p>
+                      <p class="mt-10">Deluxe Double Room</p>
+                      <p class="mb-10">1 extra-large double bed</p>
+                      <small>1 Night 2 Adults</small>
+                      <h6 class="heading">&#x20B9; 5600</h6>
+                      <small>+&#x20B9; 1,062 taxes and charges</small><br>
+                      
+                    </div>
                   </div>
-                  <div class="hotel-detail-sub">
-                    <h3>Courtyard By Marriott Ahmedabad</h3>
-                    <span class="heading">User Rating</span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <small>(109 Reviews)</small>
-                    <p class="mt-10">Deluxe Double Room</p>
-                    <p class="mb-10">1 extra-large double bed</p>
-                    <small>1 Night 2 Adults</small>
-                    <h6 class="heading">&#x20B9; 5600</h6>
-                    <small>+&#x20B9; 1,062 taxes and charges</small><br>
-                    <button class="btn btn-find mt-20" style="width: 120px;">Book Now</button>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Room Only</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
+                    
+                  </div>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Bed and breakfast</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
                   </div>
                 </div>
 
-                <div class="hotel-detail">
-                  <div class="hotel-detail-img">
-                    <img src="../img/11.jpg">
+                <div class="hotel-detail-main">
+                  <div class="hotel-detail">
+                    <div class="hotel-detail-img">
+                      <img src="../img/11.jpg">
+                    </div>
+                    <div class="hotel-detail-sub">
+                      <h3>Courtyard By Marriott Ahmedabad</h3>
+                      <span class="heading">User Rating</span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <small>(109 Reviews)</small>
+                      <p class="mt-10"><i class='fas fa-map-marker-alt'></i>  Ahmedabad</p>
+                      <p class="mt-10">Deluxe Double Room</p>
+                      <p class="mb-10">1 extra-large double bed</p>
+                      <small>1 Night 2 Adults</small>
+                      <h6 class="heading">&#x20B9; 5600</h6>
+                      <small>+&#x20B9; 1,062 taxes and charges</small><br>
+                      
+                    </div>
                   </div>
-                  <div class="hotel-detail-sub">
-                    <h3>Courtyard By Marriott Ahmedabad</h3>
-                    <span class="heading">User Rating</span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <small>(109 Reviews)</small>
-                    <p class="mt-10">Deluxe Double Room</p>
-                    <p class="mb-10">1 extra-large double bed</p>
-                    <small>1 Night 2 Adults</small>
-                    <h6 class="heading">&#x20B9; 5600</h6>
-                    <small>+&#x20B9; 1,062 taxes and charges</small><br>
-                    <button class="btn btn-find mt-20" style="width: 120px;">Book Now</button>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Room Only</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
+                    
+                  </div>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Bed and breakfast</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
                   </div>
                 </div>
 
-                <div class="hotel-detail">
-                  <div class="hotel-detail-img">
-                    <img src="../img/11.jpg">
+                <div class="hotel-detail-main">
+                  <div class="hotel-detail">
+                    <div class="hotel-detail-img">
+                      <img src="../img/11.jpg">
+                    </div>
+                    <div class="hotel-detail-sub">
+                      <h3>Courtyard By Marriott Ahmedabad</h3>
+                      <span class="heading">User Rating</span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <small>(109 Reviews)</small>
+                      <p class="mt-10"><i class='fas fa-map-marker-alt'></i>  Ahmedabad</p>
+                      <p class="mt-10">Deluxe Double Room</p>
+                      <p class="mb-10">1 extra-large double bed</p>
+                      <small>1 Night 2 Adults</small>
+                      <h6 class="heading">&#x20B9; 5600</h6>
+                      <small>+&#x20B9; 1,062 taxes and charges</small><br>
+                      
+                    </div>
                   </div>
-                  <div class="hotel-detail-sub">
-                    <h3>Courtyard By Marriott Ahmedabad</h3>
-                    <span class="heading">User Rating</span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <small>(109 Reviews)</small>
-                    <p class="mt-10">Deluxe Double Room</p>
-                    <p class="mb-10">1 extra-large double bed</p>
-                    <small>1 Night 2 Adults</small>
-                    <h6 class="heading">&#x20B9; 5600</h6>
-                    <small>+&#x20B9; 1,062 taxes and charges</small><br>
-                    <button class="btn btn-find mt-20" style="width: 120px;">Book Now</button>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Room Only</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
+                    
+                  </div>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Bed and breakfast</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="hotel-detail-main">
+                  <div class="hotel-detail">
+                    <div class="hotel-detail-img">
+                      <img src="../img/11.jpg">
+                    </div>
+                    <div class="hotel-detail-sub">
+                      <h3>Courtyard By Marriott Ahmedabad</h3>
+                      <span class="heading">User Rating</span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <small>(109 Reviews)</small>
+                      <p class="mt-10"><i class='fas fa-map-marker-alt'></i>  Ahmedabad</p>
+                      <p class="mt-10">Deluxe Double Room</p>
+                      <p class="mb-10">1 extra-large double bed</p>
+                      <small>1 Night 2 Adults</small>
+                      <h6 class="heading">&#x20B9; 5600</h6>
+                      <small>+&#x20B9; 1,062 taxes and charges</small><br>
+                      
+                    </div>
+                  </div>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Room Only</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
+                    
+                  </div>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Bed and breakfast</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="hotel-detail-main">
+                  <div class="hotel-detail">
+                    <div class="hotel-detail-img">
+                      <img src="../img/11.jpg">
+                    </div>
+                    <div class="hotel-detail-sub">
+                      <h3>Courtyard By Marriott Ahmedabad</h3>
+                      <span class="heading">User Rating</span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <small>(109 Reviews)</small>
+                      <p class="mt-10"><i class='fas fa-map-marker-alt'></i>  Ahmedabad</p>
+                      <p class="mt-10">Deluxe Double Room</p>
+                      <p class="mb-10">1 extra-large double bed</p>
+                      <small>1 Night 2 Adults</small>
+                      <h6 class="heading">&#x20B9; 5600</h6>
+                      <small>+&#x20B9; 1,062 taxes and charges</small><br>
+                      
+                    </div>
+                  </div>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Room Only</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
+                    
+                  </div>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Bed and breakfast</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="hotel-detail-main">
+                  <div class="hotel-detail">
+                    <div class="hotel-detail-img">
+                      <img src="../img/11.jpg">
+                    </div>
+                    <div class="hotel-detail-sub">
+                      <h3>Courtyard By Marriott Ahmedabad</h3>
+                      <span class="heading">User Rating</span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <small>(109 Reviews)</small>
+                      <p class="mt-10"><i class='fas fa-map-marker-alt'></i>  Ahmedabad</p>
+                      <p class="mt-10">Deluxe Double Room</p>
+                      <p class="mb-10">1 extra-large double bed</p>
+                      <small>1 Night 2 Adults</small>
+                      <h6 class="heading">&#x20B9; 5600</h6>
+                      <small>+&#x20B9; 1,062 taxes and charges</small><br>
+                      
+                    </div>
+                  </div>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Room Only</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
+                    
+                  </div>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Bed and breakfast</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="hotel-detail-main">
+                  <div class="hotel-detail">
+                    <div class="hotel-detail-img">
+                      <img src="../img/11.jpg">
+                    </div>
+                    <div class="hotel-detail-sub">
+                      <h3>Courtyard By Marriott Ahmedabad</h3>
+                      <span class="heading">User Rating</span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <small>(109 Reviews)</small>
+                      <p class="mt-10"><i class='fas fa-map-marker-alt'></i>  Ahmedabad</p>
+                      <p class="mt-10">Deluxe Double Room</p>
+                      <p class="mb-10">1 extra-large double bed</p>
+                      <small>1 Night 2 Adults</small>
+                      <h6 class="heading">&#x20B9; 5600</h6>
+                      <small>+&#x20B9; 1,062 taxes and charges</small><br>
+                      
+                    </div>
+                  </div>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Room Only</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
+                    
+                  </div>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Bed and breakfast</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
                   </div>
                 </div>
               </div>
               
               <div id="Fastest" class="fast-tabcontent">
-                <div class="hotel-detail">
-                  <div class="hotel-detail-img">
-                    <img src="../img/33.jpg">
+                <div class="hotel-detail-main">
+                  <div class="hotel-detail">
+                    <div class="hotel-detail-img">
+                      <img src="../img/11.jpg">
+                    </div>
+                    <div class="hotel-detail-sub">
+                      <h3>Courtyard By Marriott Ahmedabad</h3>
+                      <span class="heading">User Rating</span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <small>(109 Reviews)</small>
+                      <p class="mt-10"><i class='fas fa-map-marker-alt'></i>  Ahmedabad</p>
+                      <p class="mt-10">Deluxe Double Room</p>
+                      <p class="mb-10">1 extra-large double bed</p>
+                      <small>1 Night 2 Adults</small>
+                      <h6 class="heading">&#x20B9; 5600</h6>
+                      <small>+&#x20B9; 1,062 taxes and charges</small><br>
+                      
+                    </div>
                   </div>
-                  <div class="hotel-detail-sub">
-                    <h3>Courtyard By Marriott Ahmedabad</h3>
-                    <span class="heading">User Rating</span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <small>(109 Reviews)</small>
-                    <p class="mt-10">Deluxe Double Room</p>
-                    <p class="mb-10">1 extra-large double bed</p>
-                    <small>1 Night 2 Adults</small>
-                    <h6 class="heading">&#x20B9; 5600</h6>
-                    <small>+&#x20B9; 1,062 taxes and charges</small><br>
-                    <button class="btn btn-find mt-20" style="width: 120px;">Book Now</button>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Room Only</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
+                    
                   </div>
-                </div>
-
-                <div class="hotel-detail">
-                  <div class="hotel-detail-img">
-                    <img src="../img/11.jpg">
-                  </div>
-                  <div class="hotel-detail-sub">
-                    <h3>Courtyard By Marriott Ahmedabad</h3>
-                    <span class="heading">User Rating</span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <small>(109 Reviews)</small>
-                    <p class="mt-10">Deluxe Double Room</p>
-                    <p class="mb-10">1 extra-large double bed</p>
-                    <small>1 Night 2 Adults</small>
-                    <h6 class="heading">&#x20B9; 5600</h6>
-                    <small>+&#x20B9; 1,062 taxes and charges</small><br>
-                    <button class="btn btn-find mt-20" style="width: 120px;">Book Now</button>
-                  </div>
-                </div>
-
-                <div class="hotel-detail">
-                  <div class="hotel-detail-img">
-                    <img src="../img/11.jpg">
-                  </div>
-                  <div class="hotel-detail-sub">
-                    <h3>Courtyard By Marriott Ahmedabad</h3>
-                    <span class="heading">User Rating</span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <small>(109 Reviews)</small>
-                    <p class="mt-10">Deluxe Double Room</p>
-                    <p class="mb-10">1 extra-large double bed</p>
-                    <small>1 Night 2 Adults</small>
-                    <h6 class="heading">&#x20B9; 5600</h6>
-                    <small>+&#x20B9; 1,062 taxes and charges</small><br>
-                    <button class="btn btn-find mt-20" style="width: 120px;">Book Now</button>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Bed and breakfast</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
                   </div>
                 </div>
 
-                <div class="hotel-detail">
-                  <div class="hotel-detail-img">
-                    <img src="../img/11.jpg">
+                <div class="hotel-detail-main">
+                  <div class="hotel-detail">
+                    <div class="hotel-detail-img">
+                      <img src="../img/11.jpg">
+                    </div>
+                    <div class="hotel-detail-sub">
+                      <h3>Courtyard By Marriott Ahmedabad</h3>
+                      <span class="heading">User Rating</span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <small>(109 Reviews)</small>
+                      <p class="mt-10"><i class='fas fa-map-marker-alt'></i>  Ahmedabad</p>
+                      <p class="mt-10">Deluxe Double Room</p>
+                      <p class="mb-10">1 extra-large double bed</p>
+                      <small>1 Night 2 Adults</small>
+                      <h6 class="heading">&#x20B9; 5600</h6>
+                      <small>+&#x20B9; 1,062 taxes and charges</small><br>
+                      
+                    </div>
                   </div>
-                  <div class="hotel-detail-sub">
-                    <h3>Courtyard By Marriott Ahmedabad</h3>
-                    <span class="heading">User Rating</span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <small>(109 Reviews)</small>
-                    <p class="mt-10">Deluxe Double Room</p>
-                    <p class="mb-10">1 extra-large double bed</p>
-                    <small>1 Night 2 Adults</small>
-                    <h6 class="heading">&#x20B9; 5600</h6>
-                    <small>+&#x20B9; 1,062 taxes and charges</small><br>
-                    <button class="btn btn-find mt-20" style="width: 120px;">Book Now</button>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Room Only</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
+                    
                   </div>
-                </div>
-
-                <div class="hotel-detail">
-                  <div class="hotel-detail-img">
-                    <img src="../img/11.jpg">
-                  </div>
-                  <div class="hotel-detail-sub">
-                    <h3>Courtyard By Marriott Ahmedabad</h3>
-                    <span class="heading">User Rating</span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <small>(109 Reviews)</small>
-                    <p class="mt-10">Deluxe Double Room</p>
-                    <p class="mb-10">1 extra-large double bed</p>
-                    <small>1 Night 2 Adults</small>
-                    <h6 class="heading">&#x20B9; 5600</h6>
-                    <small>+&#x20B9; 1,062 taxes and charges</small><br>
-                    <button class="btn btn-find mt-20" style="width: 120px;">Book Now</button>
-                  </div>
-                </div>
-
-                <div class="hotel-detail">
-                  <div class="hotel-detail-img">
-                    <img src="../img/11.jpg">
-                  </div>
-                  <div class="hotel-detail-sub">
-                    <h3>Courtyard By Marriott Ahmedabad</h3>
-                    <span class="heading">User Rating</span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <small>(109 Reviews)</small>
-                    <p class="mt-10">Deluxe Double Room</p>
-                    <p class="mb-10">1 extra-large double bed</p>
-                    <small>1 Night 2 Adults</small>
-                    <h6 class="heading">&#x20B9; 5600</h6>
-                    <small>+&#x20B9; 1,062 taxes and charges</small><br>
-                    <button class="btn btn-find mt-20" style="width: 120px;">Book Now</button>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Bed and breakfast</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
                   </div>
                 </div>
 
-                <div class="hotel-detail">
-                  <div class="hotel-detail-img">
-                    <img src="../img/11.jpg">
+                <div class="hotel-detail-main">
+                  <div class="hotel-detail">
+                    <div class="hotel-detail-img">
+                      <img src="../img/11.jpg">
+                    </div>
+                    <div class="hotel-detail-sub">
+                      <h3>Courtyard By Marriott Ahmedabad</h3>
+                      <span class="heading">User Rating</span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <small>(109 Reviews)</small>
+                      <p class="mt-10"><i class='fas fa-map-marker-alt'></i>  Ahmedabad</p>
+                      <p class="mt-10">Deluxe Double Room</p>
+                      <p class="mb-10">1 extra-large double bed</p>
+                      <small>1 Night 2 Adults</small>
+                      <h6 class="heading">&#x20B9; 5600</h6>
+                      <small>+&#x20B9; 1,062 taxes and charges</small><br>
+                      
+                    </div>
                   </div>
-                  <div class="hotel-detail-sub">
-                    <h3>Courtyard By Marriott Ahmedabad</h3>
-                    <span class="heading">User Rating</span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <small>(109 Reviews)</small>
-                    <p class="mt-10">Deluxe Double Room</p>
-                    <p class="mb-10">1 extra-large double bed</p>
-                    <small>1 Night 2 Adults</small>
-                    <h6 class="heading">&#x20B9; 5600</h6>
-                    <small>+&#x20B9; 1,062 taxes and charges</small><br>
-                    <button class="btn btn-find mt-20" style="width: 120px;">Book Now</button>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Room Only</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
+                    
                   </div>
-                </div>
-
-                <div class="hotel-detail">
-                  <div class="hotel-detail-img">
-                    <img src="../img/11.jpg">
-                  </div>
-                  <div class="hotel-detail-sub">
-                    <h3>Courtyard By Marriott Ahmedabad</h3>
-                    <span class="heading">User Rating</span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <small>(109 Reviews)</small>
-                    <p class="mt-10">Deluxe Double Room</p>
-                    <p class="mb-10">1 extra-large double bed</p>
-                    <small>1 Night 2 Adults</small>
-                    <h6 class="heading">&#x20B9; 5600</h6>
-                    <small>+&#x20B9; 1,062 taxes and charges</small><br>
-                    <button class="btn btn-find mt-20" style="width: 120px;">Book Now</button>
-                  </div>
-                </div>
-
-                <div class="hotel-detail">
-                  <div class="hotel-detail-img">
-                    <img src="../img/11.jpg">
-                  </div>
-                  <div class="hotel-detail-sub">
-                    <h3>Courtyard By Marriott Ahmedabad</h3>
-                    <span class="heading">User Rating</span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <small>(109 Reviews)</small>
-                    <p class="mt-10">Deluxe Double Room</p>
-                    <p class="mb-10">1 extra-large double bed</p>
-                    <small>1 Night 2 Adults</small>
-                    <h6 class="heading">&#x20B9; 5600</h6>
-                    <small>+&#x20B9; 1,062 taxes and charges</small><br>
-                    <button class="btn btn-find mt-20" style="width: 120px;">Book Now</button>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Bed and breakfast</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
                   </div>
                 </div>
 
-                <div class="hotel-detail">
-                  <div class="hotel-detail-img">
-                    <img src="../img/11.jpg">
+                <div class="hotel-detail-main">
+                  <div class="hotel-detail">
+                    <div class="hotel-detail-img">
+                      <img src="../img/11.jpg">
+                    </div>
+                    <div class="hotel-detail-sub">
+                      <h3>Courtyard By Marriott Ahmedabad</h3>
+                      <span class="heading">User Rating</span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <small>(109 Reviews)</small>
+                      <p class="mt-10"><i class='fas fa-map-marker-alt'></i>  Ahmedabad</p>
+                      <p class="mt-10">Deluxe Double Room</p>
+                      <p class="mb-10">1 extra-large double bed</p>
+                      <small>1 Night 2 Adults</small>
+                      <h6 class="heading">&#x20B9; 5600</h6>
+                      <small>+&#x20B9; 1,062 taxes and charges</small><br>
+                      
+                    </div>
                   </div>
-                  <div class="hotel-detail-sub">
-                    <h3>Courtyard By Marriott Ahmedabad</h3>
-                    <span class="heading">User Rating</span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <small>(109 Reviews)</small>
-                    <p class="mt-10">Deluxe Double Room</p>
-                    <p class="mb-10">1 extra-large double bed</p>
-                    <small>1 Night 2 Adults</small>
-                    <h6 class="heading">&#x20B9; 5600</h6>
-                    <small>+&#x20B9; 1,062 taxes and charges</small><br>
-                    <button class="btn btn-find mt-20" style="width: 120px;">Book Now</button>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Room Only</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
+                    
+                  </div>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Bed and breakfast</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="hotel-detail-main">
+                  <div class="hotel-detail">
+                    <div class="hotel-detail-img">
+                      <img src="../img/11.jpg">
+                    </div>
+                    <div class="hotel-detail-sub">
+                      <h3>Courtyard By Marriott Ahmedabad</h3>
+                      <span class="heading">User Rating</span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <small>(109 Reviews)</small>
+                      <p class="mt-10"><i class='fas fa-map-marker-alt'></i>  Ahmedabad</p>
+                      <p class="mt-10">Deluxe Double Room</p>
+                      <p class="mb-10">1 extra-large double bed</p>
+                      <small>1 Night 2 Adults</small>
+                      <h6 class="heading">&#x20B9; 5600</h6>
+                      <small>+&#x20B9; 1,062 taxes and charges</small><br>
+                      
+                    </div>
+                  </div>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Room Only</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
+                    
+                  </div>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Bed and breakfast</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="hotel-detail-main">
+                  <div class="hotel-detail">
+                    <div class="hotel-detail-img">
+                      <img src="../img/11.jpg">
+                    </div>
+                    <div class="hotel-detail-sub">
+                      <h3>Courtyard By Marriott Ahmedabad</h3>
+                      <span class="heading">User Rating</span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <small>(109 Reviews)</small>
+                      <p class="mt-10"><i class='fas fa-map-marker-alt'></i>  Ahmedabad</p>
+                      <p class="mt-10">Deluxe Double Room</p>
+                      <p class="mb-10">1 extra-large double bed</p>
+                      <small>1 Night 2 Adults</small>
+                      <h6 class="heading">&#x20B9; 5600</h6>
+                      <small>+&#x20B9; 1,062 taxes and charges</small><br>
+                      
+                    </div>
+                  </div>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Room Only</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
+                    
+                  </div>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Bed and breakfast</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="hotel-detail-main">
+                  <div class="hotel-detail">
+                    <div class="hotel-detail-img">
+                      <img src="../img/11.jpg">
+                    </div>
+                    <div class="hotel-detail-sub">
+                      <h3>Courtyard By Marriott Ahmedabad</h3>
+                      <span class="heading">User Rating</span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <small>(109 Reviews)</small>
+                      <p class="mt-10"><i class='fas fa-map-marker-alt'></i>  Ahmedabad</p>
+                      <p class="mt-10">Deluxe Double Room</p>
+                      <p class="mb-10">1 extra-large double bed</p>
+                      <small>1 Night 2 Adults</small>
+                      <h6 class="heading">&#x20B9; 5600</h6>
+                      <small>+&#x20B9; 1,062 taxes and charges</small><br>
+                      
+                    </div>
+                  </div>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Room Only</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
+                    
+                  </div>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Bed and breakfast</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="hotel-detail-main">
+                  <div class="hotel-detail">
+                    <div class="hotel-detail-img">
+                      <img src="../img/11.jpg">
+                    </div>
+                    <div class="hotel-detail-sub">
+                      <h3>Courtyard By Marriott Ahmedabad</h3>
+                      <span class="heading">User Rating</span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <small>(109 Reviews)</small>
+                      <p class="mt-10"><i class='fas fa-map-marker-alt'></i>  Ahmedabad</p>
+                      <p class="mt-10">Deluxe Double Room</p>
+                      <p class="mb-10">1 extra-large double bed</p>
+                      <small>1 Night 2 Adults</small>
+                      <h6 class="heading">&#x20B9; 5600</h6>
+                      <small>+&#x20B9; 1,062 taxes and charges</small><br>
+                      
+                    </div>
+                  </div>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Room Only</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
+                    
+                  </div>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Bed and breakfast</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="hotel-detail-main">
+                  <div class="hotel-detail">
+                    <div class="hotel-detail-img">
+                      <img src="../img/11.jpg">
+                    </div>
+                    <div class="hotel-detail-sub">
+                      <h3>Courtyard By Marriott Ahmedabad</h3>
+                      <span class="heading">User Rating</span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <small>(109 Reviews)</small>
+                      <p class="mt-10"><i class='fas fa-map-marker-alt'></i>  Ahmedabad</p>
+                      <p class="mt-10">Deluxe Double Room</p>
+                      <p class="mb-10">1 extra-large double bed</p>
+                      <small>1 Night 2 Adults</small>
+                      <h6 class="heading">&#x20B9; 5600</h6>
+                      <small>+&#x20B9; 1,062 taxes and charges</small><br>
+                      
+                    </div>
+                  </div>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Room Only</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
+                    
+                  </div>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Bed and breakfast</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="hotel-detail-main">
+                  <div class="hotel-detail">
+                    <div class="hotel-detail-img">
+                      <img src="../img/11.jpg">
+                    </div>
+                    <div class="hotel-detail-sub">
+                      <h3>Courtyard By Marriott Ahmedabad</h3>
+                      <span class="heading">User Rating</span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <small>(109 Reviews)</small>
+                      <p class="mt-10"><i class='fas fa-map-marker-alt'></i>  Ahmedabad</p>
+                      <p class="mt-10">Deluxe Double Room</p>
+                      <p class="mb-10">1 extra-large double bed</p>
+                      <small>1 Night 2 Adults</small>
+                      <h6 class="heading">&#x20B9; 5600</h6>
+                      <small>+&#x20B9; 1,062 taxes and charges</small><br>
+                      
+                    </div>
+                  </div>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Room Only</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
+                    
+                  </div>
+                  <div class="hotel-pay-btn">
+                    <div class="">
+                      <p>Room Standard</p>
+                      <small>Bed and breakfast</small>
+                    </div>
+                    <div class="">
+                      <a href="">What if i cancel?</a>
+                    </div>
+                    <div class="d-flex justify-content-start" style="align-items: center;">
+                      <p style="width: 100px;">&#x20B9; 5000</p>
+                      <a href="#" role="button" class="btn btn-find">Book Now</a>
+                    </div>
                   </div>
                 </div>
               </div>

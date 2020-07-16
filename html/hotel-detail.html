@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tekwalker</title>
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../font/stylesheet.css">
+    <link rel="stylesheet" href="../css/aos.css" />
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+</head>
+<body>
+<div class="flight-main-div">
+  <header class="header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light br-nav">
+                    <a class="navbar-brand" href="../index.html"><h2>Tekwalker</h2></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                     
+                    <div class="collapse navbar-collapse d-flex flex-column bd-highlight mb-3" id="navbarNav">
+                      <div class="menu1">
+                      <ul class="navbar-nav br-navmenu1" >
+                        <li class="nav-item"><a class="nav-link" href="#">+919978325789</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Check your booking</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><img src="../img/heart-black.svg" width="20px" height="20px"></a></li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            $ USD
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            EN
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#"><img src="../img/user-black.svg" width="20px" height="20px"></a></li>
+                        
+                    </ul></div>
+                   
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+  <section class="flight-search-bg">
+    <div class="container">
+      <div class="flight-search-box">
+        <div class="row">
+          <div class="search-box-detail">
+            <div class="search">
+              
+              <button class="searchlinks" onclick="searchBox(event, 'return')">Hotel Booking</button>
+             
+            </div>
+
+            <div id="return" class="searchcontent search-active">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Search hotels in</label>
+                    <input type="text" class="form-control hotel-icon" placeholder="Search hotels name"></div>
+                  <div class="form-group col-md-2">
+                    <label for="inputEmail4">Check in</label>
+                    <input type="date" class="form-control" id="inputEmail4">
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputEmail4">Check out</label>
+                    <input type="date" class="form-control" id="inputEmail4">
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputEmail4"></label>
+                    <button type="submit" class="btn btn-find">Find</button>
+                  </div>
+                  <div class="form-group col-md-5">
+                    <div class="dropdown mr-1">
+                        <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                        2 Adult 1 Room
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                        <a class="dropdown-item" href="#">2 Adult</a>
+                        <a class="dropdown-item" href="#">1 Room</a>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="form-group col-md-3">
+                  <div class="dropdown mr-1">
+                      <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                      Payment Method
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                      <a class="dropdown-item" href="#">Visa</a>
+                      <a class="dropdown-item" href="#">MasterCard</a>
+                      <a class="dropdown-item" href="#">Prepaid MasterCard</a>
+                      <a class="dropdown-item" href="#">American Express</a>
+                      <a class="dropdown-item" href="#">Visa Debit</a>
+                      <a class="dropdown-item" href="#">MasterCard Debit</a>
+                      <a class="dropdown-item" href="#">PayPal</a>
+                      <a class="dropdown-item" href="#">Google Pay</a>
+                      <a class="dropdown-item" href="#">Phonepe</a>
+                      </div>
+                  </div>
+               </div>
+                 
+                </div>
+              </form>
+               
+            </div>  
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="flight-booking">
+    <div class="container">
+      <div class="">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="flight-side-menu">
+              <div class="show-result">
+                <h5>1 of 1500 results</h5>
+                <a href="#" class="result">Show all</a>
+                <div class="">
+                  <div id="map"></div>
+                </div>
+                
+              </div>
+              <div class="accordion flight-accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Price
+                      </button>
+                    </h2>
+                  </div>
+              
+                  <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body ">
+                      <div class="slidecontainer">
+                        <p>&#x20B9;20000 - &#x20B9;<span id="demo"></span></p>
+                        <input type="range" min="20000" max="1000000" value="500000" class="slider" id="myRange">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Stars
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <div class="stop-detail">
+                        <form>
+                          <h4>Stars</h4>
+                          <input type="checkbox">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span><br>
+                            <input type="checkbox">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span><br>
+                          <input type="checkbox">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span><br>
+                          
+                          <input type="checkbox">
+                          <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span><br>
+                          <input type="checkbox">
+                          <span class="fa fa-star checked"></span><br>
+                          <input type="checkbox">
+                          <label>Other</label>
+                        </form>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Select Hotel
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <div class="stop-detail">
+                        <form>
+                          <h4>Select Hotel</h4>
+                          <input type="checkbox">
+                          <label>Room only</label> <br>
+                          <input type="checkbox">
+                          <label>Bed and breakfast</label>  
+                        </form>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingFour">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Facility
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <div class="stop-detail">
+                        <form>
+                          <h4>Facility</h4>
+                          <input type="checkbox">
+                          <label>Free WiFi</label><br>
+                          <input type="checkbox">
+                          <label>Parking</label><br>
+                          <input type="checkbox">
+                          <label>Covid-19 measures</label><br>
+                          <input type="checkbox">
+                          <label>Adults only</label><br>
+                          <input type="checkbox">
+                          <label>Spa/Wellness </label><br>
+                          <input type="checkbox">
+                          <label>Swimming pool </label>
+                        </form>
+              
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="card">
+                  <div class="card-header" id="headingFive">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Guest rating
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <div class="stop-detail">
+                        <form>
+                          <h4>Rating</h4>
+                          <input type="checkbox">
+                          <label>&#128512 Excellent</label><br>
+                          <input type="checkbox">
+                          <label>&#128522 Very Good</label><br>
+                          <input type="checkbox">
+                          <label>&#128578 Good</label>
+                        </form>
+              
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="card">
+                  <div class="card-header" id="headingSix">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        Payment method
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <div class="form-group">
+                        <div class="dropdown mr-1">
+                            <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                            Payment Method
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                            <a class="dropdown-item" href="#">Visa</a>
+                            <a class="dropdown-item" href="#">MasterCard</a>
+                            <a class="dropdown-item" href="#">Prepaid MasterCard</a>
+                            <a class="dropdown-item" href="#">American Express</a>
+                            <a class="dropdown-item" href="#">Visa Debit</a>
+                            <a class="dropdown-item" href="#">MasterCard Debit</a>
+                            <a class="dropdown-item" href="#">PayPal</a>
+                            <a class="dropdown-item" href="#">Google Pay</a>
+                            <a class="dropdown-item" href="#">Phonepe</a>
+                            
+                            </div>
+                        </div>
+                     </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header" id="headingSix">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-reset btn-block" type="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseSix">
+                        Reset Filter
+                      </button>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-md-9" style="margin-bottom: 100px;">
+            <div class="hotel-detail-slider">
+              <div class="swiper-container gallery-top1">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" style="background-image:url(../img/11.jpg)"></div>
+                  <div class="swiper-slide" style="background-image:url(../img/22.jpg)"></div>
+                  <div class="swiper-slide" style="background-image:url(../img/22.jpg)"></div>
+                  <div class="swiper-slide" style="background-image:url(../img/22.jpg)"></div>
+                  <div class="swiper-slide" style="background-image:url(../img/22.jpg)"></div>
+                  <div class="swiper-slide" style="background-image:url(../img/22.jpg)"></div>
+                  <div class="swiper-slide" style="background-image:url(../img/22.jpg)"></div>
+                  <div class="swiper-slide" style="background-image:url(../img/22.jpg)"></div>
+                  <div class="swiper-slide" style="background-image:url(../img/22.jpg)"></div>
+                  <div class="swiper-slide" style="background-image:url(../img/22.jpg)"></div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
+              </div>
+              <div class="swiper-container gallery-thumbs1">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" style="background-image:url(../img/22.jpg)"></div>
+                  <div class="swiper-slide" style="background-image:url(../img/22.jpg)"></div>
+                  <div class="swiper-slide" style="background-image:url(../img/22.jpg)"></div>
+                  <div class="swiper-slide" style="background-image:url(../img/22.jpg)"></div>
+                  <div class="swiper-slide" style="background-image:url(../img/22.jpg)"></div>
+                  <div class="swiper-slide" style="background-image:url(../img/22.jpg)"></div>
+                  <div class="swiper-slide" style="background-image:url(../img/22.jpg)"></div>
+                  <div class="swiper-slide" style="background-image:url(../img/22.jpg)"></div>
+                  <div class="swiper-slide" style="background-image:url(../img/22.jpg)"></div>
+                  <div class="swiper-slide" style="background-image:url(../img/22.jpg)"></div>
+                </div>
+              </div>
+
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="tw-sign-up">
+              <h1>Help us be your travel companion</h1>
+              <p>Be the first to receive exclusive offers and the latest news on our products & services directly in your inbox.</p>
+              <div class="sign-up-form">
+                <form>
+                  <div class="form-row d-flex justify-content-center">
+                    <div class="col-9">
+                      <input type="text" class="form-control" placeholder="Email address">
+                    </div>
+                    <div class="col-auto">
+                      <button type="submit" class="btn btn-primary mb-2">Sign up</button>
+                    </div>
+                  </div>
+                </form>
+                <p>Email addresses submitted to IndiGo are subject to our <a href="#" class="sign-up-pp">Privacy Notice....</a></p>
+              </div>
+              <div class="social-icon d-flex justify-content-center">
+                <ul class="">
+                  <li class="icon"><a href="#"><img src="../img/fb.svg"/></a></li>
+                  <li class="icon"><a href="#"><img src="../img/insta.svg"/></a></li>
+                  <li class="icon"><a href="#"><img src="../img/in.svg"/></a></li>
+                  <li class="icon"><a href="#"><img src="../img/tw.svg"/></a></li>
+                </ul>
+              </div>
+              <p class="copyright">&copy; Copyright 2020 Tekwalker. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+   
+
+</div>
+
+
+</body>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/aos.js"></script>
+<script>
+    AOS.init({
+        easing: 'ease-in-out-sine',
+        once: true
+    });
+</script>
+<script src="js/swiper.min.js"></script>
+<script>
+  var slider = document.getElementById("myRange");
+  var output = document.getElementById("demo");
+  output.innerHTML = slider.value;
+  
+  slider.oninput = function() {
+    output.innerHTML = this.value;
+  }
+  </script>
+
+<script>
+  function searchBox(evt, cityName) {
+    var i, searchcontent, searchlinks;
+    searchcontent = document.getElementsByClassName("searchcontent");
+    for (i = 0; i < searchcontent.length; i++) {
+      searchcontent[i].style.display = "none";
+      searchcontent[i].className = searchcontent[i].className.replace("search-active", "");
+    }
+    searchlinks = document.getElementsByClassName("searchlinks");
+    for (i = 0; i < searchlinks.length; i++) {
+      searchlinks[i].className = searchlinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+<script>
+  // Initialize and add the map
+  function initMap() {
+    // The location of Uluru
+    var uluru = {lat: -25.344, lng: 131.036};
+    // The map, centered at Uluru
+    var map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 4, center: uluru});
+    // The marker, positioned at Uluru
+    var marker = new google.maps.Marker({position: uluru, map: map});
+  }
+      </script>
+
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+</script>
+
+<script src="js/swiper.min.js"></script>
+<script>
+  var galleryThumbs = new Swiper('.gallery-thumbs', {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+  });
+  var galleryTop = new Swiper('.gallery-top', {
+    spaceBetween: 10,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    thumbs: {
+      swiper: galleryThumbs
+    }
+  });
+</script>
+
+
+</html>
