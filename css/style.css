@@ -601,6 +601,7 @@ h1{
     overflow: hidden !important;
 }
 
+
 .alert-detail{
   margin-top: 100px;
   padding: 30px 30px;
@@ -1367,6 +1368,17 @@ margin-top: 15px;
   text-decoration: underline;
   cursor: pointer;
 }
+#flip3{
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+#panel3 {
+  padding: 0px;
+  display: none;
+}
 
 .flight-main-div header .navbar-brand h2{
   background: -webkit-linear-gradient(right, rgba(235, 0, 141, 0.7) , rgba(153, 102, 255, 0.7));
@@ -1415,7 +1427,7 @@ margin-top: 15px;
 }
 .fast-tabcontent {
   display: none;
-  padding: 6px 12px;
+  padding: 6px 0px;
   border-top: none;
 }
 
@@ -1849,7 +1861,7 @@ html{
 }
 
 #map {
-  height: 200px;  /* The height is 400 pixels */
+  height: 500px;  /* The height is 400 pixels */
   width: 100%;  /* The width is the width of the web page */
   margin-top: 20px;
  }
@@ -1863,22 +1875,20 @@ html{
  }
 
  .hotel-detail{
-   
    display: flex;
    justify-content: start;
-   
  }
  .hotel-detail-main:hover{
-    box-shadow: rgb(255, 0, 0) !important;
+    box-shadow: 0 1px 8px rgba(153, 102, 255, 0.7) !important;
  }
  .hotel-detail .checked {
   color: orange;
 }
 .hotel-detail .fa {
-  font-size: 18px;
+  font-size: 14px;
 }
 .hotel-detail .heading {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 500;
   color: #646464;
 }
@@ -1976,7 +1986,7 @@ html{
   opacity: 1;
 }
 .hotel-detail-slider-sub{
-  margin-top: 150px;
+  margin-top:40px;
 }
 .hotel-detail-slider-sub h4{
   font-size: 22px;
@@ -2025,4 +2035,40 @@ html{
     background-size: 18px 18px;
     background-position: left bottom;
     background-repeat: no-repeat;
+}
+
+.hotel-detail-view .swiper-container {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .hotel-detail-view{
+    height: 500px;
+    margin-top: 20px;
+  }
+.hotel-detail-view .swiper-slide {
+  background-size: cover;
+  background-position: center;
+
+}
+.hotel-detail-view .gallery-top {
+  height: 80%;
+  width: 100%;
+}
+.hotel-detail-view .gallery-thumbs {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.hotel-detail-view .gallery-thumbs .swiper-slide {
+  height: 100%;
+  opacity: 0.4;
+}
+
+.hotel-detail-view .gallery-thumbs .swiper-slide-thumb-active {
+  opacity: 1;
 }
