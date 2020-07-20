@@ -376,7 +376,7 @@ h1{
 
 .holiday-slider .swiper-container {
   width: 100%;
-      height: 500px;
+      height: 500px !important;
   background-color:black;
 }
 
@@ -403,7 +403,7 @@ h1{
 
 .more-slider .swiper-container {
   width: 100%;
-      height: 500px;
+      height: 500px !important;
   background-color:black;
 }
 
@@ -1379,7 +1379,15 @@ margin-top: 15px;
   padding: 0px;
   display: none;
 }
-
+#panel{
+  display: none;
+}
+#panel1{
+  display: none;
+}
+#panel2{
+  display: none;
+}
 .flight-main-div header .navbar-brand h2{
   background: -webkit-linear-gradient(right, rgba(235, 0, 141, 0.7) , rgba(153, 102, 255, 0.7));
   -webkit-background-clip: text;
@@ -1898,8 +1906,8 @@ html{
   color: #646464;
 }
 .hotel-detail img{
-  height: 250px;
-  width: 350px;
+  height: 190px;
+    width: 220px;
   border-radius: 10px;
   overflow: hidden;
   object-fit: cover;
@@ -1908,6 +1916,42 @@ html{
   font-size: 20px;
   font-weight: 600;
   color: black;
+}
+.hotel-detail .hotel-detail-sub ul{
+  list-style: none;
+  font-size: 15px;
+  font-weight: 400;
+  color: #646464;
+  display: flex;
+}
+.hotel-detail .hotel-detail-sub li{
+  padding: 3px 0px;
+  margin-right:10px ;
+}
+.hotel-detail .hotel-detail-sub li::before{
+  content: '';
+    display: inline-block;
+    height: 20px;
+    width: 25px;
+    background-size: 20px 20px;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+}
+.hotel-detail .hotel-detail-sub .couple::before{
+  content: "";
+  background-image: url(../img/couple.svg);
+}
+.hotel-detail .hotel-detail-sub .wifi::before{
+  content: "";
+  background-image: url(../img/wifi1.svg);
+}
+.hotel-detail .hotel-detail-sub .parking::before{
+  content: "";
+  background-image: url(../img/car-parking.svg);
+}
+.hotel-detail .hotel-detail-sub .restaurant::before{
+  content: "";
+  background-image: url(../img/bf1.svg);
 }
 .hotel-detail .hotel-detail-sub{
   margin-left: 20px;
@@ -2178,7 +2222,7 @@ html{
   border: 2px solid #dfdfdf;
   padding: 20px;
   margin: 50px 0px;
-  box-shadow: 0 1px 8px rgba(0,0,0,.1);;
+  box-shadow: 0 1px 8px rgba(0,0,0,.1);
 }
 .hotel-review-detail p{
   color: #bebcbc !important;
@@ -2192,4 +2236,100 @@ html{
   border: 1px solid #0ac3fa;
   float: right;
   margin-top: -60px;
+}
+
+.hotel-detail-faq{
+  border-radius: 10px;
+  box-shadow: 0 1px 8px rgba(0,0,0,.1);
+  padding: 20px;
+}
+.hotel-detail-faq .hotel-faq{
+  border-bottom: 1px solid #dfdfdf;
+  padding: 20px 0px;
+}
+.hotel-detail-faq .hotel-faq h6{
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.hotel-detail-faq .remove-border{
+  border: none !important;
+}
+.hotel-choose-room .choose-room-img{
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.hotel-choose-room h6{
+  margin: 0px 5px 10px 5px;
+  font-size: 18px;
+}
+.hotel-choose-room ul{
+  list-style: none;
+  font-size: 15px;
+  color: #646464;
+}
+.hotel-choose-room-main h4{
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.hotel-choose-room{
+  box-shadow: 0 1px 8px rgba(0,0,0,.1);
+  padding: 25px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.hotel-choose-room .choose-room-img img{
+  height: 100%;
+  width: 100%;
+}
+.hotel-choose-room .btn{
+  width: 150px;
+  float: right;
+}
+.hotel-choose-room .rs{
+  font-size: 25px !important;
+  font-weight: 600 !important;
+  color: #646464 !important;
+  margin: 0px 0px 10px 0px!important;
+}
+del{
+  color: #646464;
+}
+.hotel-choose-room li{
+  padding: 3px 0px;
+}
+.hotel-choose-room li::before{
+  content: '';
+    display: inline-block;
+    height: 20px;
+    width: 25px;
+    background-size: 20px 20px;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+}
+.hotel-choose-room .choose-bed:before{
+  content: '';
+    background-image: url(../img/bed1.svg); 
+}
+.hotel-choose-room .choose-refund:before{
+  content: '';
+    background-image: url(../img/refund.svg); 
+}
+.hotel-choose-room .choose-wifi:before{
+  content: '';
+    background-image: url(../img/wifi1.svg); 
+}
+.hotel-choose-room .choose-room:before{
+  content: '';
+    background-image: url(../img/room-key.svg); 
+}
+.hotel-choose-room .choose-breakfast:before{
+  content: '';
+    background-image: url(../img/bf1.svg); 
+}
+.hotel-choose-room .choose-lunch:before{
+  content: '';
+    background-image: url(../img/bf2.svg); 
 }
