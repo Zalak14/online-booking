@@ -32,6 +32,9 @@ button:focus{
   box-shadow: none;
   outline: none;
 }
+.container{
+  max-width: 1200px !important;
+}
 .header {
   z-index: 2;
   position: absolute;
@@ -1373,9 +1376,18 @@ margin-top: 15px;
   text-decoration: underline;
   cursor: pointer;
 }
+#flip4 a{
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
 
 
 #panel3 {
+  padding: 0px;
+  display: none;
+}
+#panel4 {
   padding: 0px;
   display: none;
 }
@@ -1883,7 +1895,7 @@ html{
   margin-top: 20px;
   box-shadow: 0 1px 8px rgba(0,0,0,.1);
   border-radius: 10px;
-  padding: 20px;
+  overflow: hidden;
   margin-bottom: 20px;
  }
 
@@ -1901,16 +1913,29 @@ html{
   font-size: 14px;
 }
 .hotel-detail .heading {
+  font-size: 25px;
+  font-weight: 500;
+  color: #646464;
+  margin-top: 10px;
+}
+.hotel-detail .heading1 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #9c9c9c;
+}
+.hotel-detail .heading2 {
   font-size: 14px;
   font-weight: 500;
   color: #646464;
 }
 .hotel-detail img{
-  height: 190px;
-    width: 220px;
-  border-radius: 10px;
+  height: 100%;
+    width: 240px;
   overflow: hidden;
   object-fit: cover;
+}
+.hotel-detail .hotel-detail-sub{
+  padding: 20px 0px;
 }
 .hotel-detail .hotel-detail-sub h3{
   font-size: 20px;
@@ -1919,7 +1944,7 @@ html{
 }
 .hotel-detail .hotel-detail-sub ul{
   list-style: none;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 400;
   color: #646464;
   display: flex;
@@ -1979,6 +2004,22 @@ html{
 .mb-10{
   margin-bottom: 10px;
 }
+.hotel-detail-listing-price{
+  text-align: right !important;
+  width: 220px;
+  border-left: 1px solid #dfdfdf;
+  margin-left: 20px;
+  padding: 20px 0px;
+}
+.hotel-detail-listing-price img{
+  height: 70px;
+  width: auto;
+}
+.hotel-detail-listing-price .btn{
+  width: 150px;
+  margin-top: 15px;
+  background-color: transparent !important;
+}
 
 .radio-design{
   border: 2px dotted pink;
@@ -1999,14 +2040,14 @@ html{
   color: #646464;
 }
 .hotel-detail-slider{
-  height: 500px;
+  height: 600px;
   width: 100%;
   margin-top: 20px;
 }
 
 .hotel-detail-slider .swiper-container {
   width: 100%;
-  height: 300px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -2287,6 +2328,7 @@ html{
 .hotel-choose-room .btn{
   width: 150px;
   float: right;
+  background-color: transparent !important;
 }
 .hotel-choose-room .rs{
   font-size: 25px !important;
@@ -2332,4 +2374,48 @@ del{
 .hotel-choose-room .choose-lunch:before{
   content: '';
     background-image: url(../img/bf2.svg); 
+}
+
+.hotel-detail-header-bg{
+  margin-top: 30px;
+  background-image: linear-gradient(to right,#7491ff,#0ac3fa 48%,#4addea);
+  padding: 2px 0px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1111111111111111111111111;
+}
+
+.hotel-detail-header ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  transition: all 0.5s linear 0s;
+  padding: 10px 10px;
+}
+.hotel-detail-header li{
+cursor: pointer;
+transition: all 0.5s linear 0s;
+padding: 5px 10px;
+border: 2px solid transparent;
+}
+.hotel-detail-header li a{
+  text-decoration: none;
+  color: white;
+}
+.hotel-detail-header li:hover{
+  transition: all 0.5s linear 0s;
+  border: 2px solid white;
+}
+#loadMore{
+  text-align: right;
+  margin: 0px 5px 40px;
+}
+#loadMore a{
+  width: 130px;
+  text-decoration: none;
+}
+.hotel-payment-main{
+  margin-top: 100px;
 }
