@@ -1372,23 +1372,11 @@ margin-top: 15px;
   cursor: pointer;
 }
 #flip3{
-  color: blue;
-  text-decoration: underline;
-  cursor: pointer;
-}
-#flip4 a{
-  color: blue;
-  text-decoration: underline;
   cursor: pointer;
 }
 
 
 #panel3 {
-  padding: 0px;
-  display: none;
-}
-#panel4 {
-  padding: 0px;
   display: none;
 }
 #panel{
@@ -2012,7 +2000,7 @@ html{
   padding: 20px 0px;
 }
 .hotel-detail-listing-price img{
-  height: 70px;
+  height: 50px;
   width: auto;
 }
 .hotel-detail-listing-price .btn{
@@ -2022,7 +2010,7 @@ html{
 }
 
 .radio-design{
-  border: 2px dotted pink;
+  border: 2px dotted #0ac3fa;
   padding: 3px;
 }
 .checked{
@@ -2418,4 +2406,46 @@ border: 2px solid transparent;
 }
 .hotel-payment-main{
   margin-top: 100px;
+}
+
+.hotel-traveller-info-heading{
+  background-image: linear-gradient(to right, rgba(235, 0, 141, 0.7) , rgba(153, 102, 255, 0.7));
+  padding: 15px 15px;
+  color: white;
+  margin-bottom: 20px;
+}
+.hotel-payment-gst-form{
+  display: flex;
+  justify-content: start;
+  background-image: linear-gradient(to right,#7491ff,#0ac3fa 48%,#4addea);
+  padding: 20px 20px;
+  color: white;
+}
+.hotel-payment-gst-form p{
+  color: white !important;
+}
+.hotel-payment-gst-form img{
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
+.hotel-payment-gst-form-d .btn{
+  margin: 0px 15px;
+  padding: 15px 0px;
+  width: 150px;
+  background-image: linear-gradient(to right,#7491ff,#0ac3fa 48%,#4addea) !important;
+}
+.mt-100{
+  margin-top: 100px;
+}
+.hotel-payment-sub .payment-fare h5{
+  background-image: linear-gradient(to right,#7491ff,#0ac3fa 48%,#4addea);
+  color: white;
+  border-radius: 5px;
+}
+.ml-20{
+  margin-left: 20px;
+}
+.hotel-payment-sub .payment-fare .total-font{
+  background-color: transparent;
 }
