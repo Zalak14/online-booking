@@ -56,17 +56,14 @@
                             <li class="nav-item"><a class="nav-link" href="#"><img src="img/user.svg" width="20px" height="20px"></a></li>
                             
                         </ul></div>
-                        <div>
+                        <div class="menu-icon">
                             <ul class="navbar-nav br-navmenu">
-                                <li class="nav-item active"><a class="nav-link" href="#">HOME</a></li>
-                                <li class="nav-item"><a class="nav-link" href="html/hotel.html">HOTELS</a></li>
-                                <li class="nav-item"><a class="nav-link" href="html/flight.html">FLIGHTS</a></li>
-                                <li class="nav-item"><a class="nav-link" href="html/transfer.html">Transfer</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">VACATION HOMES </a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">PACKAGES</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">TOURS</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">SERVICES</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">ABOUT US</a></li>
+                                <li class="nav-item active"><a class="nav-link menu-home" href="#">HOME</a></li>
+                                <li class="nav-item"><a class="nav-link menu-hotel" href="html/hotel.html">HOTELS</a></li>
+                                <li class="nav-item"><a class="nav-link menu-flight" href="html/flight.html">FLIGHTS</a></li>
+                                <li class="nav-item"><a class="nav-link menu-cab" href="html/transfer.html">Transfer</a></li>
+                                <li class="nav-item"><a class="nav-link menu-holiday" href="html/holiday.html">HOLIDAYS </a></li>
+                                <li class="nav-item"><a class="nav-link menu-visa" href="#">VISA</a></li>
                             </ul></div>
                         </div>
                     </nav>
@@ -86,9 +83,7 @@
               <div class="swiper-slide"><img src="img/66.jpg"/></div>
               <div class="swiper-slide"><img src="img/77.jpg"/></div>
               <div class="swiper-slide"><img src="img/88.jpg"/></div>
-            </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination0 swiper-pagination"></div>  
+            </div> 
           </div>
     </div>
 
@@ -112,10 +107,10 @@
                 <div id="one-way" class="searchcontent search-active">
                   <form>
                     <div class="form-row">
-                      <div class="form-group col-md-3">
+                      <div class="form-group col-md-4">
                         <label for="inputEmail4">From</label>
                         <input type="text" class="form-control flight-icon" placeholder="City or Airpot"></div>
-                      <div class="form-group col-md-3">
+                      <div class="form-group col-md-4">
                         <label for="inputPassword4">To</label>
                         <input type="text" class="form-control location-icon" placeholder="Country, City or island">
                       </div>
@@ -123,12 +118,7 @@
                         <label for="inputEmail4">Leaving on</label>
                         <input type="date" class="form-control" id="inputEmail4">
                       </div>
-                      
-                      <div class="form-group col-md-2">
-                        <label for="inputEmail4"></label>
-                        <button class="btn btn-find" onclick="openFlight()">Find</button>
-                      </div>
-                      <div class="form-group col-md-3">
+                      <div class="form-group col-md-4">
                         <div class="dropdown mr-1">
                             <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
                             0 adult
@@ -139,7 +129,7 @@
                             </div>
                         </div>
                      </div>
-                     <div class="form-group col-md-3">
+                     <div class="form-group col-md-4">
                         <div class="dropdown mr-1">
                             <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
                             Any Class
@@ -153,7 +143,7 @@
                             </div>
                         </div>
                      </div>
-                     <div class="form-group col-md-3">
+                     <div class="form-group col-md-4">
                       <div class="dropdown mr-1">
                           <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
                           Payment Method
@@ -171,6 +161,9 @@
                           </div>
                       </div>
                    </div>
+                   <div class="form-group col-md-12 d-flex justify-content-center">
+                    <button class="btn btn-find btn11">Find</button>
+                  </div>
                     </div>
                   </form>
                 </div>
@@ -178,10 +171,10 @@
                 <div id="return" class="searchcontent">
                   <form>
                     <div class="form-row">
-                      <div class="form-group col-md-3">
+                      <div class="form-group col-md-4">
                         <label for="inputEmail4">From</label>
                         <input type="text" class="form-control flight-icon" placeholder="City or Airpot"></div>
-                      <div class="form-group col-md-3">
+                      <div class="form-group col-md-4">
                         <label for="inputPassword4">To</label>
                         <input type="text" class="form-control location-icon" placeholder="Country, City or island">
                       </div>
@@ -193,11 +186,8 @@
                         <label for="inputEmail4">Returning on</label>
                         <input type="date" class="form-control" id="inputEmail4">
                       </div>
-                      <div class="form-group col-md-2">
-                        <label for="inputEmail4"></label>
-                        <button class="btn btn-find" onclick="openFlight()">Find</button>
-                      </div>
-                      <div class="form-group col-md-3">
+                      
+                      <div class="form-group col-md-4">
                         <div class="dropdown mr-1">
                             <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
                             0 adult
@@ -208,7 +198,7 @@
                             </div>
                         </div>
                      </div>
-                     <div class="form-group col-md-3">
+                     <div class="form-group col-md-4">
                         <div class="dropdown mr-1">
                             <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
                             Any Class
@@ -222,7 +212,7 @@
                             </div>
                         </div>
                      </div>
-                     <div class="form-group col-md-3">
+                     <div class="form-group col-md-4">
                       <div class="dropdown mr-1">
                           <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
                           Payment Method
@@ -240,6 +230,9 @@
                           </div>
                       </div>
                    </div>
+                   <div class="form-group col-md-12 d-flex justify-content-center">
+                    <button class="btn btn-find btn11">Find</button>
+                  </div>
                     </div>
                   </form>
                    
@@ -248,10 +241,22 @@
                 <div id="multicity" class="searchcontent">
                   <form>
                     <div class="form-row">
-                      <div class="form-group col-md-3">
+                      <div class="form-group col-md-4">
                         <label for="inputEmail4">From</label>
                         <input type="text" class="form-control flight-icon" placeholder="City or Airpot"></div>
-                      <div class="form-group col-md-3">
+                      <div class="form-group col-md-4">
+                        <label for="inputPassword4">To</label>
+                        <input type="text" class="form-control location-icon" placeholder="Country, City or island">
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="inputEmail4">Date</label>
+                        <input type="date" class="form-control" id="inputEmail4">
+                      </div>
+                  
+                      <div class="form-group col-md-4">
+                        <label for="inputEmail4">From</label>
+                        <input type="text" class="form-control flight-icon" placeholder="City or Airpot"></div>
+                      <div class="form-group col-md-4">
                         <label for="inputPassword4">To</label>
                         <input type="text" class="form-control location-icon" placeholder="Country, City or island">
                       </div>
@@ -260,27 +265,8 @@
                         <input type="date" class="form-control" id="inputEmail4">
                       </div>
                       
-                      <div class="form-group col-md-2">
-                        <label for="inputEmail4"></label>
-                        <button class="btn btn-find" onclick="openFlight()">Find</button>
-                      </div>
-                      <div class="form-group col-md-3">
-                        <label for="inputEmail4">From</label>
-                        <input type="text" class="form-control flight-icon" placeholder="City or Airpot"></div>
-                      <div class="form-group col-md-3">
-                        <label for="inputPassword4">To</label>
-                        <input type="text" class="form-control location-icon" placeholder="Country, City or island">
-                      </div>
-                      <div class="form-group col-md-4">
-                        <label for="inputEmail4">Date</label>
-                        <input type="date" class="form-control" id="inputEmail4">
-                      </div>
-                      <div class="form-group col-md-2">
-                        <label for="inputEmail4"></label>
-                        <button class="btn btn-find">Add city</button>
-                      </div>
     
-                      <div class="form-group col-md-3">
+                      <div class="form-group col-md-4">
                         <div class="dropdown mr-1">
                             <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
                             0 adult
@@ -291,7 +277,7 @@
                             </div>
                         </div>
                      </div>
-                     <div class="form-group col-md-3">
+                     <div class="form-group col-md-4">
                         <div class="dropdown mr-1">
                             <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
                             Any Class
@@ -305,7 +291,7 @@
                             </div>
                         </div>
                      </div>
-                     <div class="form-group col-md-3">
+                     <div class="form-group col-md-4">
                       <div class="dropdown mr-1">
                           <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
                           Payment Method
@@ -323,6 +309,10 @@
                           </div>
                       </div>
                    </div>
+                   <div class="form-group col-md-12 d-flex justify-content-center">
+                    <button class="btn btn-find btn11 mr-20">Add city</button>
+                    <button class="btn btn-find btn11">Find</button>
+                  </div>
                     </div>
                   </form>
                 </div>
@@ -336,19 +326,15 @@
                   <div class="form-group col-md-6">
                     <label for="inputEmail4">Search hotels in</label>
                     <input type="text" class="form-control hotel-icon" placeholder="Search hotels name"></div>
-                  <div class="form-group col-md-2">
+                  <div class="form-group col-md-3">
                     <label for="inputEmail4">Check in</label>
                     <input type="date" class="form-control" id="inputEmail4">
                   </div>
-                  <div class="form-group col-md-2">
+                  <div class="form-group col-md-3">
                     <label for="inputEmail4">Check out</label>
                     <input type="date" class="form-control" id="inputEmail4">
                   </div>
-                  <div class="form-group col-md-2">
-                    <label for="inputEmail4"></label>
-                    <button type="submit" class="btn btn-find">Find</button>
-                  </div>
-                  <div class="form-group col-md-5">
+                  <div class="form-group col-md-6">
                     <div class="dropdown mr-1">
                         <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
                         2 Adult 1 Room
@@ -359,7 +345,7 @@
                         </div>
                     </div>
                  </div>
-                 <div class="form-group col-md-3">
+                 <div class="form-group col-md-6">
                   <div class="dropdown mr-1">
                       <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
                       Payment Method
@@ -377,6 +363,9 @@
                       </div>
                   </div>
                </div>
+               <div class="form-group col-md-12 d-flex justify-content-center">
+                <button class="btn btn-find btn11">Find</button>
+              </div>
                  
                 </div>
               </form>
@@ -385,23 +374,28 @@
             <div id="transfer" class="tabcontent">
               <form>
                 <div class="form-row">
-                  <div class="form-group col-md-3">
+                  <div class="form-group col-md-4">
                     <label for="inputEmail4">From</label>
                     <input type="text" class="form-control flight-icon" placeholder="City or Airpot"></div>
-                  <div class="form-group col-md-3">
+                  <div class="form-group col-md-4">
                     <label for="inputPassword4">To</label>
                     <input type="text" class="form-control location-icon" placeholder="Country, City or island">
                   </div>
-                  <div class="form-group col-md-4">
+                  <div class="form-group col-md-2">
                     <label for="inputEmail4">Date</label>
                     <input type="date" class="form-control" id="inputEmail4">
                   </div>
                   <div class="form-group col-md-2">
-                    <label for="inputEmail4"></label>
-                    <button type="submit" class="btn btn-find">Find</button>
+                    <label for="inputEmail4">Time</label>
+                    <select class="custom-select form-control">
+                      <option selected>Time</option>
+                      <option value="1">1:00</option>
+                      <option value="2">2:00</option>
+                      <option value="3">3:00</option>
+                    </select>
                   </div>
                   
-                 <div class="form-group col-md-5">
+                 <div class="form-group col-md-6">
                     <div class="dropdown mr-1">
                         <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
                         Which Car
@@ -413,7 +407,7 @@
                         </div>
                     </div>
                  </div>
-                 <div class="form-group col-md-3">
+                 <div class="form-group col-md-6">
                   <div class="dropdown mr-1">
                       <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
                       Payment Method
@@ -431,6 +425,9 @@
                       </div>
                   </div>
                </div>
+               <div class="form-group col-md-12 d-flex justify-content-center">
+                <button class="btn btn-find btn11">Find</button>
+              </div>
                 </div>
               </form>
             </div>
@@ -438,26 +435,22 @@
             <div id="packages" class="tabcontent">
               <form>
                 <div class="form-row">
-                  <div class="form-group col-md-3">
+                  <div class="form-group col-md-4">
                     <label for="inputEmail4">From</label>
                     <input type="text" class="form-control flight-icon" placeholder="City or Airpot"></div>
-                  <div class="form-group col-md-3">
+                  <div class="form-group col-md-4">
                     <label for="inputPassword4">To</label>
                     <input type="text" class="form-control location-icon" placeholder="Country, City or island">
                   </div>
                   <div class="form-group col-md-2">
-                    <label for="inputEmail4">Leaving on</label>
+                    <label for="inputEmail4">During</label>
                     <input type="date" class="form-control" id="inputEmail4">
                   </div>
                   <div class="form-group col-md-2">
-                    <label for="inputEmail4">Returning on</label>
+                    <label for="inputEmail4">During</label>
                     <input type="date" class="form-control" id="inputEmail4">
                   </div>
-                  <div class="form-group col-md-2">
-                    <label for="inputEmail4"></label>
-                    <button class="btn btn-find">Find</button>
-                  </div>
-                  <div class="form-group col-md-3">
+                  <div class="form-group col-md-4">
                     <div class="dropdown mr-1">
                         <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
                         0 adult
@@ -468,7 +461,7 @@
                         </div>
                     </div>
                  </div>
-                 <div class="form-group col-md-3">
+                 <div class="form-group col-md-4">
                     <div class="dropdown mr-1">
                         <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
                         Any Class
@@ -482,7 +475,7 @@
                         </div>
                     </div>
                  </div>
-                 <div class="form-group col-md-3">
+                 <div class="form-group col-md-4">
                   <div class="dropdown mr-1">
                       <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
                       Payment Method
@@ -500,6 +493,9 @@
                       </div>
                   </div>
                </div>
+               <div class="form-group col-md-12 d-flex justify-content-center">
+                <button class="btn btn-find btn11">Find</button>
+              </div>
                 </div>
               </form>
                 </div>
@@ -1671,49 +1667,49 @@
             <div class="swiper-container slider-book">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <div class="book-slide">
+                  <div class="book-slide book-slide-color1">
                     <img src="img/book11.svg"/>
                     <h3>Safe and Secure</h3>
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="book-slide">
+                  <div class="book-slide book-slide-color2">
                     <img src="img/book22.svg"/>
                     <h3>Travel Guide</h3>
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="book-slide">
+                  <div class="book-slide book-slide-color3">
                     <img src="img/book33.svg"/>
                     <h3>Group Booking</h3>
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="book-slide">
+                  <div class="book-slide book-slide-color4">
                     <img src="img/book44.svg"/>
                     <h3>Personalised Experience</h3>
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="book-slide">
+                  <div class="book-slide book-slide-color1">
                     <img src="img/book11.svg"/>
                     <h3>Safe and Secure</h3>
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="book-slide">
+                  <div class="book-slide book-slide-color2">
                     <img src="img/book22.svg"/>
                     <h3>Travel Guide</h3>
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="book-slide">
+                  <div class="book-slide book-slide-color3">
                     <img src="img/book33.svg"/>
                     <h3>Group Booking</h3>
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="book-slide">
+                  <div class="book-slide book-slide-color4">
                     <img src="img/book44.svg"/>
                     <h3>Personalised Experience</h3>
                   </div>
