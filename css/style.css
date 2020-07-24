@@ -2449,3 +2449,97 @@ border: 2px solid transparent;
 .hotel-payment-sub .payment-fare .total-font{
   background-color: transparent;
 }
+.transfer-listing .flight-name img{
+  height: auto;
+  width: 235px;
+  object-fit: contain;
+}
+.car-specification h4{
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.car-specification ul{
+  list-style: none;
+  margin-top: 10px;
+  display: flex;
+  justify-content: start;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgb(223, 222, 222);
+}
+.car-specification ul li{
+  color: #646464;
+  margin-right: 20px;
+}
+.car-specification ul li::before{
+  content: '';
+    display: inline-block;
+    height: 21px;
+    width: 25px;
+    background-size: 20px 20px;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.car-specification ul .seat::before{
+  content: "";
+  background-image: url(../img/seat111.svg);
+}
+.car-specification ul .bag::before{
+  content: "";
+  background-image: url(../img/work.svg);
+}
+.car-specification ul .ac::before{
+  content: "";
+  background-image: url(../img/air-conditioner.svg);
+}
+.car-specification ul .mask::before{
+  content: "";
+  background-image: url(../img/face-mask.svg);
+}
+.car-specification ul .cab::before{
+  content: "";
+  background-image: url(../img/traffic.svg);
+}
+.car-specification ul .hand::before{
+  content: "";
+  background-image: url(../img/hand-sanitizer.svg);
+}
+.transfer-dis{
+  display: flex;
+  justify-content: end;
+  margin-right: 5px;
+}
+.transfer-dis img{
+  height: auto;
+  width: 70px;
+  margin-right: 10px;
+}
+.transfer-price{
+  text-align: right;
+  margin-right: 5px;
+}
+.transfer-price h2{
+font-size: 22px;
+font-weight: 600;
+margin-bottom: 20px;
+}
+.transfer-price p{
+  font-size: 18px !important;
+}
+.transfer-payment .flight-name img{
+  height: auto;
+  width: 235px;
+}
+.transfer-payment .flight-route{
+  margin-bottom: 50px;
+}
+.transfer-payment .transfer-cab p{
+  font-size: 22px !important;
+}
+.transfer-payment .transfer-cab small{
+  font-size: 15px !important;
+}
+.transfer-payment .hotel-payment-gst-form{
+  margin-bottom: 50px;
+}
