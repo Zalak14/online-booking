@@ -70,36 +70,54 @@
           <div class="search-box-detail">
             <div class="search">
               
-              <button class="searchlinks" onclick="searchBox(event, 'return')">Hotel Booking</button>
+              <button class="searchlinks" onclick="searchBox(event, 'return')">Holiday Booking</button>
              
             </div>
 
             <div id="return" class="searchcontent search-active">
               <form>
                 <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="inputEmail4">Search hotels in</label>
-                    <input type="text" class="form-control hotel-icon" placeholder="Search hotels name"></div>
-                  <div class="form-group col-md-3">
-                    <label for="inputEmail4">Check in</label>
+                  <div class="form-group col-md-4">
+                    <label for="inputEmail4">From</label>
+                    <input type="text" class="form-control flight-icon" placeholder="City or Airpot"></div>
+                  <div class="form-group col-md-4">
+                    <label for="inputPassword4">To</label>
+                    <input type="text" class="form-control location-icon" placeholder="Country, City or island">
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputEmail4">During</label>
                     <input type="date" class="form-control" id="inputEmail4">
                   </div>
-                  <div class="form-group col-md-3">
-                    <label for="inputEmail4">Check out</label>
+                  <div class="form-group col-md-2">
+                    <label for="inputEmail4">During</label>
                     <input type="date" class="form-control" id="inputEmail4">
                   </div>
-                  <div class="form-group col-md-6">
+                  <div class="form-group col-md-4">
                     <div class="dropdown mr-1">
                         <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                        2 Adult 1 Room
+                        0 adult
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                        <a class="dropdown-item" href="#">2 Adult</a>
-                        <a class="dropdown-item" href="#">1 Room</a>
+                        <a class="dropdown-item" href="#">Adult</a>
+                        <a class="dropdown-item" href="#">children</a>
                         </div>
                     </div>
                  </div>
-                 <div class="form-group col-md-6">
+                 <div class="form-group col-md-4">
+                    <div class="dropdown mr-1">
+                        <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                        Any Class
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                        <a class="dropdown-item" href="#">Any Class</a>
+                        <a class="dropdown-item" href="#">Economy</a>
+                        <a class="dropdown-item" href="#">Primium Economy</a>
+                        <a class="dropdown-item" href="#">First Class</a>
+                        <a class="dropdown-item" href="#">Business</a>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="form-group col-md-4">
                   <div class="dropdown mr-1">
                       <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
                       Payment Method
@@ -120,7 +138,6 @@
                <div class="form-group col-md-12 d-flex justify-content-center">
                 <button class="btn btn-find btn11">Find</button>
               </div>
-                 
                 </div>
               </form>
                
@@ -191,8 +208,9 @@
             </div>
             <a name="about"></a>
             <div class="hotel-detail-slider-sub">
-              <h4>Novotel Hotel</h4>
-              <p><i class='fas fa-map-marker-alt'></i> SG Highway, Ahmedabad</p>
+              <h4>Family Fun Goa Fully Loaded</h4>
+              <p><i class='fas fa-map-marker-alt'></i> Goa</p>
+              <p>Transfers Included | North Goa Sightseeing | South Goa Sightseeing</p>
 
               <div class="flight-detail-alert">
                 <div class=""><img src="../img/Alerts-1.svg"></div>
@@ -201,249 +219,39 @@
                   <p>Flights with this icon can be altered later without paying the airline change fees.* And by adding a Premium Service Package you can avoid our management fees too. <a href="#">Discover more</a></p>
                 </div>
               </div>
-
-              <div class="about-hotel">
-                <h4>About The Hotel</h4>
-                <p>This property is 10 minutes walk from the beach. Offering an outdoor pool and year-round outdoor pool, Emperor Resorts & Goa is located in Vagator. The starters are delicious and there is a lot of variety. This place has a fantastic location with an amazing sunset so it is a good idea to go there early. Emperor Resorts & Goa is only 10 minutes from Thalassa night club. Each room at this resort is air conditioned and is equipped with a kitchenette and TV with satellite channels. Certain units include a seating area to relax in after a busy day. A balcony or patio are featured in certain rooms. The rooms are equipped with a private bathroom fitted with a bath. For your comfort, you will find slippers and free toiletries.</p>
-                <a name="policy"></a>
-                <div class="hotel-rules">
-                  <h4>Rules and Policies</h4>
-                </div>
-                <div>
-                  <p><b>Guest Profile</b></p>
-                  <ul>
-                    <li>Suitable for children</li>
-                    <li>Bachelors allowed</li>
-                    <li>Unmarried couples are not allowed.Local IDs are accepted.</li>
-                  </ul>
-
-                  <p><b>Smoking/Alcohol consumption Rules</b></p>
-                  <ul>
-                    <li>Smoking within the premises is not allowed</li>
-                    <li>There are some restrictions on alcohol consumption.</li>
-                  </ul>
-
-                  <p><b>Society Rules</b></p>
-                  <ul>
-                    <li>Local id and unmarried couples are not allowed</li>
-                  </ul>
-
-                  <p><b>Payment Related</b></p>
-                  <ul>
-                    <li>No security deposit is required</li>
-                    <li>There are no restrictions on food for guests</li>
-                  </ul>
-
-                  <p><b>Pet(s) Related</b></p>
-                  <ul>
-                    <li>Pets are not allowed.</li>
-                  </ul>
-
-                  <p><b>Directions to reach the property</b></p>
-                  <ul>
-                    <li>Nearest Airport - Goa International Airport, 44 kms, 1 hr 15 mins Nearest Railway Station - Vasco da Gama Railway Station, 40 Kms, 1 hr 15 mins</li>
-                  </ul>
-                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="hplan">
+            <div class="tab">
+              <button class="hplanlinks" onclick="openHolidayplan(event, 'holiday-plan')">Holiday Plan</button>
+              <button class="hplanlinks" onclick="openHolidayplan(event, 'holiday-policy')">Policy</button>
+            </div>
+            <div id="holiday-plan" class="hplancontent search-active">
+              <div class="hplan-sub-tab">
+                <button class="sub-hplanlinks" onclick="openHolidayplansub(event, 'h-plan1')">Holiday Plan</button>
+                <button class="sub-hplanlinks" onclick="openHolidayplansub(event, 'h-plan2')">Policy</button>
               </div>
-              <a name="room"></a>
-              <div class="hotel-choose-room-main">
-                <h4>Choose Room</h4>
+              <div id="h-plan1" class="sub-hplancontent search-active">
+                <h3>Paris</h3>
+                <p>Paris is the capital of France.</p> 
               </div>
-              <div class="hotel-choose-room">
-                <h6><b>Deluxe AC Room</b></h6>
-                    <div class="row">
-                      <div class="col-md-3">
-                        <div class="choose-room-img">
-                          <img src="../img/11.jpg">
-                        </div>
-                      </div>
-                        <div class="col-md-2">
-                          <p><b>Highlights</b></p>
-                          <ul>
-                            <li class="choose-bed">Double Bedroom</li>
-                            <li class="choose-refund">Non Refundable</li>
-                            <li class="choose-wifi">Free Wi-Fi</li>
-                          </ul>
-                        </div>
-                        <div class="col-sm-3">
-                          <p><b>Available room</b></p>
-                          <ul>
-                            <li class="choose-room">Room Only</li>
-                          </ul>
-                        </div>
-                        <div class="col-md-2">
-                          <p><b>Price for 2 nights</b></p>
-                          <del>&#x20B9; 5000</del>
-                          <p class="rs">&#x20B9; 4000</p>
-                        </div>
-                        <div class="col-md-2">
-                          <a href="../html/hotel-payment.html" role="button" class="btn btn-find">Book Now</a>
-                        </div>
-                    </div>
+              <div id="h-plan2" class="sub-hplancontent">
+                <h3>Paris11</h3>
+                <p>Paris is the capital of France.</p> 
               </div>
-              
-              <div class="hotel-choose-room">
-                <h6><b>Executive Room</b></h6>
-                    <div class="row">
-                      <div class="col-md-3">
-                        <div class="choose-room-img">
-                          <img src="../img/11.jpg">
-                        </div>
-                      </div>
-                        <div class="col-md-2">
-                          <p><b>Highlights</b></p>
-                          <ul>
-                            <li class="choose-bed">Double Bedroom</li>
-                            <li class="choose-refund">Non Refundable</li>
-                            <li class="choose-wifi">Free Wi-Fi</li>
-                          </ul>
-                        </div>
-                        <div class="col-sm-3">
-                          <p><b>Available room</b></p>
-                          <ul>
-                            <li class="choose-room">Room Only</li>
-                            <li class="choose-breakfast">Breakfast</li>
-                          </ul>
-                        </div>
-                        <div class="col-md-2">
-                          <p><b>Price for 2 nights</b></p>
-                          <del>&#x20B9; 6000</del>
-                          <p class="rs">&#x20B9; 5000</p>
-                        </div>
-                        <div class="col-md-2">
-                          <a href="../html/hotel-payment.html" role="button" class="btn btn-find">Book Now</a>
-                        </div>
-                    </div>
-              </div>
-
-              <div class="hotel-choose-room">
-                <h6><b>Family AC Room</b></h6>
-                    <div class="row">
-                      <div class="col-md-3">
-                        <div class="choose-room-img">
-                          <img src="../img/11.jpg">
-                        </div>
-                      </div>
-                        <div class="col-md-2">
-                          <p><b>Highlights</b></p>
-                          <ul>
-                            <li class="choose-bed">Double Bedroom</li>
-                            <li class="choose-refund">Non Refundable</li>
-                            <li class="choose-wifi">Free Wi-Fi</li>
-                          </ul>
-                        </div>
-                        <div class="col-sm-3">
-                          <p><b>Available room</b></p>
-                          <ul>
-                            <li class="choose-room">Room Only</li>
-                            <li class="choose-breakfast">Breakfast</li>
-                            <li class="choose-lunch">Lunch</li>
-                          </ul>
-                        </div>
-                        <div class="col-md-2">
-                          <p><b>Price for 2 nights</b></p>
-                          <del>&#x20B9; 7000</del>
-                          <p class="rs">&#x20B9; 6000</p>
-                        </div>
-                        <div class="col-md-2">
-                          <a href="../html/hotel-payment.html" role="button" class="btn btn-find">Book Now</a>
-                        </div>
-                    </div>
-              </div>
-
-              <a name="facility"></a>
-              <div class="hotel-facility">
-                <h4>Hotel Facility</h4>
-                <div class="d-flex justify-content-between">
-                  <div class="">
-                    <p><b>GENERAL SERVICES</b></p>
-                    <ul>
-                      <li>Doctor on Call</li>
-                      <li>Luggage Storage</li>
-                      <li>Ticket Tour Assistance</li>
-                      <li>Wake-up Call</li>
-                    </ul>
-                  </div>
-
-                  <div class="">
-                    <p><b>FOOD AND DRINKS</b></p>
-                    <ul>
-                      <li>Restaurant</li>
-                      <li>Bar </li>
-                      <li>Dining Area</li>
-                    </ul>
-                  </div>
-
-                  <div class="">
-                    <p><b>INDOOR ACTIVITIES AND SPORTS</b></p>
-                    <ul>
-                      <li>Indoor Games (Pool Table)</li>
-                    </ul>
-                  </div>
-                  <div class="">
-                    <p><b>COMMON AREA</b></p>
-                  <ul>
-                    <li>Lawn</li>
-                    <li>Reception</li>
-                    <li>Seating Area</li>
-                  </ul>
-                  </div>
-                  
-                  
-  
-                </div>
-
-                <div class="d-flex justify-content-between">
-                  
-
-                  <div class="">
-                    <p><b>BEAUTY AND SPA</b></p>
-                    <ul>
-                      <li>Spa</li>
-                      <li>Facial Treatments </li>
-                      <li>Hair Treatments</li>
-                      <li>Salon</li>
-                      <li>Steam and Sauna</li>
-                      <li>Massage</li>
-                      <li>Manicure Pedicure</li>
-                    </ul>
-                  </div>
-
-                  <div class="">
-                    <p><b>SAFETY AND SECURITY</b></p>
-                    <ul>
-                      <li>Safe</li>
-                      <li>Fire Extinguishers</li>
-                      <li>Safety and Security</li>
-                      <li>Security</li>
-                    </ul>
-                  </div>
-                  <div class="">
-                    <p><b>MEDIA AND TECHNOLOGY</b></p>
-                    <ul>
-                      <li>Electrical Chargers</li>
-                      <li>TV</li>
-                    </ul>
-                  </div>
-
-                  <div class="">
-                    <p><b>BASIC FACILITIES</b></p>
-                    <ul>
-                      <li>Free Wi-Fi</li>
-                      <li>Swimming Pool (Common Pool)</li>
-                      <li>Free Parking</li>
-                      <li>Power Backup</li>
-                      <li>Air Conditioning (Room controlled)</li>
-                      <li>Ironing Service (Limited Pieces of Laundry Free)</li>
-                      
-                    </ul>
-                  </div>
-                 
-  
-                </div>
-
-                
-              </div>
+            </div>
+            
+            <div id="holiday-policy" class="hplancontent">
+              <h3>Paris</h3>
+              <p>Paris is the capital of France.</p> 
             </div>
           </div>
         </div>
@@ -764,7 +572,39 @@
       });
       </script>
       
+      <script>
+        function openHolidayplan(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("hplancontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+            tabcontent[i].className = tabcontent[i].className.replace("search-active", "");
+          }
+          tablinks = document.getElementsByClassName("hplanlinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        </script>
 
+<script>
+  function openHolidayplansub(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("sub-hplancontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+      tabcontent[i].className = tabcontent[i].className.replace("search-active", "");
+    }
+    tablinks = document.getElementsByClassName("sub-hplanlinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  </script>
 <script>
   function openDetail(evt, cityName) {
     var i, tabcontent, tablinks;
