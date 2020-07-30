@@ -205,7 +205,7 @@ button:focus{
 
 .search-tab{
   position: absolute;
-  top: 250px;
+  top: 230px;
   left: 10%;
   right: 10%;
   z-index: 3;
