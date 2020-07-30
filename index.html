@@ -80,8 +80,16 @@
                   <img src="img/banner1.svg"/>
                 </div>
               </div>
-              <div class="swiper-slide"><img src="img/banner2.svg"/></div>
-              <div class="swiper-slide"><img src="img/banner3.svg"/></div>
+              <div class="swiper-slide">
+                <div class="banner-slide-img">
+                  <img src="img/banner2.svg"/>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="banner-slide-img">
+                  <img src="img/banner3.svg"/>
+                </div>
+              </div>
             </div> 
           </div>
     </div>
@@ -2071,10 +2079,6 @@
     var swiper = new Swiper('.banner-slider', {
       spaceBetween: 30,
       centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
