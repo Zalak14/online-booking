@@ -71,7 +71,7 @@
           <div class="search-box-detail">
             <div class="search">
               
-              <button class="searchlinks" onclick="searchBox(event, 'return')">Holiday Booking</button>
+              <button class="searchlinks pr-0 pl-0 ml-12" onclick="searchBox(event, 'return')">Holiday Booking</button>
              
             </div>
 
@@ -93,7 +93,7 @@
                     <label for="inputEmail4">During</label>
                     <input type="date" class="form-control" id="inputEmail4">
                   </div>
-                  <div class="form-group col-md-6">
+                  <div class="form-group col-md-5">
                     <div class="dropdown mr-1">
                         <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
                         2 Adult 1 Room
@@ -104,7 +104,7 @@
                         </div>
                     </div>
                  </div>
-                 <div class="form-group col-md-6">
+                 <div class="form-group col-md-5">
                   <div class="dropdown mr-1">
                       <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
                       Payment Method
@@ -121,6 +121,18 @@
                       <a class="dropdown-item" href="#">Phonepe</a>
                       </div>
                   </div>
+               </div>
+               <div class="form-group col-md-2">
+                <div class="dropdown mr-1">
+                  <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                  Currency
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                  <a class="dropdown-item" href="#">INR</a>
+                  <a class="dropdown-item" href="#">USD</a>
+                  <a class="dropdown-item" href="#">EUR</a>
+                  </div>
+              </div>
                </div>
                <div class="form-group col-md-12 d-flex justify-content-center">
                 <button class="btn btn-find btn11">Modify</button>
@@ -146,7 +158,7 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="swiper-slide">
-                      <div class="card" style="width: 16rem;">
+                      <div class="card" style="width: 13rem;">
                         <img src="../img/22.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title card-title1">All Package</h5>
@@ -156,7 +168,7 @@
                   </div>
                   <div class="swiper-slide">
                     <div class="swiper-slide">
-                      <div class="card" style="width: 16rem;">
+                      <div class="card" style="width: 13rem;">
                         <img src="../img/11.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title card-title1">Family Special Holiday</h5>
@@ -168,7 +180,7 @@
                   </div>
                   <div class="swiper-slide">
                     <div class="swiper-slide">
-                      <div class="card" style="width: 16rem;">
+                      <div class="card" style="width: 13rem;">
                         <img src="../img/33.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title card-title1">Luxury</h5>
@@ -178,7 +190,7 @@
                   </div>
                   <div class="swiper-slide">
                     <div class="swiper-slide">
-                      <div class="card" style="width: 16rem;">
+                      <div class="card" style="width: 13rem;">
                         <img src="../img/44.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title card-title1">Couple Package</h5>
@@ -188,7 +200,7 @@
                   </div>
                   <div class="swiper-slide">
                     <div class="swiper-slide">
-                      <div class="card" style="width: 16rem;">
+                      <div class="card" style="width: 13rem;">
                         <img src="../img/55.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title card-title1">Soulmate Special</h5>
@@ -198,7 +210,7 @@
                   </div>
                   <div class="swiper-slide">
                     <div class="swiper-slide">
-                      <div class="card" style="width: 16rem;">
+                      <div class="card" style="width: 13rem;">
                         <img src="../img/66.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title card-title1">Nature</h5>
@@ -208,7 +220,7 @@
                   </div>
                   <div class="swiper-slide">
                     <div class="swiper-slide">
-                      <div class="card" style="width: 16rem;">
+                      <div class="card" style="width: 13rem;">
                         <img src="../img/77.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title card-title1">Adventure</h5>
@@ -218,7 +230,7 @@
                   </div>
                   <div class="swiper-slide">
                     <div class="swiper-slide">
-                      <div class="card" style="width: 16rem;">
+                      <div class="card" style="width: 13rem;">
                         <img src="../img/88.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title card-title1">Flight & Hotel</h5>
@@ -1249,11 +1261,11 @@
 <script src="../js/swiper.min.js"></script>
 <script>
   var swiper = new Swiper('.getaways-slider1', {
-    slidesPerView: 4,
+    slidesPerView: 5,
     spaceBetween: 30,
-    slidesPerGroup: 4,
+    slidesPerGroup: 5,
     loop: true,
-    loopFillGroupWithBlank: true,
+    
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
