@@ -718,6 +718,12 @@ h1{
   overflow: hidden;
   border-radius: 10px;
 }
+.slider-mandates .card-img-top{
+  height: 200px;
+  width: auto;
+  object-position: center center;
+  object-fit: cover;
+}
 
 .mandate-main .card-title{
   font-weight: 600;
