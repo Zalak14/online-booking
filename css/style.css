@@ -2072,6 +2072,9 @@ html{
 .mr-20{
   margin-right: 20px;
 }
+.mr-0{
+  margin-right: 0px !important;
+}
 .btn11{
   width: 200px;
   padding: 12px 0px;
