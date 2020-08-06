@@ -854,7 +854,8 @@ margin-bottom: 10px;
  text-align: center;
  margin: 20px 0px;
  padding: 20px;
- 
+ height: 145px;
+ width: 100%;
 }
 
 .book-heading{
@@ -1511,12 +1512,12 @@ margin-top: 15px;
   display: flex;
   align-items: center;
   height: 90px;
-    width: 196px;
+    max-width: 196px;
     margin-top: 20px;
 }
 .map-btn .btn{
   position: absolute;
-  left: 32%;
+  left: 30%;
 }
 
 .flight-detail-alert{
@@ -3230,4 +3231,291 @@ margin-bottom: 20px;
 }
 .pg-main2 .card img{
   height: 140px;
+}
+.visa-banner-img{
+  width: 100%;
+  height: 250px;
+  overflow: hidden !important;
+  margin-top: 100px;
+}
+.visa-banner-img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 1px 40%;
+}
+.filter-header-bg{
+  padding: 20px;
+  box-shadow: 0 1px 8px rgba(0,0,0,.1);
+  display: none;
+}
+
+
+@media only screen and (max-width: 1199px) {
+  .filter-header-bg{
+    padding: 20px;
+    box-shadow: 0 1px 8px rgba(0,0,0,.1);
+    display: block;
+  }
+  .slider-alert .swiper-slide .alert-slider-text{
+    width: 87%;
+    margin-left: 20px;
+  }
+  .filter-hide{
+    display: none;
+  }
+  .alert-slider-text{
+    text-align: center;
+  }
+  .slider-alert .swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+    left: 1% !important;
+  }
+  .plane-design{
+    background-image: none;
+  }
+  .map-btn .btn {
+    left: 29%;
+}
+
+
+.hotel-detail-listing-price{
+  width: 310px;
+}
+
+}
+@media only screen and (max-width: 991px) {
+  .alert-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .alert-slider .swiper-slide{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0;
+
+  }
+  .slider-alert .swiper-slide .alert-slider-text{
+    margin-left: 0;
+  }
+  .pg-slider .swiper-slide{
+    display: flex;
+    justify-content: center;
+  }
+  .blog-slider-div .swiper-slide{
+    display: flex;
+    justify-content: center;
+  }
+  .tw-addon .swiper-slide{
+    display: flex;
+    justify-content: center;
+  }
+  .mandate-main .swiper-slide{
+    display: flex;
+    justify-content: center;
+  }
+  .all-offer{
+    display: block;
+  }
+  .all-offer-heading h1 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.hotel-detail-listing-price {
+  margin-right: 20px;
+}
+
+}
+@media only screen and (max-width: 767px) {
+.pd-detail{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.tw-sign-up h1{
+  font-size: 22px;
+}
+p{
+  font-size: 12px !important;
+}
+.sign-up-form .form-control{
+  padding: 12px 15px;
+}
+.sign-up-form .btn{
+  padding: 12px 20px;
+}
+.social-icon ul li img {
+  height: 35px;
+  width: 35px;
+}
+.pd-detail .card-title{
+  font-size: 16px;
+}
+.pd-heading h1 {
+  font-size: 22px;
+}
+h1{
+  font-size: 22px;
+}
+.all-offer-heading h1 {
+  font-size: 22px;
+}
+.offer button{
+  font-size: 15px;
+  margin-right: 10px;
+  padding: 10px 20px;
+}
+.hotel-detail{
+  display: block;
+}
+.hotel-detail-listing-price{
+  width: 200px;
+  margin-right: 20px;
+}
+.hotel-detail-img img{
+  height: 200px;
+  width: 100%;
+  object-position: bottom center;
+}
+.show-result h5{
+  font-size: 16px;
+}
+
+}
+@media only screen and (max-width: 575px) {
+  .mandate-main .mandate-title {
+    margin: 0px 0px 10px 0px;
+  }
+  .bg-blog{
+    padding: 20px 10px;
+    box-shadow: none;
+    margin: 20px 0px 10px;
+  }
+  .travel-heading {
+    margin-bottom: 20px;
+  }
+  .book-heading{
+    margin: 0;
+  }
+  .pg-main .pg-heading {
+    margin: 0px 0px 20px 0px;
+    display: block !important;
+  }
+  .pg-main .pg-heading .dropdown{
+    width: 100%;
+    margin-top: 10px;
+  }
+  .pg-slider .card-title{
+    font-size: 15px;
+  }
+  h1{
+    font-size: 18px;
+  }
+  .all-offer-heading h1 {
+    font-size: 18px;
+  }
+  .pd-heading h1 {
+    font-size: 18px;
+  }
+  .pd-heading {
+    margin: 20px 0px 20px 0px;
+}
+.pd-main {
+  box-shadow: none;
+  padding: 0px 10px;
+}
+.tw-sign-up h1 {
+  font-size: 16px;
+}
+footer{
+  padding: 40px 0px 0px 0px;
+  margin-top: 20px;
+}
+.mm-bb-20{
+  margin-bottom: 20px;
+}
+.social-icon ul{
+  margin-top: 10px;
+}
+.copyright {
+  margin-top: 20px;
+}
+.social-icon ul li img {
+  height: 30px;
+  width: 30px;
+}
+.tw-pd {
+  margin-bottom: 0px;
+}
+.pg-main{
+  margin-bottom: 30px;
+  padding: 20px 10px;
+  box-shadow: none;
+}
+.tw-book-main{
+  margin-bottom: 30px;
+  padding: 20px 10px;
+  box-shadow: none;
+}
+.pg-main .btn{
+  margin-left: 0;
+}
+.mandate-main {
+  margin-top: 0px;
+  padding: 20px 10px;
+  box-shadow: none;
+}
+.mandate-main .card{
+  margin: 10px 0px 10px 0px;
+}
+.bg-offer {
+  box-shadow: none;
+  padding: 20px 0px;
+}
+.offer-slide-detail .card-img{
+  height: 100%;
+  border-radius: 0px;
+  margin: 0px 0px 0px 0px;
+}
+.offer-slide-detail .card{
+  height: 100% !important;
+}
+.offer-tc{
+  margin-top: 0;
+  display: none;
+}
+.offer button {
+  font-size: 13px;
+  font-weight: 600;
+  margin-right: 5px;
+  padding: 10px 12px;
+}
+.tw-offer {
+  margin: 0px 0px;
+}
+.flight-detail-alert{
+  display: none;
+}
+.fast-detail button{
+  padding: 14px 5px;
+  font-size: 14px;
+}
+.hotel-detail .hotel-detail-sub {
+  margin-left: 5px;
+}
+.hotel-detail .hotel-detail-sub h3 {
+  font-size: 16px;
+}
+.dd-block{
+  display: block !important;
+}
+.hotel-detail-listing-price {
+  text-align: left !important;
+  margin-left: 5px;
+  padding: 0px 0px 20px;
+}
+
 }
