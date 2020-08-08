@@ -1238,7 +1238,7 @@
               <div class="sign-up-form">
                 <form>
                   <div class="form-row d-flex justify-content-center">
-                    <div class="col-9">
+                    <div class="col-sm-9 col-xs-12 mm-bb-20">
                       <input type="text" class="form-control" placeholder="Email address">
                     </div>
                     <div class="col-auto">
@@ -1295,6 +1295,28 @@
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    breakpoints: {
+    1100: {       
+         slidesPerView: 4,
+         spaceBetween: 10,
+         slidesPerGroup: 4,     
+      },
+      730: {       
+         slidesPerView: 3,
+         spaceBetween: 10,
+         slidesPerGroup: 3,     
+      },
+      500: {       
+         slidesPerView: 2,
+         spaceBetween: 10,
+         slidesPerGroup: 2,    
+      },
+      400: {       
+         slidesPerView: 1,
+         spaceBetween: 10,
+         slidesPerGroup: 1,     
+      },
+    }
   });
 </script>
 <script>

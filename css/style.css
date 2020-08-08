@@ -3276,6 +3276,9 @@ margin-bottom: 20px;
   .map-btn .btn {
     left: 29%;
 }
+.hotel-detail-listing-price1{
+  width: 325px !important;
+}
 
 
 .hotel-detail-listing-price{
@@ -3326,6 +3329,43 @@ margin-bottom: 20px;
 }
 .hotel-detail-listing-price {
   margin-right: 20px;
+}
+.hotel-detail-listing-price1{
+  width: 209px !important;
+}
+.visa-banner-img{
+  height: 170px;
+}
+.car-specification ul li{
+  font-size: 12px !important;
+}
+.hotel-detail-view {
+  height: 450px;
+}
+.hotel-detail-view {
+  height: 300px;
+}
+.hotel-detail-view .gallery-thumbs {
+  height: 30%;
+}
+.dd-block-768{
+  display: block !important;
+}
+.hotel-review-sub{
+  display: block;
+}
+.hotel-review-rating-row{
+  margin-left: 15px;
+}
+.choose-room-dis img {
+  height: 38px;
+}
+.hotel-choose-room .choose-room-img{
+  height: 200px;
+}
+.hotel-choose-room .choose-room-img img{
+  object-fit: cover;
+  object-position: bottom center;
 }
 
 }
@@ -3382,6 +3422,61 @@ h1{
 }
 .show-result h5{
   font-size: 16px;
+}
+.flight-name{
+  justify-content: center;
+}
+.visa-terms-sub {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.dd-block-576{
+  display: block !important;
+}
+.faq-main-div{
+  padding: 15px;
+}
+.faq-main-div .card-body{
+  padding: 15px 0;
+}
+.faq-main-div .card{
+  padding: 0;
+}
+.faq-main-div button{
+  padding: 0;
+}
+.faq-main-div ul li{
+  font-size: 12px;
+}
+.visa-page-sub ul li{
+  font-size: 12px;
+}
+.visa-circle{
+  height: 42px;
+  width: 42px;
+  margin-right: 16px;
+}
+.visa-circle img{
+  height: 26px;
+}
+.visa-page-sub .visa-circle{
+  height: 40px;
+  width: 40px;
+}
+.hotel-traveller-info-heading h4{
+  font-size: 20px;
+}
+.hotel-choose-room .btn{
+  float: left;
+    margin-left: 5px;
+}
+.hotel-detail-header-bg{
+  display: none;
+}
+.flex-column{
+  flex-direction: row !important;
 }
 
 }
@@ -3516,6 +3611,123 @@ footer{
   text-align: left !important;
   margin-left: 5px;
   padding: 0px 0px 20px;
+}
+.transfer-price {
+  text-align: left;
+  margin-left: 5px;
+}
+.transfer-dis{
+  justify-content: start !important;
+}
+.flight-main-div header .navbar-brand h2{
+  font-size: 24px;
+}
+.bg-light{
+  margin-top: 10px;
+}
+.visa-banner-img {
+  height: 110px;
+}
+h4{
+  font-size: 20px;
+}
+.visa-page-main h3{
+  font-size: 16px;
+}
+.visa-page-main{
+  box-shadow: none;
+  padding: 5px;
+}
+.visa-circle {
+  height: 40px;
+  width: 60px;
+}
+.visa-circle img{
+  height: 20px;
+}
+.visa-page-sub .visa-circle {
+  height: 40px;
+  width: 80px;
+}
+.visa-page-sub h3{
+  font-size: 16px !important;
+}
+.faq-main-div h3{
+  font-size: 20px;
+}
+.mt-100 {
+  margin-top: 40px;
+}
+.visa-types-main {
+  margin-top: 40px;
+}
+.hotel-payment-sub .payment-fare h5{
+  font-size: 16px;
+}
+.payment-fare .total-font p {
+  font-size: 16px !important;
+}
+.cab-location h5{
+  font-size: 16px;
+}
+label{
+font-size: 14px;
+}
+.transfer-payment .transfer-cab small{
+  font-size: 14px !important;
+}
+.transfer-payment .transfer-cab p{
+  font-size: 18px !important;
+}
+.hotel-facility li{
+  font-size: 13px;
+}
+.hotel-facility li:before{
+  background-size: 18px 13px;
+}
+.hotel-review h4{
+  font-size: 20px;
+}
+.hotel-review-rating-row{
+  display: none;
+}
+#loadMore{
+  margin:0px 5px 0;
+}
+.hotel-detail-slider-sub h4{
+  font-size: 20px;
+}
+.hotel-choose-room h6{
+  font-size: 16px;
+}
+.hotel-review-detail h3{
+  font-size: 18px;
+}
+.about-hotel-rules h4{
+  font-size: 20px;
+}
+.hotel-payment-gst-form{
+  display: block;
+  text-align: center;
+}
+.pay-color{
+  margin: 10px 0px 15px 0px;
+  width: 100%;
+}
+.btn1{
+  margin-right: 10px !important;
+}
+.payment-detail .card-body .btn{
+  padding: 15px;
+}
+.payment-option .option-detail {
+  margin-top: 20px;
+}
+.payment-option-net .option-net{
+  display: block;
+}
+.payment-option-amazon li{
+  font-size: 14px;
 }
 
 }
