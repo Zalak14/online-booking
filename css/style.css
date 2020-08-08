@@ -1900,7 +1900,7 @@ html{
 }
 .payment-fare{
   box-shadow: 0 1px 8px rgba(0,0,0,.1);
-  margin-top: 50px;
+  margin-top: 0px;
   border-radius: 10px;
   padding: 10px;
 }
@@ -3249,6 +3249,21 @@ margin-bottom: 20px;
   box-shadow: 0 1px 8px rgba(0,0,0,.1);
   display: none;
 }
+.payment-detail {
+  margin-top: 0px;
+}
+.payment-addon-img{
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 10px !important;
+}
+.payment-addon-img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 
 
 @media only screen and (max-width: 1199px) {
@@ -3279,12 +3294,27 @@ margin-bottom: 20px;
 .hotel-detail-listing-price1{
   width: 325px !important;
 }
-
-
 .hotel-detail-listing-price{
   width: 310px;
 }
-
+.payment-fare{
+  margin-top: 30px;
+}
+.flight-route .flight-price h2{
+  font-size: 19px;
+}
+.holiday-book-btn{
+  padding: 15px;
+}
+.btn11{
+  width: 150px;
+}
+.holiday-book-btn h2{
+  font-size: 22px;
+}
+.hotel-detail-listing-price a{
+  margin-right: 15px;
+}
 }
 @media only screen and (max-width: 991px) {
   .alert-title{
@@ -3367,7 +3397,30 @@ margin-bottom: 20px;
   object-fit: cover;
   object-position: bottom center;
 }
-
+.payment-addon-img{
+  height: 150px;
+}
+.fast-tabcontent .flight-name {
+  justify-content: start;
+}
+.flight-route .flight-price{
+  justify-content: start !important;
+}
+.flight-route .flight-price1 {
+  justify-content: flex-end !important;
+}
+.holiday-plan-day1{
+  display: none;
+}
+.holiday-plan-day2{
+  display: none;
+}
+.holiday-plan-day3{
+  display: none;
+}
+.holiday-plan-day5{
+  display: none;
+}
 }
 @media only screen and (max-width: 767px) {
 .pd-detail{
@@ -3477,6 +3530,45 @@ h1{
 }
 .flex-column{
   flex-direction: row !important;
+}
+.payment-addon .card-body{
+  margin-top: 15px;
+}
+.payment-addon .btn{
+  margin-top: 15px !important;
+}
+.payment-addon-img img{
+  width: 250px;
+}
+.payment-addon-img{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.protection-circle {
+  height: 60px;
+  width: 60px;
+}
+.seat-select{
+  background-size: 444px auto;
+}
+.seat-select-color ul li img {
+  height: 25px;
+  width: 25px;
+}
+.flight-price1 a{
+  font-size: 14px !important;
+  margin-top: 10px !important;
+}
+.hplan .hplan-sub-tab button span{
+  padding: 1px 8px;
+}
+.hplan .hplan-sub-tab button{
+  padding: 14px 0;
+  font-size: 16px;
+}
+.holiday-book-btn{
+  bottom: 0;
 }
 
 }
@@ -3729,5 +3821,118 @@ font-size: 14px;
 .payment-option-amazon li{
   font-size: 14px;
 }
-
+.payment-addon .btn-add{
+  height: 40px;
+}
+.payment-detail .card-body .btn-add{
+  float: left !important;
+  padding: 9px !important;
+  margin-left: 20px !important;
+}
+.payment-addon .card-body li{
+  font-size: 13px;
+}
+.protection-insu img {
+  height: 50px;
+  width: 120px;
+}
+.seat-select-color ul{
+  display: block;
+}
+.seat-select-color ul li{
+  margin-bottom: 10px;
+}
+.fast-tabcontent .flight-name {
+  margin-bottom: 15px;
+}
+.flight-route .flight-time{
+  margin-bottom: 15px;
+}
+.flight-route .flight-hour{
+  margin-bottom: 15px;
+}
+.flight-slide-open .flight-slide-open-facility-img{
+  margin-left: 21px;
+}
+.slide-line{
+  width: 100px;
+}
+.route-slide-detail {
+  text-align: left;
+  margin-left: 5px;
+}
+.btn-book{
+  width: 83%;
+}
+.flight-name1{
+  justify-content: start !important;
+}
+.hotel-detail-listing-price2{
+  position: absolute;
+  bottom: 67.9%;
+    left: 68%;
+}
+.hotel-detail-listing-price3{
+  position: absolute;
+  bottom: 55.9%;
+  left: 27%;
+}
+.holiday-endday a {
+  position: absolute;
+  right: 34px;
+  font-size: 14px;
+}
+.hotel-detail-listing-price4{
+  position: absolute;
+  bottom: 39.8%;
+  left: 27%;
+}
+.hotel-detail-listing-price5{
+  position: absolute;
+  bottom: 23.7%;
+  left: 27%;
+}
+.hotel-detail-listing-price6{
+  position: absolute;
+  bottom: 42.8%;
+  left: 67%;
+}
+.hotel-detail-listing-price7{
+  position: absolute;
+  bottom: 0.8%;
+  left: 67%;
+}
+.hotel-detail-listing-price8{
+  position: absolute;
+  bottom: 60%;
+  left: 27%;
+}
+.hotel-detail-listing-price9{
+  position: absolute;
+  bottom: 30.2%;
+  left: 27%;
+}
+.hotel-detail-listing-price10{
+  position: absolute;
+  bottom: 0.5%;
+    left: 27%;
+}
+.holiday-book-btn{
+  bottom: 0;
+}
+.hotel-review{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.hplan {
+  margin-bottom: 0px;
+}
+.hplan .hplan-sub-tab button{
+  width: 31%;
+  margin-right: 5px;
+  font-size: 15px;
+}
+.hplan .hplan-sub-tab{
+  flex-wrap: wrap;
+}
 }
