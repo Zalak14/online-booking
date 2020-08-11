@@ -104,7 +104,7 @@ button:focus{
   font-size: 14px;
 }
 .menu1{
-  padding-left: 16.5%;
+  padding-left: 35.5%;
 }
 
 .br-navmenu li{
@@ -148,6 +148,28 @@ button:focus{
 }
 .navbar-collapse{
   flex-basis: auto;
+}
+.btn-header{
+  background: rgb(66, 66, 66);
+  padding: 10px !important;
+  margin-top: 10px;
+  background-repeat: no-repeat;
+  background-size: 35px 23px;
+  padding-left: 35px !important;
+  background-position: left center;
+  font-size: 12px;
+}
+.btn-support{
+  background-image: url(../img/clock.svg);
+}
+.btn-login{
+  background-image: url(../img/login.svg);
+}
+.btn-flag{
+  background-image: url(../img/india.svg);
+}
+.btn-support:hover{
+  opacity: 0.5;
 }
 .banner-slide-img{
   height: 100vh !important;
@@ -710,6 +732,16 @@ h1{
 }
 .pl-0{
   padding-left: 0px !important;
+}
+.pr-0{
+  padding-right: 0px !important;
+}
+.payment-main-div{
+  margin-top: 100px;
+}
+.hotel-detail-listing-price1{
+  width: 335px !important;
+  margin-right: 15px;
 }
 
 .mandate-main .card{
@@ -2934,6 +2966,9 @@ margin-bottom: 20px;
   padding: 20px;
   background-color: white;
 }
+.holiday-book-btn1{
+  bottom: 0 !important;
+}
 .color-blue{
   color: #00bef8 !important;
 }
@@ -3315,6 +3350,9 @@ margin-bottom: 20px;
 .hotel-detail-listing-price a{
   margin-right: 15px;
 }
+.search-tab{
+  top: 170px;
+}
 }
 @media only screen and (max-width: 991px) {
   .alert-title{
@@ -3420,6 +3458,9 @@ margin-bottom: 20px;
 }
 .holiday-plan-day5{
   display: none;
+}
+.search-tab{
+  top: 140px;
 }
 }
 @media only screen and (max-width: 767px) {
@@ -3569,6 +3610,12 @@ h1{
 }
 .holiday-book-btn{
   bottom: 0;
+}
+.search-tab{
+  top: 100px;
+}
+.banner-slide-img{
+  height: 810px !important;
 }
 
 }
@@ -3935,4 +3982,5 @@ font-size: 14px;
 .hplan .hplan-sub-tab{
   flex-wrap: wrap;
 }
+
 }

@@ -34,56 +34,35 @@
           <div class="search-box-detail">
             <div class="search">
               
-              <button class="searchlinks pl-0 pr-0 ml-12" onclick="searchBox(event, 'return')">Transfer</button>
+              <button class="searchlinks pl-0 pr-0 ml-12 active" onclick="searchBox(event, 'return')">Transfer</button>
              
             </div>
 
             <div id="return" class="searchcontent search-active">
               <form>
                 <div class="form-row">
-                  <div class="form-group col-md-4">
+                  <div class="form-group col-xl-4 col-md-6">
                     <label for="inputEmail4">From</label>
                     <input type="text" class="form-control flight-icon" placeholder="City or Airpot"></div>
-                  <div class="form-group col-md-4">
+                  <div class="form-group col-xl-4 col-md-6">
                     <label for="inputPassword4">To</label>
                     <input type="text" class="form-control location-icon" placeholder="Country, City or island">
                   </div>
-                  <div class="form-group col-md-2">
+                  <div class="form-group col-xl-2 col-md-6">
                     <label for="inputEmail4">Date</label>
                     <input type="date" class="form-control" id="inputEmail4">
                   </div>
-                  <div class="form-group col-md-2">
+                  <div class="form-group col-xl-2 col-md-6">
                     <label for="inputEmail4">Time</label>
                     <select class="custom-select form-control">
                       <option selected>Time</option>
-                      <option value="1">1:00 AM</option>
-                      <option value="2">2:00 AM</option>
-                      <option value="3">3:00 AM</option>
-                      <option value="4">4:00 AM</option>
-                      <option value="5">5:00 AM</option>
-                      <option value="6">6:00 AM</option>
-                      <option value="7">7:00 AM</option>
-                      <option value="8">8:00 AM</option>
-                      <option value="9">9:00 AM</option>
-                      <option value="10">10:00 AM</option>
-                      <option value="11">11:00 AM</option>
-                      <option value="12">12:00 AM</option>
-                      <option value="1">1:00 PM</option>
-                      <option value="2">2:00 PM</option>
-                      <option value="3">3:00 PM</option>
-                      <option value="4">4:00 PM</option>
-                      <option value="5">5:00 PM</option>
-                      <option value="6">6:00 PM</option>
-                      <option value="7">7:00 PM</option>
-                      <option value="8">8:00 PM</option>
-                      <option value="9">9:00 PM</option>
-                      <option value="10">10:00 PM</option>
-                      <option value="11">11:00 PM</option>
-                      <option value="12">12:00 PM</option>
+                      <option value="1">1:00</option>
+                      <option value="2">2:00</option>
+                      <option value="3">3:00</option>
                     </select>
                   </div>
                   
-                 <div class="form-group col-md-5">
+                 <div class="form-group col-md-4">
                     <div class="dropdown mr-1">
                         <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
                         Which Car
@@ -113,7 +92,7 @@
                       </div>
                   </div>
                </div>
-               <div class="form-group col-md-2">
+               <div class="form-group col-md-3">
                 <div class="dropdown mr-1">
                   <button type="button" class="btn btn-secondary btn-dd" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
                   Currency
@@ -404,7 +383,7 @@
             </div>
             <div class="transfer-listing">
               <div class="fast-detail">
-                <button class="fast-tablinks" onclick="openFast(event, 'Offer')">Recommended</button>
+                <button class="fast-tablinks active" onclick="openFast(event, 'Offer')">Recommended</button>
                 <button class="fast-tablinks" onclick="openFast(event, 'Cheapest')">Cheap Price</button>
                 <button class="fast-tablinks" onclick="openFast(event, 'Fastest')">Rating</button>
               </div>
