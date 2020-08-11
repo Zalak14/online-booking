@@ -3617,6 +3617,20 @@ h1{
 .banner-slide-img{
   height: 810px !important;
 }
+.search button{
+  padding: 10px 5px;
+  font-size: 14px;
+}
+.searchcontent .btn-find{
+  font-size: 14px !important;
+  padding: 10px 0 !important;
+}
+.banner-slide-img{
+  height: 1025px !important;
+}
+.search-tab{
+  top: 95px;
+}
 
 }
 @media only screen and (max-width: 575px) {
@@ -3981,6 +3995,25 @@ font-size: 14px;
 }
 .hplan .hplan-sub-tab{
   flex-wrap: wrap;
+}
+.tab button{
+  padding: 8px 3px;
+  font-weight: 600;
+  font-size: 12px;
+}
+.search button{
+  padding: 10px 5px;
+  font-size: 14px;
+}
+.searchcontent .btn-find{
+  font-size: 14px !important;
+  padding: 10px 0 !important;
+}
+.banner-slide-img{
+  height: 1000px !important;
+}
+.search-tab{
+  top: 95px;
 }
 
 }
