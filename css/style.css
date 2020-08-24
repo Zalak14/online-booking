@@ -158,7 +158,7 @@ button:focus{
   flex-basis: auto;
 }
 .btn-header{
-  background: #00B4DB;
+  background: rgb(83, 83, 83);
   padding: 10px !important;
   margin-top: 10px;
   background-repeat: no-repeat;
@@ -4079,4 +4079,21 @@ font-size: 14px;
   top: 95px;
 }
 
+}
+
+
+.bg-img{
+  height: 100vh;
+  width: 100vw;
+}
+.bg-img img{
+height: 100vh;
+width: 125vw;
+margin-left: -120px;
+object-fit: cover;
+}
+.login-form-main{
+  position: absolute;
+  top: 10%;
+  left: 42%;
 }
