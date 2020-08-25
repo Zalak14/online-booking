@@ -639,6 +639,42 @@
 </section>
 </div>
 
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+       <div class="alert-model-main">
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Login for the best travel offers</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="">
+                  <form>
+                    <p>Use mobile no. or email to Login / Signup</p>
+                    <input type="text" class="form-control">
+                  </form>
+                <div class="d-flex justify-content-center mt-20">
+                  <button class="btn btn-success">Continue</button>
+                </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+       </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
 <section class="tw-alerts">
   <div class="tw-alerts-div" data-aos="fade-up" data-aos-duration="1000">
     <div class="container">
@@ -2464,7 +2500,14 @@
     evt.currentTarget.className += " active";
   }
   </script>
-  
+  <script>
+  $( document ).ready(function() {
+    $('#exampleModalCenter').modal({
+  keyboard: false
+})
+});
+   
+  </script>
 
 
 
