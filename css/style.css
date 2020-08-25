@@ -4122,8 +4122,7 @@ font-size: 14px;
 }
 .bg-img img{
 height: 100vh;
-width: 135vw;
-margin-left: -150px;
+width: 100vw;
 object-fit: cover;
 }
 .login-form-main{
